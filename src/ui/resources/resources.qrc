@@ -1,0 +1,14 @@
+<RCC>
+  <qresource>
+    <file>icons/menu_about.svg</file>
+    <file>icons/menu_close.svg</file>
+    <file>icons/menu_documentation.svg</file>
+    <file>icons/menu_license.svg</file>
+    <file>icons/menu_new.svg</file>
+    <file>icons/menu_print.svg</file>
+    <file>icons/menu_save_image.svg</file>
+    <file>icons/menu_save.svg</file>
+    <file>icons/simulation_abort.svg</file>
+    <file>icons/simulation_start.svg</file>
+  </qresource>
+</RCC>
