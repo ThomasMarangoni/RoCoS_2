@@ -5,11 +5,19 @@ from ui import Analyse as Analyse
 from ui import CodeGenerator as CodeGenerator
 from ui import SimulationControl as SimulationControl
 
+class Window01(QtWidgets.QMainWindow):
+
+    def __init__(self):
+        super().__init__()
+
+    def pushButtonGenerateSequencePressed(self):
+        print("Hello")
+
 
 app = QtWidgets.QApplication([])
 
 print("Starting Main Window")
-window01 = QtWidgets.QMainWindow()
+window01 = Window01()
 mainUi = Main.Ui_MainWindow()
 mainUi.setupUi(window01)
 window01.show()

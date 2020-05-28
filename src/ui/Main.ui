@@ -626,7 +626,7 @@
           <item row="1" column="0">
            <widget class="QTabWidget" name="tabWidget_receiver_filter">
             <property name="currentIndex">
-             <number>0</number>
+             <number>3</number>
             </property>
             <widget class="QWidget" name="tab_receiver_filter_integrate_and_dump">
              <attribute name="title">
@@ -1377,7 +1377,7 @@
        <item row="0" column="0" colspan="5">
         <widget class="QTabWidget" name="tabWidget_channel">
          <property name="currentIndex">
-          <number>0</number>
+          <number>3</number>
          </property>
          <widget class="QWidget" name="awgn">
           <attribute name="title">
@@ -2195,5 +2195,820 @@
  <resources>
   <include location="resources/resources.qrc"/>
  </resources>
- <connections/>
+ <connections>
+  <connection>
+   <sender>pushButton_transmitter_antipodal_generate_sequence</sender>
+   <signal>pressed()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>pushButtonGenerateSequencePressed()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>67</x>
+     <y>444</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>5</x>
+     <y>459</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_transmitter_orthogonal_generate_sequence</sender>
+   <signal>pressed()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>pushButtonGenerateSequencePressed()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>157</x>
+     <y>427</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-1</x>
+     <y>437</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_receiver_antipodal_generate_sequence</sender>
+   <signal>pressed()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>pushButtonGenerateSequencePressed()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1420</x>
+     <y>429</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1860</x>
+     <y>380</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_receiver_orthogonal_generate_sequence</sender>
+   <signal>pressed()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>pushButtonGenerateSequencePressed()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1287</x>
+     <y>444</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1866</x>
+     <y>437</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_transmitter_pulseshape_show</sender>
+   <signal>pressed()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>pushButtonPulseshapeShow()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>252</x>
+     <y>533</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1</x>
+     <y>539</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_transmitter_pulseshape_properties</sender>
+   <signal>pressed()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>pushButtonPulseshapeProperties()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>270</x>
+     <y>572</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-1</x>
+     <y>577</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_transmitter_antipodal_analyse_sequence</sender>
+   <signal>pressed()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>pushButtonTransmitterAntipodalAnalyseSequence()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>289</x>
+     <y>436</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>4</x>
+     <y>427</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_transmitter_antipodal_analyse_kkf</sender>
+   <signal>pressed()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>pushButtonTransmitterAntipodalAnalyseKKF()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>514</x>
+     <y>433</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1</x>
+     <y>380</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_transmitter_orthogonal_analyse_sequence</sender>
+   <signal>pressed()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>pushButtonTransmitterOthogonalAnalyseSequence()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>278</x>
+     <y>422</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-5</x>
+     <y>364</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_transmitter_orthogonal_analyse_kkf</sender>
+   <signal>pressed()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>pushButtonTransmitterOthogonalAnalyseKKF()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>423</x>
+     <y>419</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>5</x>
+     <y>407</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushbutton_ss_sequence_clone</sender>
+   <signal>pressed()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>pushButtonCloneTransmitterSettings()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1781</x>
+     <y>483</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1861</x>
+     <y>480</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_receiver_orthogonal_analyse_sequence</sender>
+   <signal>pressed()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>pushButtonReceiverOthogonalAnalyseSequence()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1473</x>
+     <y>444</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1858</x>
+     <y>412</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_receiver_orthogonal_analyse_kkf</sender>
+   <signal>pressed()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>pushButtonTransmitterOthogonalAnalyseKKF()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1659</x>
+     <y>444</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1861</x>
+     <y>364</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_receiver_antipodal_analyse_sequence</sender>
+   <signal>pressed()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>pushButtonReceiverAntipodalAnalyseSequence()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1602</x>
+     <y>424</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1860</x>
+     <y>337</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_receiver_antipodal_analyse_kkf</sender>
+   <signal>pressed()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>pushButtonTransmitterAntipodalAnalyseKKF()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1745</x>
+     <y>415</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1855</x>
+     <y>303</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_receiver_filter_low_pass_filter_show_impulseresponse</sender>
+   <signal>pressed()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>pushButtonFilterLowPassShowImpulseresponse()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1788</x>
+     <y>609</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1857</x>
+     <y>598</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_receiver_filter_rake_receiver_addtolist</sender>
+   <signal>pressed()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>pushButtonFilterRakeReceiverAddToList()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1727</x>
+     <y>621</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1856</x>
+     <y>588</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_receiver_filter_rake_receiver_clone</sender>
+   <signal>pressed()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>pushButtonFilterRakeReceiverCloneChannelMWs()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1772</x>
+     <y>809</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1861</x>
+     <y>787</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_channel_cw_addtolist</sender>
+   <signal>pressed()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>pushButtonChannelCWAddToList()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>954</x>
+     <y>148</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>981</x>
+     <y>21</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_channel_mw_addtolist</sender>
+   <signal>pressed()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>pushButtonChannelMWAddToList()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>987</x>
+     <y>166</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>964</x>
+     <y>25</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_channel_mu_generate_sequence</sender>
+   <signal>pressed()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>pushButtonGenerateSequencePressed()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1112</x>
+     <y>168</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>725</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_channel_mu_analyse_sequence</sender>
+   <signal>pressed()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>pushButtonChannelMUAnalyseSequence()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1173</x>
+     <y>210</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>433</x>
+     <y>21</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_channel_mu_analyse_kkf</sender>
+   <signal>pressed()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>pushButtonChannelMUAnalyseKKF()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1087</x>
+     <y>283</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1229</x>
+     <y>25</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_channel_mu_addtolist</sender>
+   <signal>pressed()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>pushButtonChannelMUAddToList()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>972</x>
+     <y>352</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>618</x>
+     <y>44</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_transmitter_pulseshape_samples</sender>
+   <signal>editingFinished()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>lineEditTransmitterPulseshapeSamples()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>159</x>
+     <y>554</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1</x>
+     <y>509</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_transmitter_pulseshape_duration</sender>
+   <signal>editingFinished()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>lineEditTransmitterPulseshapeDuration()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>194</x>
+     <y>574</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-4</x>
+     <y>490</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_transmitter_signalresults_chiprate</sender>
+   <signal>editingFinished()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>lineEditTransmitterSignalResultsChipRate()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>142</x>
+     <y>661</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1</x>
+     <y>651</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_transmitter_signalresults_bitduration</sender>
+   <signal>editingFinished()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>lineEditTransmitterSignalResultsBitDuration()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>154</x>
+     <y>690</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1</x>
+     <y>684</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_transmitter_signalresults_bitrate</sender>
+   <signal>editingFinished()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>lineEditTransmitterSignalResultsBitRate()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>149</x>
+     <y>719</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>3</x>
+     <y>717</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_transmitter_signalresults_samplerate</sender>
+   <signal>editingFinished()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>lineEditTransmitterSignalResultsSampleRate()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>169</x>
+     <y>753</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>2</x>
+     <y>753</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_transmitter_signalresults_oversampling</sender>
+   <signal>editingFinished()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>lineEditTransmitterSignalResultsOversampling()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>178</x>
+     <y>779</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-3</x>
+     <y>788</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_transmitter_signalparameter_chipamplitude</sender>
+   <signal>editingFinished()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>lineEditTransmitterSignalParameterChipAmplitude()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>412</x>
+     <y>656</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>3</x>
+     <y>625</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_transmitter_signalparameter_chipduration</sender>
+   <signal>editingFinished()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>lineEditTransmitterSignalParameterChipDuration()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>426</x>
+     <y>691</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>2</x>
+     <y>825</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_channel_awgn_snr</sender>
+   <signal>editingFinished()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>lineEditChannelAWGNPropertiesSNR()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>778</x>
+     <y>146</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>621</x>
+     <y>31</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_channel_awgn_stddev</sender>
+   <signal>editingFinished()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>lineEditChannelAWGNPropertiesStdDev()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>750</x>
+     <y>171</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1226</x>
+     <y>21</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_channel_cw_frequency</sender>
+   <signal>editingFinished()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>lineEditChannelCWHz()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>714</x>
+     <y>143</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1225</x>
+     <y>64</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_channel_cw_procent</sender>
+   <signal>editingFinished()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>lineEditChannelCWPercentage()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>724</x>
+     <y>175</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1226</x>
+     <y>104</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_channel_mw_seconds</sender>
+   <signal>editingFinished()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>lineEditChannelMWs()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>719</x>
+     <y>141</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1228</x>
+     <y>50</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_channel_mw_procent</sender>
+   <signal>editingFinished()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>lineEditChannelMWPercentage()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>690</x>
+     <y>169</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>620</x>
+     <y>84</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_channel_mu_procent</sender>
+   <signal>editingFinished()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>lineEditChannelMUPercentage()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>710</x>
+     <y>354</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>603</x>
+     <y>880</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_channel_cw</sender>
+   <signal>editingFinished()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>lineEditChannelNumberOfCW()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>799</x>
+     <y>727</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>628</x>
+     <y>874</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_channel_mw</sender>
+   <signal>editingFinished()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>lineEditChannelNumberOfMW()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>813</x>
+     <y>779</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>643</x>
+     <y>884</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit__channel_mu_users</sender>
+   <signal>editingFinished()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>lineEditChannelNumberOfMU()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1080</x>
+     <y>727</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1055</x>
+     <y>874</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_receiver_filter_integrate_and_dump_delay</sender>
+   <signal>editingFinished()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>lineEditReceiverFilterIntegrateAndDumpDelay()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1331</x>
+     <y>608</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1270</x>
+     <y>878</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_receiver_filter_matched_filter_delay</sender>
+   <signal>editingFinished()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>lineEditReceiverFilterMatchedFilter()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1340</x>
+     <y>601</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1346</x>
+     <y>884</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_receiver_filter_low_pass_filter_delay</sender>
+   <signal>editingFinished()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>lineEditReceiverFilterLowPassFilterDelay()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1344</x>
+     <y>612</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1313</x>
+     <y>874</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_receiver_filter_rake_receiver_delay</sender>
+   <signal>editingFinished()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>lineEditReceiverFilterRakeReceiverDelay()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1355</x>
+     <y>595</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1858</x>
+     <y>863</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_receiver_filter_rake_receiver_procent</sender>
+   <signal>editingFinished()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>lineEditReceiverFilterRakeReceiverPercentage()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1337</x>
+     <y>645</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1861</x>
+     <y>841</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>pushButtonGenerateSequencePressed()</slot>
+  <slot>pushButtonPulseshapeShow()</slot>
+  <slot>pushButtonPulseshapeProperties()</slot>
+  <slot>pushButtonTransmitterAntipodalAnalyseSequence()</slot>
+  <slot>pushButtonTransmitterAntipodalAnalyseKKF()</slot>
+  <slot>pushButtonTransmitterOthogonalAnalyseSequence()</slot>
+  <slot>pushButtonTransmitterOthogonalAnalyseKKF()</slot>
+  <slot>pushButtonCloneTransmitterSettings()</slot>
+  <slot>pushButtonReceiverOthogonalAnalyseSequence()</slot>
+  <slot>pushButtonReceiverOthogonalAnalyseKKF()</slot>
+  <slot>pushButtonReceiverAntipodalAnalyseSequence()</slot>
+  <slot>pushButtonReceiverAntipodalAnalyseKKF()</slot>
+  <slot>pushButtonFilterLowPassShowImpulseresponse()</slot>
+  <slot>pushButtonFilterRakeReceiverAddToList()</slot>
+  <slot>pushButtonFilterRakeReceiverCloneChannelMWs()</slot>
+  <slot>pushButtonChannelCWAddToList()</slot>
+  <slot>pushButtonChannelMWAddToList()</slot>
+  <slot>pushButtonChannelMUAnalyseSequence()</slot>
+  <slot>pushButtonChannelMUAnalyseKKF()</slot>
+  <slot>pushButtonChannelMUAddToList()</slot>
+  <slot>lineEditTransmitterPulseshapeSamples()</slot>
+  <slot>lineEditTransmitterPulseshapeDuration()</slot>
+  <slot>lineEditTransmitterSignalResultsChipRate()</slot>
+  <slot>lineEditTransmitterSignalResultsBitDuration()</slot>
+  <slot>lineEditTransmitterSignalResultsBitRate()</slot>
+  <slot>lineEditTransmitterSignalResultsSampleRate()</slot>
+  <slot>lineEditTransmitterSignalResultsOversampling()</slot>
+  <slot>lineEditTransmitterSignalParameterChipAmplitude()</slot>
+  <slot>lineEditTransmitterSignalParameterChipDuration()</slot>
+  <slot>lineEditChannelAWGNPropertiesSNR()</slot>
+  <slot>lineEditChannelAWGNPropertiesStdDev()</slot>
+  <slot>lineEditChannelCWHz()</slot>
+  <slot>lineEditChannelCWPercentage()</slot>
+  <slot>lineEditChannelMWs()</slot>
+  <slot>lineEditChannelMWPercentage()</slot>
+  <slot>lineEditChannelMUPercentage()</slot>
+  <slot>lineEditChannelNumberOfCW()</slot>
+  <slot>lineEditChannelNumberOfMW()</slot>
+  <slot>lineEditChannelNumberOfMU()</slot>
+  <slot>lineEditReceiverFilterIntegrateAndDumpDelay()</slot>
+  <slot>lineEditReceiverFilterMatchedFilter()</slot>
+  <slot>lineEditReceiverFilterLowPassFilterDelay()</slot>
+  <slot>lineEditReceiverFilterRakeReceiverDelay()</slot>
+  <slot>lineEditReceiverFilterRakeReceiverPercentage()</slot>
+ </slots>
 </ui>

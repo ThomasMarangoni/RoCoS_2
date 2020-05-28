@@ -334,6 +334,11 @@ color: rgb(255, 255, 255)</string>
              <string>Rx Sequence 2</string>
             </property>
            </item>
+           <item>
+            <property name="text">
+             <string>Channel MU</string>
+            </property>
+           </item>
           </widget>
          </item>
          <item>
