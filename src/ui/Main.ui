@@ -437,8 +437,21 @@
                 </property>
                </widget>
               </item>
+              <item row="1" column="0" colspan="3">
+               <spacer name="verticalSpacer_11">
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>40</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
               <item row="0" column="0" colspan="3">
-               <widget class="QListView" name="listView_transmitter_antipodal">
+               <widget class="QListWidget" name="listWidget_transmitter_antipodal">
                 <property name="sizePolicy">
                  <sizepolicy hsizetype="Expanding" vsizetype="Ignored">
                   <horstretch>0</horstretch>
@@ -452,19 +465,6 @@
                  </size>
                 </property>
                </widget>
-              </item>
-              <item row="1" column="0" colspan="3">
-               <spacer name="verticalSpacer_11">
-                <property name="orientation">
-                 <enum>Qt::Vertical</enum>
-                </property>
-                <property name="sizeHint" stdset="0">
-                 <size>
-                  <width>20</width>
-                  <height>40</height>
-                 </size>
-                </property>
-               </spacer>
               </item>
              </layout>
             </widget>
@@ -512,8 +512,8 @@
                 </property>
                </widget>
               </item>
-              <item row="1" column="0" colspan="3">
-               <widget class="QListWidget" name="listView_transmitter_orthogonal_2">
+              <item row="0" column="0" colspan="3">
+               <widget class="QListWidget" name="listWidget_transmitter_orthogonal_1">
                 <property name="sizePolicy">
                  <sizepolicy hsizetype="Expanding" vsizetype="Ignored">
                   <horstretch>0</horstretch>
@@ -528,8 +528,8 @@
                 </property>
                </widget>
               </item>
-              <item row="0" column="0" colspan="3">
-               <widget class="QListWidget" name="listView_transmitter_orthogonal_1">
+              <item row="1" column="0" colspan="3">
+               <widget class="QListWidget" name="listWidget_transmitter_orthogonal_2">
                 <property name="sizePolicy">
                  <sizepolicy hsizetype="Expanding" vsizetype="Ignored">
                   <horstretch>0</horstretch>
@@ -1042,7 +1042,7 @@
           <item>
            <widget class="QTabWidget" name="tabWidget_receiver_ss_sequence">
             <property name="currentIndex">
-             <number>0</number>
+             <number>1</number>
             </property>
             <widget class="QWidget" name="tab_receiver_antipodal">
              <attribute name="title">
@@ -1059,22 +1059,6 @@
                 </property>
                 <property name="text">
                  <string>Generate Sequence</string>
-                </property>
-               </widget>
-              </item>
-              <item row="0" column="0" colspan="3">
-               <widget class="QListView" name="listView_receiver_antipodal">
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="Expanding" vsizetype="Ignored">
-                  <horstretch>0</horstretch>
-                  <verstretch>0</verstretch>
-                 </sizepolicy>
-                </property>
-                <property name="minimumSize">
-                 <size>
-                  <width>0</width>
-                  <height>130</height>
-                 </size>
                 </property>
                </widget>
               </item>
@@ -1116,6 +1100,22 @@
                  </size>
                 </property>
                </spacer>
+              </item>
+              <item row="0" column="0" colspan="3">
+               <widget class="QListWidget" name="listWidget_receiver_antipodal">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Expanding" vsizetype="Ignored">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>130</height>
+                 </size>
+                </property>
+               </widget>
               </item>
              </layout>
             </widget>
@@ -1163,8 +1163,8 @@
                 </property>
                </widget>
               </item>
-              <item row="1" column="0" colspan="3">
-               <widget class="QListWidget" name="listView_receiver_orthogonal_2">
+              <item row="0" column="0" colspan="3">
+               <widget class="QListWidget" name="listWidget_receiver_orthogonal_1">
                 <property name="sizePolicy">
                  <sizepolicy hsizetype="Expanding" vsizetype="Ignored">
                   <horstretch>0</horstretch>
@@ -1179,8 +1179,8 @@
                 </property>
                </widget>
               </item>
-              <item row="0" column="0" colspan="3">
-               <widget class="QListWidget" name="listView_receiver_orthogonal_1">
+              <item row="1" column="0" colspan="3">
+               <widget class="QListWidget" name="listWidget_receiver_orthogonal_2">
                 <property name="sizePolicy">
                  <sizepolicy hsizetype="Expanding" vsizetype="Ignored">
                   <horstretch>0</horstretch>
@@ -1377,7 +1377,7 @@
        <item row="0" column="0" colspan="5">
         <widget class="QTabWidget" name="tabWidget_channel">
          <property name="currentIndex">
-          <number>3</number>
+          <number>4</number>
          </property>
          <widget class="QWidget" name="awgn">
           <attribute name="title">
@@ -1561,7 +1561,7 @@
              </property>
              <layout class="QGridLayout" name="gridLayout_14">
               <item row="1" column="0">
-               <widget class="QListView" name="listView_channel_cw_users"/>
+               <widget class="QListWidget" name="listWidget_channel_cw_users"/>
               </item>
              </layout>
             </widget>
@@ -1687,7 +1687,7 @@
              </property>
              <layout class="QGridLayout" name="gridLayout_17">
               <item row="1" column="0">
-               <widget class="QListView" name="listView_channel_mw_users"/>
+               <widget class="QListWidget" name="listWidget_channel_mw_users"/>
               </item>
              </layout>
             </widget>
@@ -1724,7 +1724,7 @@
              </property>
              <layout class="QGridLayout" name="gridLayout_20">
               <item row="1" column="0">
-               <widget class="QListView" name="listView_channel_mu_users">
+               <widget class="QListWidget" name="listWidget_channel_mu_users">
                 <property name="sizePolicy">
                  <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
                   <horstretch>0</horstretch>
@@ -1748,16 +1748,6 @@
               <string>new User</string>
              </property>
              <layout class="QGridLayout" name="gridLayout_19">
-              <item row="0" column="0">
-               <widget class="QListWidget" name="listWidget_channel_mu_newusers">
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-                  <horstretch>0</horstretch>
-                  <verstretch>0</verstretch>
-                 </sizepolicy>
-                </property>
-               </widget>
-              </item>
               <item row="0" column="1">
                <layout class="QVBoxLayout" name="verticalLayout_3">
                 <item>
@@ -1854,6 +1844,16 @@
                 </item>
                </layout>
               </item>
+              <item row="0" column="0">
+               <widget class="QListWidget" name="listWidget_channel_mu_newusers">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+               </widget>
+              </item>
              </layout>
             </widget>
            </item>
@@ -1914,7 +1914,7 @@
      <x>0</x>
      <y>0</y>
      <width>1862</width>
-     <height>20</height>
+     <height>19</height>
     </rect>
    </property>
    <property name="font">
@@ -2116,12 +2116,12 @@
  </widget>
  <tabstops>
   <tabstop>tabWidget_transmitter_ss_sequence</tabstop>
-  <tabstop>listView_transmitter_antipodal</tabstop>
+  <tabstop>listWidget_transmitter_antipodal</tabstop>
   <tabstop>pushButton_transmitter_antipodal_generate_sequence</tabstop>
   <tabstop>pushButton_transmitter_antipodal_analyse_sequence</tabstop>
   <tabstop>pushButton_transmitter_antipodal_analyse_kkf</tabstop>
-  <tabstop>listView_transmitter_orthogonal_1</tabstop>
-  <tabstop>listView_transmitter_orthogonal_2</tabstop>
+  <tabstop>listWidget_transmitter_orthogonal_1</tabstop>
+  <tabstop>listWidget_transmitter_orthogonal_2</tabstop>
   <tabstop>pushButton_transmitter_orthogonal_generate_sequence</tabstop>
   <tabstop>pushButton_transmitter_orthogonal_analyse_sequence</tabstop>
   <tabstop>pushButton_transmitter_orthogonal_analyse_kkf</tabstop>
@@ -2144,18 +2144,18 @@
   <tabstop>lineEdit_channel_cw_frequency</tabstop>
   <tabstop>lineEdit_channel_cw_procent</tabstop>
   <tabstop>pushButton_channel_cw_addtolist</tabstop>
-  <tabstop>listView_channel_cw_users</tabstop>
+  <tabstop>listWidget_channel_cw_users</tabstop>
   <tabstop>lineEdit_channel_mw_seconds</tabstop>
   <tabstop>lineEdit_channel_mw_procent</tabstop>
   <tabstop>pushButton_channel_mw_addtolist</tabstop>
-  <tabstop>listView_channel_mw_users</tabstop>
+  <tabstop>listWidget_channel_mw_users</tabstop>
   <tabstop>listWidget_channel_mu_newusers</tabstop>
   <tabstop>lineEdit_channel_mu_procent</tabstop>
   <tabstop>pushButton_channel_mu_addtolist</tabstop>
   <tabstop>pushButton_channel_mu_generate_sequence</tabstop>
   <tabstop>pushButton_channel_mu_analyse_sequence</tabstop>
   <tabstop>pushButton_channel_mu_analyse_kkf</tabstop>
-  <tabstop>listView_channel_mu_users</tabstop>
+  <tabstop>listWidget_channel_mu_users</tabstop>
   <tabstop>checkBox_channel_awgn</tabstop>
   <tabstop>checkBox_channel_cw</tabstop>
   <tabstop>lineEdit_channel_cw</tabstop>
@@ -2167,11 +2167,11 @@
   <tabstop>radioButton_channel_mu_acdma</tabstop>
   <tabstop>tabWidget_receiver_ss_sequence</tabstop>
   <tabstop>pushButton_receiver_antipodal_generate_sequence</tabstop>
-  <tabstop>listView_receiver_orthogonal_1</tabstop>
-  <tabstop>listView_receiver_antipodal</tabstop>
+  <tabstop>listWidget_receiver_orthogonal_1</tabstop>
+  <tabstop>listWidget_receiver_antipodal</tabstop>
   <tabstop>pushButton_receiver_antipodal_analyse_sequence</tabstop>
   <tabstop>pushButton_receiver_antipodal_analyse_kkf</tabstop>
-  <tabstop>listView_receiver_orthogonal_2</tabstop>
+  <tabstop>listWidget_receiver_orthogonal_2</tabstop>
   <tabstop>pushButton_receiver_orthogonal_generate_sequence</tabstop>
   <tabstop>pushButton_receiver_orthogonal_analyse_sequence</tabstop>
   <tabstop>pushButton_receiver_orthogonal_analyse_kkf</tabstop>
@@ -2200,11 +2200,11 @@
    <sender>pushButton_transmitter_antipodal_generate_sequence</sender>
    <signal>pressed()</signal>
    <receiver>MainWindow</receiver>
-   <slot>pushButtonGenerateSequencePressed()</slot>
+   <slot>pushButtonGenerateSequence()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>67</x>
-     <y>444</y>
+     <y>437</y>
     </hint>
     <hint type="destinationlabel">
      <x>5</x>
@@ -2216,7 +2216,7 @@
    <sender>pushButton_transmitter_orthogonal_generate_sequence</sender>
    <signal>pressed()</signal>
    <receiver>MainWindow</receiver>
-   <slot>pushButtonGenerateSequencePressed()</slot>
+   <slot>pushButtonGenerateSequence()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>157</x>
@@ -2232,11 +2232,11 @@
    <sender>pushButton_receiver_antipodal_generate_sequence</sender>
    <signal>pressed()</signal>
    <receiver>MainWindow</receiver>
-   <slot>pushButtonGenerateSequencePressed()</slot>
+   <slot>pushButtonGenerateSequence()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>1420</x>
-     <y>429</y>
+     <x>1300</x>
+     <y>437</y>
     </hint>
     <hint type="destinationlabel">
      <x>1860</x>
@@ -2248,11 +2248,11 @@
    <sender>pushButton_receiver_orthogonal_generate_sequence</sender>
    <signal>pressed()</signal>
    <receiver>MainWindow</receiver>
-   <slot>pushButtonGenerateSequencePressed()</slot>
+   <slot>pushButtonGenerateSequence()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>1287</x>
-     <y>444</y>
+     <x>1300</x>
+     <y>437</y>
     </hint>
     <hint type="destinationlabel">
      <x>1866</x>
@@ -2299,8 +2299,8 @@
    <slot>pushButtonTransmitterAntipodalAnalyseSequence()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>289</x>
-     <y>436</y>
+     <x>248</x>
+     <y>437</y>
     </hint>
     <hint type="destinationlabel">
      <x>4</x>
@@ -2315,8 +2315,8 @@
    <slot>pushButtonTransmitterAntipodalAnalyseKKF()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>514</x>
-     <y>433</y>
+     <x>431</x>
+     <y>437</y>
     </hint>
     <hint type="destinationlabel">
      <x>1</x>
@@ -2379,8 +2379,8 @@
    <slot>pushButtonReceiverOthogonalAnalyseSequence()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>1473</x>
-     <y>444</y>
+     <x>1481</x>
+     <y>437</y>
     </hint>
     <hint type="destinationlabel">
      <x>1858</x>
@@ -2395,8 +2395,8 @@
    <slot>pushButtonTransmitterOthogonalAnalyseKKF()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>1659</x>
-     <y>444</y>
+     <x>1664</x>
+     <y>437</y>
     </hint>
     <hint type="destinationlabel">
      <x>1861</x>
@@ -2411,8 +2411,8 @@
    <slot>pushButtonReceiverAntipodalAnalyseSequence()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>1602</x>
-     <y>424</y>
+     <x>1481</x>
+     <y>437</y>
     </hint>
     <hint type="destinationlabel">
      <x>1860</x>
@@ -2427,8 +2427,8 @@
    <slot>pushButtonTransmitterAntipodalAnalyseKKF()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>1745</x>
-     <y>415</y>
+     <x>1664</x>
+     <y>437</y>
     </hint>
     <hint type="destinationlabel">
      <x>1855</x>
@@ -2443,8 +2443,8 @@
    <slot>pushButtonFilterLowPassShowImpulseresponse()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>1788</x>
-     <y>609</y>
+     <x>1682</x>
+     <y>618</y>
     </hint>
     <hint type="destinationlabel">
      <x>1857</x>
@@ -2475,8 +2475,8 @@
    <slot>pushButtonFilterRakeReceiverCloneChannelMWs()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>1772</x>
-     <y>809</y>
+     <x>1816</x>
+     <y>800</y>
     </hint>
     <hint type="destinationlabel">
      <x>1861</x>
@@ -2491,8 +2491,8 @@
    <slot>pushButtonChannelCWAddToList()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>954</x>
-     <y>148</y>
+     <x>989</x>
+     <y>169</y>
     </hint>
     <hint type="destinationlabel">
      <x>981</x>
@@ -2507,8 +2507,8 @@
    <slot>pushButtonChannelMWAddToList()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>987</x>
-     <y>166</y>
+     <x>989</x>
+     <y>169</y>
     </hint>
     <hint type="destinationlabel">
      <x>964</x>
@@ -2520,11 +2520,11 @@
    <sender>pushButton_channel_mu_generate_sequence</sender>
    <signal>pressed()</signal>
    <receiver>MainWindow</receiver>
-   <slot>pushButtonGenerateSequencePressed()</slot>
+   <slot>pushButtonGenerateSequence()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>1112</x>
-     <y>168</y>
+     <x>1172</x>
+     <y>179</y>
     </hint>
     <hint type="destinationlabel">
      <x>725</x>
@@ -2539,8 +2539,8 @@
    <slot>pushButtonChannelMUAnalyseSequence()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>1173</x>
-     <y>210</y>
+     <x>1172</x>
+     <y>240</y>
     </hint>
     <hint type="destinationlabel">
      <x>433</x>
@@ -2555,8 +2555,8 @@
    <slot>pushButtonChannelMUAnalyseKKF()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>1087</x>
-     <y>283</y>
+     <x>1172</x>
+     <y>301</y>
     </hint>
     <hint type="destinationlabel">
      <x>1229</x>
@@ -2571,8 +2571,8 @@
    <slot>pushButtonChannelMUAddToList()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>972</x>
-     <y>352</y>
+     <x>990</x>
+     <y>364</y>
     </hint>
     <hint type="destinationlabel">
      <x>618</x>
@@ -2587,8 +2587,8 @@
    <slot>lineEditTransmitterPulseshapeSamples()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>159</x>
-     <y>554</y>
+     <x>205</x>
+     <y>550</y>
     </hint>
     <hint type="destinationlabel">
      <x>1</x>
@@ -2619,8 +2619,8 @@
    <slot>lineEditTransmitterSignalResultsChipRate()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>142</x>
-     <y>661</y>
+     <x>202</x>
+     <y>655</y>
     </hint>
     <hint type="destinationlabel">
      <x>1</x>
@@ -2635,8 +2635,8 @@
    <slot>lineEditTransmitterSignalResultsBitDuration()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>154</x>
-     <y>690</y>
+     <x>202</x>
+     <y>684</y>
     </hint>
     <hint type="destinationlabel">
      <x>1</x>
@@ -2651,8 +2651,8 @@
    <slot>lineEditTransmitterSignalResultsBitRate()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>149</x>
-     <y>719</y>
+     <x>202</x>
+     <y>713</y>
     </hint>
     <hint type="destinationlabel">
      <x>3</x>
@@ -2667,8 +2667,8 @@
    <slot>lineEditTransmitterSignalResultsSampleRate()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>169</x>
-     <y>753</y>
+     <x>202</x>
+     <y>742</y>
     </hint>
     <hint type="destinationlabel">
      <x>2</x>
@@ -2683,8 +2683,8 @@
    <slot>lineEditTransmitterSignalResultsOversampling()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>178</x>
-     <y>779</y>
+     <x>202</x>
+     <y>771</y>
     </hint>
     <hint type="destinationlabel">
      <x>-3</x>
@@ -2699,8 +2699,8 @@
    <slot>lineEditTransmitterSignalParameterChipAmplitude()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>412</x>
-     <y>656</y>
+     <x>439</x>
+     <y>655</y>
     </hint>
     <hint type="destinationlabel">
      <x>3</x>
@@ -2715,8 +2715,8 @@
    <slot>lineEditTransmitterSignalParameterChipDuration()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>426</x>
-     <y>691</y>
+     <x>439</x>
+     <y>684</y>
     </hint>
     <hint type="destinationlabel">
      <x>2</x>
@@ -2731,7 +2731,7 @@
    <slot>lineEditChannelAWGNPropertiesSNR()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>778</x>
+     <x>828</x>
      <y>146</y>
     </hint>
     <hint type="destinationlabel">
@@ -2747,8 +2747,8 @@
    <slot>lineEditChannelAWGNPropertiesStdDev()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>750</x>
-     <y>171</y>
+     <x>828</x>
+     <y>175</y>
     </hint>
     <hint type="destinationlabel">
      <x>1226</x>
@@ -2763,8 +2763,8 @@
    <slot>lineEditChannelCWHz()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>714</x>
-     <y>143</y>
+     <x>740</x>
+     <y>146</y>
     </hint>
     <hint type="destinationlabel">
      <x>1225</x>
@@ -2779,7 +2779,7 @@
    <slot>lineEditChannelCWPercentage()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>724</x>
+     <x>740</x>
      <y>175</y>
     </hint>
     <hint type="destinationlabel">
@@ -2795,8 +2795,8 @@
    <slot>lineEditChannelMWs()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>719</x>
-     <y>141</y>
+     <x>740</x>
+     <y>146</y>
     </hint>
     <hint type="destinationlabel">
      <x>1228</x>
@@ -2811,8 +2811,8 @@
    <slot>lineEditChannelMWPercentage()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>690</x>
-     <y>169</y>
+     <x>740</x>
+     <y>175</y>
     </hint>
     <hint type="destinationlabel">
      <x>620</x>
@@ -2827,8 +2827,8 @@
    <slot>lineEditChannelMUPercentage()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>710</x>
-     <y>354</y>
+     <x>741</x>
+     <y>355</y>
     </hint>
     <hint type="destinationlabel">
      <x>603</x>
@@ -2843,8 +2843,8 @@
    <slot>lineEditChannelNumberOfCW()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>799</x>
-     <y>727</y>
+     <x>844</x>
+     <y>725</y>
     </hint>
     <hint type="destinationlabel">
      <x>628</x>
@@ -2859,8 +2859,8 @@
    <slot>lineEditChannelNumberOfMW()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>813</x>
-     <y>779</y>
+     <x>844</x>
+     <y>774</y>
     </hint>
     <hint type="destinationlabel">
      <x>643</x>
@@ -2875,8 +2875,8 @@
    <slot>lineEditChannelNumberOfMU()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>1080</x>
-     <y>727</y>
+     <x>1140</x>
+     <y>717</y>
     </hint>
     <hint type="destinationlabel">
      <x>1055</x>
@@ -2891,8 +2891,8 @@
    <slot>lineEditReceiverFilterIntegrateAndDumpDelay()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>1331</x>
-     <y>608</y>
+     <x>1357</x>
+     <y>584</y>
     </hint>
     <hint type="destinationlabel">
      <x>1270</x>
@@ -2907,8 +2907,8 @@
    <slot>lineEditReceiverFilterMatchedFilter()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>1340</x>
-     <y>601</y>
+     <x>1357</x>
+     <y>584</y>
     </hint>
     <hint type="destinationlabel">
      <x>1346</x>
@@ -2923,8 +2923,8 @@
    <slot>lineEditReceiverFilterLowPassFilterDelay()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>1344</x>
-     <y>612</y>
+     <x>1377</x>
+     <y>589</y>
     </hint>
     <hint type="destinationlabel">
      <x>1313</x>
@@ -2955,8 +2955,8 @@
    <slot>lineEditReceiverFilterRakeReceiverPercentage()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>1337</x>
-     <y>645</y>
+     <x>1397</x>
+     <y>630</y>
     </hint>
     <hint type="destinationlabel">
      <x>1861</x>
@@ -2964,9 +2964,409 @@
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>checkBox_channel_awgn</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>checkBoxChannelAWGN(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>655</x>
+     <y>661</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>793</x>
+     <y>868</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox_channel_cw</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>checkBoxChannelNumberOfCW(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>648</x>
+     <y>709</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>644</x>
+     <y>870</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox_channel_mw</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>checkBoxChannelNumberOfMW(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>679</x>
+     <y>766</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>768</x>
+     <y>864</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox_channel_mu_users</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>checkBoxChannelMUNumberOfUsers(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1005</x>
+     <y>714</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1214</x>
+     <y>864</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>listWidget_transmitter_orthogonal_1</sender>
+   <signal>currentItemChanged(QListWidgetItem*,QListWidgetItem*)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>listWidgetTransmitterSSSequenceOrthogonal1(QListWidgetItem*,QListWidgetItem*)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>272</x>
+     <y>202</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>296</x>
+     <y>865</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>listWidget_transmitter_orthogonal_2</sender>
+   <signal>currentItemChanged(QListWidgetItem*,QListWidgetItem*)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>listWidgetTransmitterSSSequenceOrthogonal2(QListWidgetItem*,QListWidgetItem*)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>465</x>
+     <y>334</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>233</x>
+     <y>864</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>listWidget_transmitter_antipodal</sender>
+   <signal>currentItemChanged(QListWidgetItem*,QListWidgetItem*)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>listWidgetTransmitterSSSequenceAntipodal(QListWidgetItem*,QListWidgetItem*)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>205</x>
+     <y>159</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>279</x>
+     <y>872</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>listWidget_receiver_antipodal</sender>
+   <signal>currentItemChanged(QListWidgetItem*,QListWidgetItem*)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>listWidgetReceiverSSSequenceAntipodal(QListWidgetItem*,QListWidgetItem*)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1448</x>
+     <y>193</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1864</x>
+     <y>150</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>listWidget_receiver_orthogonal_1</sender>
+   <signal>currentItemChanged(QListWidgetItem*,QListWidgetItem*)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>listWidgetReceiverSSSequenceOrthogonal1(QListWidgetItem*,QListWidgetItem*)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1549</x>
+     <y>175</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1853</x>
+     <y>169</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>listWidget_receiver_orthogonal_2</sender>
+   <signal>currentItemChanged(QListWidgetItem*,QListWidgetItem*)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>listWidgetReceiverSSSequenceOrthogonal2(QListWidgetItem*,QListWidgetItem*)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1578</x>
+     <y>325</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1860</x>
+     <y>278</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>listWidget_receiver_filter_rake_receiver_rakefingers</sender>
+   <signal>currentItemChanged(QListWidgetItem*,QListWidgetItem*)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>listWidgetReceiverFilterRakeReceiver(QListWidgetItem*,QListWidgetItem*)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1579</x>
+     <y>726</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1861</x>
+     <y>703</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>listWidget_channel_cw_users</sender>
+   <signal>currentItemChanged(QListWidgetItem*,QListWidgetItem*)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>listWidgetChannelCW(QListWidgetItem*,QListWidgetItem*)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>920</x>
+     <y>482</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1238</x>
+     <y>520</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>listWidget_channel_mw_users</sender>
+   <signal>currentItemChanged(QListWidgetItem*,QListWidgetItem*)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>listWidgetChannelMW(QListWidgetItem*,QListWidgetItem*)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>995</x>
+     <y>464</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1240</x>
+     <y>458</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>listWidget_channel_mu_newusers</sender>
+   <signal>currentItemChanged(QListWidgetItem*,QListWidgetItem*)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>listWidgetChannelMUNewUser(QListWidgetItem*,QListWidgetItem*)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>906</x>
+     <y>222</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1240</x>
+     <y>248</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>listWidget_channel_mu_users</sender>
+   <signal>currentItemChanged(QListWidgetItem*,QListWidgetItem*)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>listWidgetChannelMU(QListWidgetItem*,QListWidgetItem*)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>930</x>
+     <y>487</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1239</x>
+     <y>490</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>tabWidget_transmitter_ss_sequence</sender>
+   <signal>currentChanged(int)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>tabWidgetTransmitterSSSequence(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>442</x>
+     <y>93</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>5</x>
+     <y>136</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>tabWidget_channel</sender>
+   <signal>currentChanged(int)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>tabWidgetChannel(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>955</x>
+     <y>66</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1003</x>
+     <y>-1</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>tabWidget_receiver_ss_sequence</sender>
+   <signal>currentChanged(int)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>tabWidgetReceiverSSSequence(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1661</x>
+     <y>94</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1651</x>
+     <y>-4</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>tabWidget_receiver_filter</sender>
+   <signal>currentChanged(int)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>tabWidgetReceiverFilter(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1763</x>
+     <y>560</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1861</x>
+     <y>561</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>comboBox_transmitter_pulseshape</sender>
+   <signal>activated(int)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>comboBoxTransmitterPulseshape(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>155</x>
+     <y>503</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1</x>
+     <y>609</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_channel_mu_scdma</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>radioButtonChannelMUSCDMA(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>944</x>
+     <y>730</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1238</x>
+     <y>725</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_channel_mu_acdma</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>radioButtonChannelMUACDMA(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>971</x>
+     <y>767</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1241</x>
+     <y>752</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_receiver_filter_rake_receiver_integrateanddump</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>radioButtonReceiverFilterRakeReceiverFingerTypesIntegrateAndDump(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1711</x>
+     <y>679</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1858</x>
+     <y>676</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_receiver_filter_rake_receiver_matchedfilter</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>radioButtonReceiverFilterRakeReceiverFingerTypesMatchedFilter(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1728</x>
+     <y>711</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1857</x>
+     <y>661</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_receiver_filter_rake_receiver_lowpassfilter</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>radioButtonReceiverFilterRakeReceiverFingerTypesLowPassFilter(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1698</x>
+     <y>733</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1864</x>
+     <y>737</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
  <slots>
-  <slot>pushButtonGenerateSequencePressed()</slot>
+  <slot>pushButtonGenerateSequence()</slot>
   <slot>pushButtonPulseshapeShow()</slot>
   <slot>pushButtonPulseshapeProperties()</slot>
   <slot>pushButtonTransmitterAntipodalAnalyseSequence()</slot>
@@ -3010,5 +3410,30 @@
   <slot>lineEditReceiverFilterLowPassFilterDelay()</slot>
   <slot>lineEditReceiverFilterRakeReceiverDelay()</slot>
   <slot>lineEditReceiverFilterRakeReceiverPercentage()</slot>
+  <slot>tabWidgetTransmitterSSSequence(int)</slot>
+  <slot>tabWidgetChannel(int)</slot>
+  <slot>tabWidgetReceiverSSSequence(int)</slot>
+  <slot>tabWidgetReceiverFilter(int)</slot>
+  <slot>comboBoxTransmitterPulseshape(int)</slot>
+  <slot>checkBoxChannelAWGN(bool)</slot>
+  <slot>checkBoxChannelNumberOfCW(bool)</slot>
+  <slot>checkBoxChannelNumberOfMW(bool)</slot>
+  <slot>checkBoxChannelMUNumberOfUsers(bool)</slot>
+  <slot>radioButtonChannelMUSCDMA(bool)</slot>
+  <slot>radioButtonChannelMUACDMA(bool)</slot>
+  <slot>radioButtonReceiverFilterRakeReceiverFingerTypesIntegrateAndDump(bool)</slot>
+  <slot>radioButtonReceiverFilterRakeReceiverFingerTypesMatchedFilter(bool)</slot>
+  <slot>radioButtonReceiverFilterRakeReceiverFingerTypesLowPassFilter(bool)</slot>
+  <slot>listWidgetTransmitterSSSequenceAntipodal(QListWidgetItem*,QListWidgetItem*)</slot>
+  <slot>listWidgetTransmitterSSSequenceOrthogonal1(QListWidgetItem*,QListWidgetItem*)</slot>
+  <slot>listWidgetTransmitterSSSequenceOrthogonal2(QListWidgetItem*,QListWidgetItem*)</slot>
+  <slot>listWidgetReceiverSSSequenceOrthogonal1(QListWidgetItem*,QListWidgetItem*)</slot>
+  <slot>listWidgetReceiverSSSequenceOrthogonal2(QListWidgetItem*,QListWidgetItem*)</slot>
+  <slot>listWidgetReceiverSSSequenceAntipodal(QListWidgetItem*,QListWidgetItem*)</slot>
+  <slot>listWidgetReceiverFilterRakeReceiver(QListWidgetItem*,QListWidgetItem*)</slot>
+  <slot>listWidgetChannelCW(QListWidgetItem*,QListWidgetItem*)</slot>
+  <slot>listWidgetChannelMW(QListWidgetItem*,QListWidgetItem*)</slot>
+  <slot>listWidgetChannelMU(QListWidgetItem*,QListWidgetItem*)</slot>
+  <slot>listWidgetChannelMUNewUser(QListWidgetItem*,QListWidgetItem*)</slot>
  </slots>
 </ui>
