@@ -100,7 +100,7 @@
    <item row="0" column="0" colspan="2">
     <widget class="QTabWidget" name="tabWidget">
      <property name="currentIndex">
-      <number>2</number>
+      <number>1</number>
      </property>
      <widget class="QWidget" name="tab">
       <attribute name="title">
@@ -775,5 +775,586 @@
  <resources>
   <include location="resources/resources.qrc"/>
  </resources>
- <connections/>
+ <connections>
+  <connection>
+   <sender>pushButton_saveresults</sender>
+   <signal>pressed()</signal>
+   <receiver>Dialog_SimulationControl</receiver>
+   <slot>pushButtonSaveResults()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>330</x>
+     <y>697</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>380</x>
+     <y>699</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_savesettings</sender>
+   <signal>pressed()</signal>
+   <receiver>Dialog_SimulationControl</receiver>
+   <slot>pushButtonSaveSettings()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>653</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>377</x>
+     <y>655</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_startsimulation</sender>
+   <signal>pressed()</signal>
+   <receiver>Dialog_SimulationControl</receiver>
+   <slot>pushButtonStartSimulation()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>100</x>
+     <y>649</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>2</x>
+     <y>653</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_abortsimulation</sender>
+   <signal>pressed()</signal>
+   <receiver>Dialog_SimulationControl</receiver>
+   <slot>pushButtonAbortSimulation()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>66</x>
+     <y>699</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>4</x>
+     <y>700</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>comboBox_simulation</sender>
+   <signal>activated(int)</signal>
+   <receiver>Dialog_SimulationControl</receiver>
+   <slot>comboBoxSimulation(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>45</x>
+     <y>607</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>4</x>
+     <y>610</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox_showsimulationprogress</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>Dialog_SimulationControl</receiver>
+   <slot>checkBoxShowSimulationProgress(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>12</x>
+     <y>573</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1</x>
+     <y>572</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>tabWidget</sender>
+   <signal>currentChanged(int)</signal>
+   <receiver>Dialog_SimulationControl</receiver>
+   <slot>tabWidget(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>21</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>3</x>
+     <y>19</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox_signals_output_data</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>Dialog_SimulationControl</receiver>
+   <slot>checkBoxSignalsOutputData(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>36</x>
+     <y>93</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>2</x>
+     <y>89</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox_signals_output_transmitter</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>Dialog_SimulationControl</receiver>
+   <slot>checkBoxSignalsOutputTransmitter(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>35</x>
+     <y>118</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>4</x>
+     <y>114</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>groupBox</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>Dialog_SimulationControl</receiver>
+   <slot>checkBoxSignalsOutputModulator(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>31</x>
+     <y>151</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>4</x>
+     <y>147</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox_signals_output_channel</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>Dialog_SimulationControl</receiver>
+   <slot>checkBoxSignalsOutputChannel(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>39</x>
+     <y>179</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-1</x>
+     <y>178</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox_signals_data_generated</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>Dialog_SimulationControl</receiver>
+   <slot>checkBoxSignalsDataGenerated(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>54</x>
+     <y>255</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>3</x>
+     <y>248</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox_signals_data_estimated</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>Dialog_SimulationControl</receiver>
+   <slot>checkBoxSignalsDataEstimated(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>66</x>
+     <y>278</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>4</x>
+     <y>275</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox_signals_show_histogramms</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>Dialog_SimulationControl</receiver>
+   <slot>checkBoxSignalsShowHistogramms(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>41</x>
+     <y>359</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>3</x>
+     <y>353</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox_signals_show_running_window</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>Dialog_SimulationControl</receiver>
+   <slot>checkBoxSignalsShowRunningWindow(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>84</x>
+     <y>380</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>2</x>
+     <y>384</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_signals_simulation_bitsframes</sender>
+   <signal>textEdited(QString)</signal>
+   <receiver>Dialog_SimulationControl</receiver>
+   <slot>lineEditSignalsSimulationBitsFrame(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>233</x>
+     <y>462</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>373</x>
+     <y>453</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_signals_simulation_samplerate</sender>
+   <signal>textEdited(QString)</signal>
+   <receiver>Dialog_SimulationControl</receiver>
+   <slot>lineEditSignalsSimulationSamplerate(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>254</x>
+     <y>480</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>373</x>
+     <y>487</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_signals_simulation_numberofsamples</sender>
+   <signal>textEdited(QString)</signal>
+   <receiver>Dialog_SimulationControl</receiver>
+   <slot>lineEditSignalsSimulationNumberOfShownSamples(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>257</x>
+     <y>520</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>376</x>
+     <y>523</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox_histogramms_properties_dataoutput</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>Dialog_SimulationControl</receiver>
+   <slot>checkBoxHistogrammsPropertiesDataOutput(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>49</x>
+     <y>88</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>5</x>
+     <y>83</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox_histogramms_properties_signalbeforedecision</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>Dialog_SimulationControl</receiver>
+   <slot>checkBoxHistogrammsPropertiesSignalBeforeDecision(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>40</x>
+     <y>122</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>372</x>
+     <y>119</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox_histogramms_properties_sampledsignal</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>Dialog_SimulationControl</receiver>
+   <slot>checkBoxHistogrammsPropertiesSampledSignal(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>42</x>
+     <y>151</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>377</x>
+     <y>146</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox_histogramms_properties_errordistribution</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>Dialog_SimulationControl</receiver>
+   <slot>checkBoxHistogrammsPropertiesErrorDistribution(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>127</x>
+     <y>178</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>374</x>
+     <y>177</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox_histogramms_simulation_automaticrangeestimation</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>Dialog_SimulationControl</receiver>
+   <slot>checkBoxHistogrammsSimulationAutomaticRangeEstimation(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>169</x>
+     <y>246</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>378</x>
+     <y>248</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_histogramms_simulation_granularity</sender>
+   <signal>textEdited(QString)</signal>
+   <receiver>Dialog_SimulationControl</receiver>
+   <slot>lineEditHistogrammsSimulationGranularity(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>169</x>
+     <y>280</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>375</x>
+     <y>280</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox_BEP_SNR_activate</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>Dialog_SimulationControl</receiver>
+   <slot>checkBoxBEPSimulationBEPSNRActivate(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>107</x>
+     <y>88</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>373</x>
+     <y>85</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox_BEP_MU_activate</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>Dialog_SimulationControl</receiver>
+   <slot>checkBoxBEPSimulationBEPMUsActivate(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>48</x>
+     <y>224</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>376</x>
+     <y>222</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox_BEP_simulation_showfirsttimesamples</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>Dialog_SimulationControl</receiver>
+   <slot>checkBoxBEPSimulationSimulationShowFirst(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>68</x>
+     <y>363</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>374</x>
+     <y>354</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox_BEP_simulation_showhistogramms</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>Dialog_SimulationControl</receiver>
+   <slot>checkBoxBEPSimulationSimulationShowHistogramms(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>41</x>
+     <y>391</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>376</x>
+     <y>389</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_BEP_SNR_range_start</sender>
+   <signal>textEdited(QString)</signal>
+   <receiver>Dialog_SimulationControl</receiver>
+   <slot>lineEditBEPSimulationBEPSNRSNRRangeFrom(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>173</x>
+     <y>121</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>0</x>
+     <y>49</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_BEP_SNR_range_end</sender>
+   <signal>textEdited(QString)</signal>
+   <receiver>Dialog_SimulationControl</receiver>
+   <slot>lineEditBEPSimulationBEPSNRSNRRangeTo(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>265</x>
+     <y>119</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>374</x>
+     <y>60</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_BEP_SNR_granularity</sender>
+   <signal>textEdited(QString)</signal>
+   <receiver>Dialog_SimulationControl</receiver>
+   <slot>lineEditBEPSimulationBEPSNRGranularity(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>204</x>
+     <y>149</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>377</x>
+     <y>22</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_BEP_MU_numberofusers</sender>
+   <signal>textEdited(QString)</signal>
+   <receiver>Dialog_SimulationControl</receiver>
+   <slot>lineEditBEPSimulationBEPMUsNrOfUsers(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>146</x>
+     <y>255</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>4</x>
+     <y>238</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_BEP_simulation_bitstosimulate</sender>
+   <signal>textEdited(QString)</signal>
+   <receiver>Dialog_SimulationControl</receiver>
+   <slot>lineEditBEPSimulationBEPSNRNrOfBitsToSimulate(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>251</x>
+     <y>328</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>375</x>
+     <y>328</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_BEP_simulation_timesamples</sender>
+   <signal>textEdited(QString)</signal>
+   <receiver>Dialog_SimulationControl</receiver>
+   <slot>lineEditBEPSimulationSimulationTimeSamples(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>180</x>
+     <y>368</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>373</x>
+     <y>436</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>pushButtonSaveResults()</slot>
+  <slot>pushButtonSaveSettings()</slot>
+  <slot>pushButtonStartSimulation()</slot>
+  <slot>pushButtonAbortSimulation()</slot>
+  <slot>comboBoxSimulation(int)</slot>
+  <slot>checkBoxShowSimulationProgress(bool)</slot>
+  <slot>tabWidget(int)</slot>
+  <slot>checkBoxSignalsOutputData(bool)</slot>
+  <slot>checkBoxSignalsOutputTransmitter(bool)</slot>
+  <slot>checkBoxSignalsOutputModulator(bool)</slot>
+  <slot>checkBoxSignalsOutputChannel(bool)</slot>
+  <slot>checkBoxSignalsDataGenerated(bool)</slot>
+  <slot>checkBoxSignalsDataEstimated(bool)</slot>
+  <slot>checkBoxSignalsShowHistogramms(bool)</slot>
+  <slot>checkBoxSignalsShowRunningWindow(bool)</slot>
+  <slot>lineEditSignalsSimulationBitsFrame(QString)</slot>
+  <slot>lineEditSignalsSimulationSamplerate(QString)</slot>
+  <slot>lineEditSignalsSimulationNumberOfShownSamples(QString)</slot>
+  <slot>checkBoxHistogrammsPropertiesDataOutput(bool)</slot>
+  <slot>checkBoxHistogrammsPropertiesSignalBeforeDecision(bool)</slot>
+  <slot>checkBoxHistogrammsPropertiesSampledSignal(bool)</slot>
+  <slot>checkBoxHistogrammsPropertiesErrorDistribution(bool)</slot>
+  <slot>checkBoxHistogrammsSimulationAutomaticRangeEstimation(bool)</slot>
+  <slot>lineEditHistogrammsSimulationGranularity(QString)</slot>
+  <slot>checkBoxBEPSimulationBEPSNRActivate(bool)</slot>
+  <slot>checkBoxBEPSimulationBEPMUsActivate(bool)</slot>
+  <slot>checkBoxBEPSimulationSimulationShowFirst(bool)</slot>
+  <slot>checkBoxBEPSimulationSimulationShowHistogramms(bool)</slot>
+  <slot>lineEditBEPSimulationBEPSNRSNRRangeFrom(QString)</slot>
+  <slot>lineEditBEPSimulationBEPSNRSNRRangeTo(QString)</slot>
+  <slot>lineEditBEPSimulationBEPSNRGranularity(QString)</slot>
+  <slot>lineEditBEPSimulationBEPMUsNrOfUsers(QString)</slot>
+  <slot>lineEditBEPSimulationBEPSNRNrOfBitsToSimulate(QString)</slot>
+  <slot>lineEditBEPSimulationSimulationTimeSamples(QString)</slot>
+ </slots>
 </ui>

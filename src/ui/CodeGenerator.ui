@@ -22,7 +22,7 @@
    <item row="0" column="0">
     <widget class="QTabWidget" name="tabs">
      <property name="currentIndex">
-      <number>1</number>
+      <number>4</number>
      </property>
      <widget class="QWidget" name="msequence">
       <attribute name="title">
@@ -252,7 +252,7 @@ color: rgb(255, 255, 255)</string>
         </widget>
        </item>
        <item row="0" column="1">
-        <widget class="QListView" name="listView_msequence"/>
+        <widget class="QListWidget" name="listWidget_msequence"/>
        </item>
       </layout>
      </widget>
@@ -538,10 +538,10 @@ color: rgb(255, 255, 255)</string>
         </widget>
        </item>
        <item row="0" column="1">
-        <widget class="QListView" name="listView_mfamily_1"/>
+        <widget class="QListWidget" name="listWidget_mfamily_1"/>
        </item>
        <item row="1" column="1">
-        <widget class="QListView" name="listView_mfamily_2"/>
+        <widget class="QListWidget" name="listWidget_mfamily_2"/>
        </item>
       </layout>
      </widget>
@@ -750,9 +750,6 @@ color: rgb(255, 255, 255)</string>
          </layout>
         </widget>
        </item>
-       <item row="0" column="1">
-        <widget class="QListView" name="listView_goldsequence"/>
-       </item>
        <item row="1" column="0">
         <widget class="QPushButton" name="pushButton_goldsequence_generatesequence">
          <property name="minimumSize">
@@ -872,6 +869,9 @@ color: rgb(255, 255, 255)
           </size>
          </property>
         </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QListWidget" name="listWidget_goldsequence"/>
        </item>
       </layout>
      </widget>
@@ -1002,9 +1002,6 @@ color: rgb(255, 255, 255)
          </layout>
         </widget>
        </item>
-       <item row="0" column="1">
-        <widget class="QListView" name="listView_goldfamily"/>
-       </item>
        <item row="1" column="0">
         <widget class="QPushButton" name="pushButton_goldfamily_generatesequence">
          <property name="minimumSize">
@@ -1123,6 +1120,9 @@ color: rgb(255, 255, 255)</string>
           </size>
          </property>
         </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QListWidget" name="listWidget_goldfamily"/>
        </item>
       </layout>
      </widget>
@@ -1276,9 +1276,6 @@ color: rgb(255, 255, 255)</string>
          </layout>
         </widget>
        </item>
-       <item row="0" column="1">
-        <widget class="QListView" name="listView_ogfsequence"/>
-       </item>
        <item row="1" column="0">
         <widget class="QPushButton" name="pushButton_ogfsequence_generatesequence">
          <property name="minimumSize">
@@ -1397,6 +1394,9 @@ color: rgb(255, 255, 255)</string>
           </size>
          </property>
         </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QListWidget" name="listWidget_ogfsequence"/>
        </item>
       </layout>
      </widget>
@@ -1527,9 +1527,6 @@ color: rgb(255, 255, 255)</string>
          </layout>
         </widget>
        </item>
-       <item row="0" column="1">
-        <widget class="QListView" name="listView_ogffamily"/>
-       </item>
        <item row="1" column="0">
         <widget class="QPushButton" name="pushButton_ogffamily_generatesequence">
          <property name="minimumSize">
@@ -1649,6 +1646,9 @@ color: rgb(255, 255, 255)</string>
          </property>
         </widget>
        </item>
+       <item row="0" column="1">
+        <widget class="QListWidget" name="listWidget_ogffamily"/>
+       </item>
       </layout>
      </widget>
      <widget class="QWidget" name="kasamisequence">
@@ -1758,9 +1758,6 @@ color: rgb(255, 255, 255)</string>
           </item>
          </layout>
         </widget>
-       </item>
-       <item row="0" column="1">
-        <widget class="QListView" name="listView_kasamisequence"/>
        </item>
        <item row="1" column="0">
         <widget class="QPushButton" name="pushButton_kasamisequence_generatesequence">
@@ -1880,6 +1877,9 @@ color: rgb(255, 255, 255)</string>
           </size>
          </property>
         </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QListWidget" name="listWidget_kasamisequence"/>
        </item>
       </layout>
      </widget>
@@ -2033,9 +2033,6 @@ color: rgb(255, 255, 255)</string>
          </layout>
         </widget>
        </item>
-       <item row="0" column="1">
-        <widget class="QListView" name="listView_kasamifamily"/>
-       </item>
        <item row="1" column="0">
         <widget class="QPushButton" name="pushButton_kasamifamily_generatesequence">
          <property name="minimumSize">
@@ -2155,6 +2152,9 @@ color: rgb(255, 255, 255)</string>
          </property>
         </widget>
        </item>
+       <item row="0" column="1">
+        <widget class="QListWidget" name="listWidget_kasamifamily"/>
+       </item>
       </layout>
      </widget>
      <widget class="QWidget" name="ovsfsequence">
@@ -2254,9 +2254,6 @@ color: rgb(255, 255, 255)</string>
           </item>
          </layout>
         </widget>
-       </item>
-       <item row="0" column="1">
-        <widget class="QListView" name="listView_ovsfsequence"/>
        </item>
        <item row="1" column="0">
         <widget class="QPushButton" name="pushButton_ovsfsequence_generatesequence">
@@ -2377,6 +2374,9 @@ color: rgb(255, 255, 255)</string>
          </property>
         </widget>
        </item>
+       <item row="0" column="1">
+        <widget class="QListWidget" name="listWidget_ovsfsequence"/>
+       </item>
       </layout>
      </widget>
      <widget class="QWidget" name="golaysequence">
@@ -2418,9 +2418,6 @@ color: rgb(255, 255, 255)</string>
           </item>
          </layout>
         </widget>
-       </item>
-       <item row="0" column="1">
-        <widget class="QListView" name="listView_golaysequence"/>
        </item>
        <item row="1" column="0">
         <widget class="QPushButton" name="pushButton_golaysequence_generatesequence">
@@ -2541,6 +2538,9 @@ color: rgb(255, 255, 255)</string>
          </property>
         </widget>
        </item>
+       <item row="0" column="1">
+        <widget class="QListWidget" name="listWidget_golaysequence"/>
+       </item>
       </layout>
      </widget>
     </widget>
@@ -2548,5 +2548,810 @@ color: rgb(255, 255, 255)</string>
   </layout>
  </widget>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>tabs</sender>
+   <signal>currentChanged(int)</signal>
+   <receiver>Dialog_CodeGenerator</receiver>
+   <slot>tabWidget(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>77</x>
+     <y>25</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>2</x>
+     <y>19</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_msequence_register1_exponents</sender>
+   <signal>textEdited(QString)</signal>
+   <receiver>Dialog_CodeGenerator</receiver>
+   <slot>lineEditMSequencePropertiesRegister1Exponents(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>208</x>
+     <y>127</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>2</x>
+     <y>113</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_msequence_register1_initialload</sender>
+   <signal>textEdited(QString)</signal>
+   <receiver>Dialog_CodeGenerator</receiver>
+   <slot>lineEditMSequencePropertiesRegister1InitialLoad(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>208</x>
+     <y>156</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>2</x>
+     <y>142</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>listWidget_msequence</sender>
+   <signal>currentItemChanged(QListWidgetItem*,QListWidgetItem*)</signal>
+   <receiver>Dialog_CodeGenerator</receiver>
+   <slot>listWidgetMSequence(QListWidgetItem*,QListWidgetItem*)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>665</x>
+     <y>45</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1246</x>
+     <y>52</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_msequence_generatesequence</sender>
+   <signal>pressed()</signal>
+   <receiver>Dialog_CodeGenerator</receiver>
+   <slot>pushButtonMSequenceGenerateSequence()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>34</x>
+     <y>382</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-5</x>
+     <y>347</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_msequence_afkanalyse</sender>
+   <signal>pressed()</signal>
+   <receiver>Dialog_CodeGenerator</receiver>
+   <slot>pushButtonMSequenceAFKAnalyse()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>728</x>
+     <y>382</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>5</x>
+     <y>360</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_msequence_kkfanalyse</sender>
+   <signal>pressed()</signal>
+   <receiver>Dialog_CodeGenerator</receiver>
+   <slot>pushButtonMSequenceKKFAnalyse()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>849</x>
+     <y>382</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-4</x>
+     <y>386</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_msequence_deletall</sender>
+   <signal>pressed()</signal>
+   <receiver>Dialog_CodeGenerator</receiver>
+   <slot>pushButtonMSequenceDeleteAll()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>969</x>
+     <y>382</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1246</x>
+     <y>328</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_msequence_clone</sender>
+   <signal>pressed()</signal>
+   <receiver>Dialog_CodeGenerator</receiver>
+   <slot>pushButtonMSequenceClone()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1214</x>
+     <y>382</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1251</x>
+     <y>363</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>comboBox_msequence</sender>
+   <signal>currentIndexChanged(int)</signal>
+   <receiver>Dialog_CodeGenerator</receiver>
+   <slot>comboBoxMSequence(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1090</x>
+     <y>382</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1247</x>
+     <y>389</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_mfamily_register1_exponents</sender>
+   <signal>textEdited(QString)</signal>
+   <receiver>Dialog_CodeGenerator</receiver>
+   <slot>lineEditMFamilyPropertiesRegister1Exponents(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>208</x>
+     <y>127</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>4</x>
+     <y>107</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_mfamily_register1_initialload</sender>
+   <signal>textEdited(QString)</signal>
+   <receiver>Dialog_CodeGenerator</receiver>
+   <slot>lineEditMFamilyPropertiesRegister1InitialLoad(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>208</x>
+     <y>156</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1</x>
+     <y>81</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_mfamily_sequence_length</sender>
+   <signal>textEdited(QString)</signal>
+   <receiver>Dialog_CodeGenerator</receiver>
+   <slot>lineEditMFamilyPropertiesSequenceLength(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>208</x>
+     <y>227</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-3</x>
+     <y>212</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_mfamily_sequence_distance</sender>
+   <signal>textEdited(QString)</signal>
+   <receiver>Dialog_CodeGenerator</receiver>
+   <slot>lineEditMFamilyPropertiesSequenceDistance(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>208</x>
+     <y>256</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>0</x>
+     <y>249</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_mfamily_generatesequence</sender>
+   <signal>pressed()</signal>
+   <receiver>Dialog_CodeGenerator</receiver>
+   <slot>pushButtonMFamilyGenerateSequence()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>45</x>
+     <y>382</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1</x>
+     <y>315</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_mfamily_afkanalyse</sender>
+   <signal>pressed()</signal>
+   <receiver>Dialog_CodeGenerator</receiver>
+   <slot>pushButtonMFamilyAFKAnalyse()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>728</x>
+     <y>382</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>4</x>
+     <y>342</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_mfamily_afkanalyse</sender>
+   <signal>pressed()</signal>
+   <receiver>Dialog_CodeGenerator</receiver>
+   <slot>pushButtonMFamilyAFKAnalyse()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>728</x>
+     <y>382</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>0</x>
+     <y>291</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_mfamily_kkfanalyse</sender>
+   <signal>released()</signal>
+   <receiver>Dialog_CodeGenerator</receiver>
+   <slot>pushButtonMFamilyKKFAnalyse()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>849</x>
+     <y>382</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>3</x>
+     <y>278</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_mfamily_deleteall</sender>
+   <signal>pressed()</signal>
+   <receiver>Dialog_CodeGenerator</receiver>
+   <slot>pushButtonMFamilyDeleteAll()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>969</x>
+     <y>382</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1249</x>
+     <y>354</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>comboBox_mfamily</sender>
+   <signal>currentIndexChanged(int)</signal>
+   <receiver>Dialog_CodeGenerator</receiver>
+   <slot>comboBoxMFamily(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1090</x>
+     <y>382</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1247</x>
+     <y>296</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_mfamily_clone</sender>
+   <signal>pressed()</signal>
+   <receiver>Dialog_CodeGenerator</receiver>
+   <slot>pushButtonMFamilyClone()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1214</x>
+     <y>382</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1252</x>
+     <y>423</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>listWidget_mfamily_1</sender>
+   <signal>currentItemChanged(QListWidgetItem*,QListWidgetItem*)</signal>
+   <receiver>Dialog_CodeGenerator</receiver>
+   <slot>listWidgetMFamily1(QListWidgetItem*,QListWidgetItem*)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>665</x>
+     <y>45</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1244</x>
+     <y>90</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>listWidget_mfamily_2</sender>
+   <signal>currentItemChanged(QListWidgetItem*,QListWidgetItem*)</signal>
+   <receiver>Dialog_CodeGenerator</receiver>
+   <slot>listWidgetMFamily2(QListWidgetItem*,QListWidgetItem*)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>665</x>
+     <y>193</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1248</x>
+     <y>223</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_goldsequence_register1_exponents</sender>
+   <signal>textEdited(QString)</signal>
+   <receiver>Dialog_CodeGenerator</receiver>
+   <slot>lineEditGoldSequencePropertiesRegister1Exponents(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>141</x>
+     <y>118</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>0</x>
+     <y>50</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_goldsequence_register1_initialload</sender>
+   <signal>textEdited(QString)</signal>
+   <receiver>Dialog_CodeGenerator</receiver>
+   <slot>lineEditGoldSequencePropertiesRegister1InitialLoad(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>159</x>
+     <y>144</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>2</x>
+     <y>76</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_goldsequence_register2_exponents</sender>
+   <signal>textEdited(QString)</signal>
+   <receiver>Dialog_CodeGenerator</receiver>
+   <slot>lineEditGoldSequencePropertiesRegister2Exponents(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>332</x>
+     <y>116</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>330</x>
+     <y>-6</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_goldsequence_register2_initialload</sender>
+   <signal>textEdited(QString)</signal>
+   <receiver>Dialog_CodeGenerator</receiver>
+   <slot>lineEditGoldSequencePropertiesRegister2InitialLoad(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>381</x>
+     <y>137</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>362</x>
+     <y>-4</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_goldsequence_sequence_length</sender>
+   <signal>textEdited(QString)</signal>
+   <receiver>Dialog_CodeGenerator</receiver>
+   <slot>lineEditGoldSequencePropertiesSequenceLength(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>195</x>
+     <y>210</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-3</x>
+     <y>197</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_goldsequence_sequence_distances</sender>
+   <signal>textEdited(QString)</signal>
+   <receiver>Dialog_CodeGenerator</receiver>
+   <slot>lineEditGoldSequencePropertiesSequenceDistance(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>162</x>
+     <y>241</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>2</x>
+     <y>238</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>listWidget_goldsequence</sender>
+   <signal>currentItemChanged(QListWidgetItem*,QListWidgetItem*)</signal>
+   <receiver>Dialog_CodeGenerator</receiver>
+   <slot>listWidgetGoldSequence(QListWidgetItem*,QListWidgetItem*)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1181</x>
+     <y>70</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1254</x>
+     <y>37</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_goldsequence_generatesequence</sender>
+   <signal>pressed()</signal>
+   <receiver>Dialog_CodeGenerator</receiver>
+   <slot>pushButtonGoldSequenceGenerateSequence()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>58</x>
+     <y>363</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>0</x>
+     <y>421</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_goldsequence_afkanalyse</sender>
+   <signal>released()</signal>
+   <receiver>Dialog_CodeGenerator</receiver>
+   <slot>pushButtonGoldSequenceAFKAnalyse()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>667</x>
+     <y>356</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-1</x>
+     <y>458</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_goldsequence_kkfanalyse</sender>
+   <signal>pressed()</signal>
+   <receiver>Dialog_CodeGenerator</receiver>
+   <slot>pushButtonGoldSequenceKKFAnalyse()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>756</x>
+     <y>365</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>6</x>
+     <y>410</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_goldsequence_deleteall</sender>
+   <signal>pressed()</signal>
+   <receiver>Dialog_CodeGenerator</receiver>
+   <slot>pushButtonGoldSequenceDeleteAll()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>926</x>
+     <y>370</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-2</x>
+     <y>512</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>comboBox_goldsequence</sender>
+   <signal>currentIndexChanged(int)</signal>
+   <receiver>Dialog_CodeGenerator</receiver>
+   <slot>comboBoxGoldSequence(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1095</x>
+     <y>361</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1246</x>
+     <y>488</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_goldsequence_clone</sender>
+   <signal>pressed()</signal>
+   <receiver>Dialog_CodeGenerator</receiver>
+   <slot>pushButtonGoldSequenceClone()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1157</x>
+     <y>370</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1244</x>
+     <y>415</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_goldfamily_register1_exponents</sender>
+   <signal>textEdited(QString)</signal>
+   <receiver>Dialog_CodeGenerator</receiver>
+   <slot>lineEditGoldFamilyPropertiesRegister1Exponents(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>168</x>
+     <y>122</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>173</x>
+     <y>7</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_goldfamily_register1_initialload</sender>
+   <signal>textEdited(QString)</signal>
+   <receiver>Dialog_CodeGenerator</receiver>
+   <slot>lineEditGoldFamilyPropertiesRegister1InitialLoad(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>190</x>
+     <y>136</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>154</x>
+     <y>8</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_goldfamily_register2_exponents</sender>
+   <signal>textEdited(QString)</signal>
+   <receiver>Dialog_CodeGenerator</receiver>
+   <slot>lineEditGoldFamilyPropertiesRegister2Exponents(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>376</x>
+     <y>135</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>564</x>
+     <y>-4</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>listWidget_goldfamily</sender>
+   <signal>currentItemChanged(QListWidgetItem*,QListWidgetItem*)</signal>
+   <receiver>Dialog_CodeGenerator</receiver>
+   <slot>listWidgetGoldFamily(QListWidgetItem*,QListWidgetItem*)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1206</x>
+     <y>68</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1173</x>
+     <y>0</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_goldfamily_clone</sender>
+   <signal>pressed()</signal>
+   <receiver>Dialog_CodeGenerator</receiver>
+   <slot>pushButtonGoldFamilyClone()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1179</x>
+     <y>363</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1250</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>comboBox_goldfamily</sender>
+   <signal>currentIndexChanged(int)</signal>
+   <receiver>Dialog_CodeGenerator</receiver>
+   <slot>comboBoxGoldFamily(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1049</x>
+     <y>357</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1247</x>
+     <y>260</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_goldfamily_deleteall</sender>
+   <signal>pressed()</signal>
+   <receiver>Dialog_CodeGenerator</receiver>
+   <slot>pushButtonGoldFamilyDeleteAll()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>947</x>
+     <y>358</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1245</x>
+     <y>174</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_goldfamily_kkfanalyse</sender>
+   <signal>pressed()</signal>
+   <receiver>Dialog_CodeGenerator</receiver>
+   <slot>pushButtonGoldFamilyKKFAnalyse()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>787</x>
+     <y>357</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1253</x>
+     <y>200</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_goldfamily_afkanalyse</sender>
+   <signal>pressed()</signal>
+   <receiver>Dialog_CodeGenerator</receiver>
+   <slot>pushButtonGoldFamilyAFKAnalyse()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>725</x>
+     <y>357</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1247</x>
+     <y>141</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_goldfamily_generatesequence</sender>
+   <signal>pressed()</signal>
+   <receiver>Dialog_CodeGenerator</receiver>
+   <slot>pushButtonGoldFamilyGenerateSequence()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>443</x>
+     <y>356</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1255</x>
+     <y>113</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>tabWidget(int)</slot>
+  <slot>lineEditMSequencePropertiesRegister1Exponents(QString)</slot>
+  <slot>lineEditMSequencePropertiesRegister1InitialLoad(QString)</slot>
+  <slot>listWidgetMSequence(QListWidgetItem*,QListWidgetItem*)</slot>
+  <slot>pushButtonMSequenceGenerateSequence()</slot>
+  <slot>pushButtonMSequenceAFKAnalyse()</slot>
+  <slot>pushButtonMSequenceKKFAnalyse()</slot>
+  <slot>pushButtonMSequenceDeleteAll()</slot>
+  <slot>pushButtonMSequenceClone()</slot>
+  <slot>comboBoxMSequence(int)</slot>
+  <slot>lineEditMFamilyPropertiesRegister1Exponents(QString)</slot>
+  <slot>lineEditMFamilyPropertiesRegister1InitialLoad(QString)</slot>
+  <slot>lineEditMFamilyPropertiesSequenceLength(QString)</slot>
+  <slot>lineEditMFamilyPropertiesSequenceDistance(QString)</slot>
+  <slot>listWidgetMFamily1(QListWidgetItem*,QListWidgetItem*)</slot>
+  <slot>listWidgetMFamily2(QListWidgetItem*,QListWidgetItem*)</slot>
+  <slot>pushButtonMFamilyGenerateSequence()</slot>
+  <slot>pushButtonMFamilyAFKAnalyse()</slot>
+  <slot>pushButtonMFamilyKKFAnalyse()</slot>
+  <slot>pushButtonMFamilyDeleteAll()</slot>
+  <slot>pushButtonMFamilyClone()</slot>
+  <slot>comboBoxMFamily(int)</slot>
+  <slot>lineEditGoldSequencePropertiesRegister1Exponents(QString)</slot>
+  <slot>lineEditGoldSequencePropertiesRegister1InitialLoad(QString)</slot>
+  <slot>lineEditGoldSequencePropertiesRegister2Exponents(QString)</slot>
+  <slot>lineEditGoldSequencePropertiesRegister2InitialLoad(QString)</slot>
+  <slot>lineEditGoldSequencePropertiesSequenceLength(QString)</slot>
+  <slot>lineEditGoldSequencePropertiesSequenceDistance(QString)</slot>
+  <slot>listWidgetGoldSequence(QListWidgetItem*,QListWidgetItem*)</slot>
+  <slot>pushButtonGoldSequenceGenerateSequence()</slot>
+  <slot>pushButtonGoldSequenceAFKAnalyse()</slot>
+  <slot>pushButtonGoldSequenceKKFAnalyse()</slot>
+  <slot>pushButtonGoldSequenceDeleteAll()</slot>
+  <slot>pushButtonGoldSequenceClone()</slot>
+  <slot>comboBoxGoldSequence(int)</slot>
+  <slot>lineEditGoldFamilyPropertiesRegister1Exponents(QString)</slot>
+  <slot>lineEditGoldFamilyPropertiesRegister1InitialLoad(QString)</slot>
+  <slot>lineEditGoldFamilyPropertiesRegister2Exponents(QString)</slot>
+  <slot>listWidgetGoldFamily(QListWidgetItem*,QListWidgetItem*)</slot>
+  <slot>pushButtonGoldFamilyGenerateSequence()</slot>
+  <slot>pushButtonGoldFamilyAFKAnalyse()</slot>
+  <slot>pushButtonGoldFamilyKKFAnalyse()</slot>
+  <slot>pushButtonGoldFamilyDeleteAll()</slot>
+  <slot>pushButtonGoldFamilyClone()</slot>
+  <slot>comboBoxGoldFamily(int)</slot>
+  <slot>lineEditOGFSequencePropertiesRegister1Exponents(QString)</slot>
+  <slot>lineEditOGFSequencePropertiesRegister1InitialLoad(QString)</slot>
+  <slot>lineEditOGFSequencePropertiesRegister2Exponents(QString)</slot>
+  <slot>lineEditOGFSequencePropertiesRegister2InitialLoad(QString)</slot>
+  <slot>listWidgetOGFSequence(QListWidgetItem*,QListWidgetItem*)</slot>
+  <slot>pushButtonOGFSequenceGenerateSequence()</slot>
+  <slot>pushButtonOGFSequenceAFKAnalyse()</slot>
+  <slot>pushButtonOGFSequenceKKFAnalyse()</slot>
+  <slot>pushButtonOGFSequenceDeleteAll()</slot>
+  <slot>pushButtonOGFSequenceClone()</slot>
+  <slot>comboBoxOGFSequence(int)</slot>
+  <slot>lineEditOGFFamilyPropertiesRegister1Exponents(QString)</slot>
+  <slot>lineEditOGFFamilyPropertiesRegister1InitialLoad(QString)</slot>
+  <slot>lineEditOGFFamilyPropertiesRegister2Exponents(QString)</slot>
+  <slot>listWidgetOGFFamily(QListWidgetItem*,QListWidgetItem*)</slot>
+  <slot>pushButtonOGFFamilyGenerateSequence()</slot>
+  <slot>pushButtonOGFFamilyAFKAnalyse()</slot>
+  <slot>pushButtonOGFFamilyKKFAnalyse()</slot>
+  <slot>pushButtonOGFFamilyDeleteAll()</slot>
+  <slot>pushButtonOGFFamilyClone()</slot>
+  <slot>comboBoxOGFFamily(int)</slot>
+ </slots>
 </ui>
