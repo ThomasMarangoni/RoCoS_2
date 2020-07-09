@@ -1,6 +1,8 @@
 from PyQt5 import QtWidgets
 from ui import CodeGenerator as CodeGenerator
 from uiHelper import CodeGeneratorHelper as CodeGeneratorHelper
+from ui import SimulationControl as SimulationControl
+from uiHelper import SimulationControlHelper as SimulationControlHelper
 
 
 class MainHelper(QtWidgets.QMainWindow):
@@ -8,12 +10,14 @@ class MainHelper(QtWidgets.QMainWindow):
     def __init__(self):
         super().__init__()
 
-    def pushButtonGenerateSequence(self):
-        #codeGeneratorHelper = CodeGeneratorHelper.CodeGeneratorHelper()
-        #codeGeneratorUi = CodeGenerator.Ui_Dialog_CodeGenerator()
-        #codeGeneratorUi.setupUi(codeGeneratorHelper)
-        #codeGeneratorHelper.show()
+    def actionSimulationControl(checked):
+        windowSimulationControl = SimulationControlHelper.SimulationControlHelper()
+        windowSimulationControl.ui = SimulationControl.Ui_Dialog_SimulationControl()
+        windowSimulationControl.ui.setupUi(windowSimulationControl)
+        windowSimulationControl.exec_()
+        windowSimulationControl.show()
 
+    def pushButtonGenerateSequence(self):
         windowCodeGenerator = CodeGeneratorHelper.CodeGeneratorHelper()
         windowCodeGenerator.ui = CodeGenerator.Ui_Dialog_CodeGenerator()
         windowCodeGenerator.ui.setupUi(windowCodeGenerator)
@@ -77,76 +81,76 @@ class MainHelper(QtWidgets.QMainWindow):
     def pushButtonChannelMUAddToList(self):
         print("Not Implemented")
 
-    def lineEditTransmitterPulseshapeSamples(self, text):
-        print("Not Implemented" + " " + text)
+    def lineEditTransmitterPulseshapeSamples(self):
+        print("Not Implemented" + " " + self.sender().text())
 
-    def lineEditTransmitterPulseshapeDuration(self, text):
+    def lineEditTransmitterPulseshapeDuration(self):
         print("Not Implemented")
 
-    def lineEditTransmitterSignalResultsChipRate(self, text):
+    def lineEditTransmitterSignalResultsChipRate(self):
         print("Not Implemented")
 
-    def lineEditTransmitterSignalResultsBitDuration(self, text):
+    def lineEditTransmitterSignalResultsBitDuration(self):
         print("Not Implemented")
 
-    def lineEditTransmitterSignalResultsBitRate(self, text):
+    def lineEditTransmitterSignalResultsBitRate(self):
         print("Not Implemented")
 
-    def lineEditTransmitterSignalResultsSampleRate(self, text):
+    def lineEditTransmitterSignalResultsSampleRate(self):
         print("Not Implemented")
 
-    def lineEditTransmitterSignalResultsOversampling(self, text):
+    def lineEditTransmitterSignalResultsOversampling(self):
         print("Not Implemented")
 
-    def lineEditTransmitterSignalParameterChipAmplitude(self, text):
+    def lineEditTransmitterSignalParameterChipAmplitude(self):
         print("Not Implemented")
 
-    def lineEditTransmitterSignalParameterChipDuration(self, text):
+    def lineEditTransmitterSignalParameterChipDuration(self):
         print("Not Implemented")
 
-    def lineEditChannelAWGNPropertiesSNR(self, text):
+    def lineEditChannelAWGNPropertiesSNR(self):
         print("Not Implemented")
 
-    def lineEditChannelAWGNPropertiesStdDev(self, text):
+    def lineEditChannelAWGNPropertiesStdDev(self):
         print("Not Implemented")
 
-    def lineEditChannelCWHz(self, text):
+    def lineEditChannelCWHz(self):
         print("Not Implemented")
 
-    def lineEditChannelCWPercentage(self, text):
+    def lineEditChannelCWPercentage(self):
         print("Not Implemented")
 
-    def lineEditChannelMWs(self, text):
+    def lineEditChannelMWs(self):
         print("Not Implemented")
 
-    def lineEditChannelMWPercentage(self, text):
+    def lineEditChannelMWPercentage(self):
         print("Not Implemented")
 
-    def lineEditChannelMUPercentage(self, text):
+    def lineEditChannelMUPercentage(self):
         print("Not Implemented")
 
-    def lineEditChannelNumberOfCW(self, text):
+    def lineEditChannelNumberOfCW(self):
         print("Not Implemented")
 
-    def lineEditChannelNumberOfMW(self, text):
+    def lineEditChannelNumberOfMW(self):
         print("Not Implemented")
 
-    def lineEditChannelNumberOfMU(self, text):
+    def lineEditChannelNumberOfMU(self):
         print("Not Implemented")
 
-    def lineEditReceiverFilterMatchedFilter(self, text):
+    def lineEditReceiverFilterMatchedFilter(self):
         print("Not Implemented")
 
-    def lineEditReceiverFilterLowPassFilterDelay(self, text):
+    def lineEditReceiverFilterLowPassFilterDelay(self):
         print("Not Implemented")
 
-    def lineEditReceiverFilterRakeReceiverDelay(self, text):
+    def lineEditReceiverFilterRakeReceiverDelay(self):
         print("Not Implemented")
 
-    def lineEditReceiverFilterRakeReceiverPercentage(self, text):
+    def lineEditReceiverFilterRakeReceiverPercentage(self):
         print("Not Implemented")
 
-    def lineEditReceiverFilterIntegrateAndDumpDelay(self, text):
+    def lineEditReceiverFilterIntegrateAndDumpDelay(self):
         print("Not Implemented")
 
     def tabWidgetTransmitterSSSequence(self, index):

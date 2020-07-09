@@ -100,7 +100,7 @@
    <item row="0" column="0" colspan="2">
     <widget class="QTabWidget" name="tabWidget">
      <property name="currentIndex">
-      <number>1</number>
+      <number>0</number>
      </property>
      <widget class="QWidget" name="tab">
       <attribute name="title">
@@ -353,6 +353,9 @@
           </item>
           <item row="1" column="1">
            <widget class="QLineEdit" name="lineEdit_histogramms_simulation_granularity">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
             <property name="minimumSize">
              <size>
               <width>60</width>
@@ -432,6 +435,9 @@
           </item>
           <item row="1" column="1">
            <widget class="QLineEdit" name="lineEdit_BEP_MU_numberofusers">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
             <property name="minimumSize">
              <size>
               <width>60</width>
@@ -523,6 +529,9 @@
           </item>
           <item row="2" column="1">
            <widget class="QLineEdit" name="lineEdit_BEP_simulation_timesamples">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
             <property name="minimumSize">
              <size>
               <width>60</width>
@@ -596,6 +605,9 @@
           </item>
           <item row="2" column="1">
            <widget class="QLineEdit" name="lineEdit_BEP_SNR_range_start">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
             <property name="minimumSize">
              <size>
               <width>60</width>
@@ -619,6 +631,9 @@
           </item>
           <item row="3" column="1">
            <widget class="QLineEdit" name="lineEdit_BEP_SNR_granularity">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
             <property name="minimumSize">
              <size>
               <width>60</width>
@@ -649,6 +664,9 @@
           </item>
           <item row="2" column="4">
            <widget class="QLineEdit" name="lineEdit_BEP_SNR_range_end">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
             <property name="minimumSize">
              <size>
               <width>60</width>
@@ -943,8 +961,8 @@
    <slot>checkBoxSignalsOutputChannel(bool)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>39</x>
-     <y>179</y>
+     <x>62</x>
+     <y>176</y>
     </hint>
     <hint type="destinationlabel">
      <x>-1</x>
@@ -959,8 +977,8 @@
    <slot>checkBoxSignalsDataGenerated(bool)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>54</x>
-     <y>255</y>
+     <x>77</x>
+     <y>251</y>
     </hint>
     <hint type="destinationlabel">
      <x>3</x>
@@ -1018,9 +1036,9 @@
   </connection>
   <connection>
    <sender>lineEdit_signals_simulation_bitsframes</sender>
-   <signal>textEdited(QString)</signal>
+   <signal>editingFinished()</signal>
    <receiver>Dialog_SimulationControl</receiver>
-   <slot>lineEditSignalsSimulationBitsFrame(QString)</slot>
+   <slot>lineEditSignalsSimulationBitsFrame()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>233</x>
@@ -1034,13 +1052,13 @@
   </connection>
   <connection>
    <sender>lineEdit_signals_simulation_samplerate</sender>
-   <signal>textEdited(QString)</signal>
+   <signal>editingFinished()</signal>
    <receiver>Dialog_SimulationControl</receiver>
-   <slot>lineEditSignalsSimulationSamplerate(QString)</slot>
+   <slot>lineEditSignalsSimulationSamplerate()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>254</x>
-     <y>480</y>
+     <x>278</x>
+     <y>504</y>
     </hint>
     <hint type="destinationlabel">
      <x>373</x>
@@ -1050,9 +1068,9 @@
   </connection>
   <connection>
    <sender>lineEdit_signals_simulation_numberofsamples</sender>
-   <signal>textEdited(QString)</signal>
+   <signal>editingFinished()</signal>
    <receiver>Dialog_SimulationControl</receiver>
-   <slot>lineEditSignalsSimulationNumberOfShownSamples(QString)</slot>
+   <slot>lineEditSignalsSimulationNumberOfShownSamples()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>257</x>
@@ -1103,8 +1121,8 @@
    <slot>checkBoxHistogrammsPropertiesSampledSignal(bool)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>42</x>
-     <y>151</y>
+     <x>65</x>
+     <y>149</y>
     </hint>
     <hint type="destinationlabel">
      <x>377</x>
@@ -1119,8 +1137,8 @@
    <slot>checkBoxHistogrammsPropertiesErrorDistribution(bool)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>127</x>
-     <y>178</y>
+     <x>150</x>
+     <y>176</y>
     </hint>
     <hint type="destinationlabel">
      <x>374</x>
@@ -1135,8 +1153,8 @@
    <slot>checkBoxHistogrammsSimulationAutomaticRangeEstimation(bool)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>169</x>
-     <y>246</y>
+     <x>192</x>
+     <y>245</y>
     </hint>
     <hint type="destinationlabel">
      <x>378</x>
@@ -1146,13 +1164,13 @@
   </connection>
   <connection>
    <sender>lineEdit_histogramms_simulation_granularity</sender>
-   <signal>textEdited(QString)</signal>
+   <signal>editingFinished()</signal>
    <receiver>Dialog_SimulationControl</receiver>
-   <slot>lineEditHistogrammsSimulationGranularity(QString)</slot>
+   <slot>lineEditHistogrammsSimulationGranularity()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>169</x>
-     <y>280</y>
+     <x>185</x>
+     <y>274</y>
     </hint>
     <hint type="destinationlabel">
      <x>375</x>
@@ -1183,8 +1201,8 @@
    <slot>checkBoxBEPSimulationBEPMUsActivate(bool)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>48</x>
-     <y>224</y>
+     <x>71</x>
+     <y>222</y>
     </hint>
     <hint type="destinationlabel">
      <x>376</x>
@@ -1199,8 +1217,8 @@
    <slot>checkBoxBEPSimulationSimulationShowFirst(bool)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>68</x>
-     <y>363</y>
+     <x>91</x>
+     <y>352</y>
     </hint>
     <hint type="destinationlabel">
      <x>374</x>
@@ -1215,8 +1233,8 @@
    <slot>checkBoxBEPSimulationSimulationShowHistogramms(bool)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>41</x>
-     <y>391</y>
+     <x>64</x>
+     <y>380</y>
     </hint>
     <hint type="destinationlabel">
      <x>376</x>
@@ -1226,9 +1244,9 @@
   </connection>
   <connection>
    <sender>lineEdit_BEP_SNR_range_start</sender>
-   <signal>textEdited(QString)</signal>
+   <signal>editingFinished()</signal>
    <receiver>Dialog_SimulationControl</receiver>
-   <slot>lineEditBEPSimulationBEPSNRSNRRangeFrom(QString)</slot>
+   <slot>lineEditBEPSimulationBEPSNRSNRRangeFrom()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>173</x>
@@ -1242,9 +1260,9 @@
   </connection>
   <connection>
    <sender>lineEdit_BEP_SNR_range_end</sender>
-   <signal>textEdited(QString)</signal>
+   <signal>editingFinished()</signal>
    <receiver>Dialog_SimulationControl</receiver>
-   <slot>lineEditBEPSimulationBEPSNRSNRRangeTo(QString)</slot>
+   <slot>lineEditBEPSimulationBEPSNRSNRRangeTo()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>265</x>
@@ -1258,13 +1276,13 @@
   </connection>
   <connection>
    <sender>lineEdit_BEP_SNR_granularity</sender>
-   <signal>textEdited(QString)</signal>
+   <signal>editingFinished()</signal>
    <receiver>Dialog_SimulationControl</receiver>
-   <slot>lineEditBEPSimulationBEPSNRGranularity(QString)</slot>
+   <slot>lineEditBEPSimulationBEPSNRGranularity()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>204</x>
-     <y>149</y>
+     <x>197</x>
+     <y>153</y>
     </hint>
     <hint type="destinationlabel">
      <x>377</x>
@@ -1274,13 +1292,13 @@
   </connection>
   <connection>
    <sender>lineEdit_BEP_MU_numberofusers</sender>
-   <signal>textEdited(QString)</signal>
+   <signal>editingFinished()</signal>
    <receiver>Dialog_SimulationControl</receiver>
-   <slot>lineEditBEPSimulationBEPMUsNrOfUsers(QString)</slot>
+   <slot>lineEditBEPSimulationBEPMUsNrOfUsers()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>146</x>
-     <y>255</y>
+     <x>184</x>
+     <y>251</y>
     </hint>
     <hint type="destinationlabel">
      <x>4</x>
@@ -1290,13 +1308,13 @@
   </connection>
   <connection>
    <sender>lineEdit_BEP_simulation_bitstosimulate</sender>
-   <signal>textEdited(QString)</signal>
+   <signal>editingFinished()</signal>
    <receiver>Dialog_SimulationControl</receiver>
-   <slot>lineEditBEPSimulationBEPSNRNrOfBitsToSimulate(QString)</slot>
+   <slot>lineEditBEPSimulationBEPSNRNrOfBitsToSimulate()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>251</x>
-     <y>328</y>
+     <x>285</x>
+     <y>323</y>
     </hint>
     <hint type="destinationlabel">
      <x>375</x>
@@ -1306,17 +1324,113 @@
   </connection>
   <connection>
    <sender>lineEdit_BEP_simulation_timesamples</sender>
-   <signal>textEdited(QString)</signal>
+   <signal>editingFinished()</signal>
    <receiver>Dialog_SimulationControl</receiver>
-   <slot>lineEditBEPSimulationSimulationTimeSamples(QString)</slot>
+   <slot>lineEditBEPSimulationSimulationTimeSamples()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>180</x>
-     <y>368</y>
+     <x>195</x>
+     <y>353</y>
     </hint>
     <hint type="destinationlabel">
      <x>373</x>
      <y>436</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox_histogramms_simulation_automaticrangeestimation</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>lineEdit_histogramms_simulation_granularity</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>59</x>
+     <y>236</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>146</x>
+     <y>259</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox_BEP_SNR_activate</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>lineEdit_BEP_SNR_range_start</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>65</x>
+     <y>83</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>152</x>
+     <y>112</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox_BEP_SNR_activate</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>lineEdit_BEP_SNR_range_end</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>116</x>
+     <y>88</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>259</x>
+     <y>120</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox_BEP_SNR_activate</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>lineEdit_BEP_SNR_granularity</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>190</x>
+     <y>82</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>182</x>
+     <y>142</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox_BEP_MU_activate</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>lineEdit_BEP_MU_numberofusers</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>95</x>
+     <y>206</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>151</x>
+     <y>245</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox_BEP_simulation_showfirsttimesamples</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>lineEdit_BEP_simulation_timesamples</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>105</x>
+     <y>345</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>150</x>
+     <y>345</y>
     </hint>
    </hints>
   </connection>
@@ -1337,24 +1451,24 @@
   <slot>checkBoxSignalsDataEstimated(bool)</slot>
   <slot>checkBoxSignalsShowHistogramms(bool)</slot>
   <slot>checkBoxSignalsShowRunningWindow(bool)</slot>
-  <slot>lineEditSignalsSimulationBitsFrame(QString)</slot>
-  <slot>lineEditSignalsSimulationSamplerate(QString)</slot>
-  <slot>lineEditSignalsSimulationNumberOfShownSamples(QString)</slot>
+  <slot>lineEditSignalsSimulationBitsFrame()</slot>
+  <slot>lineEditSignalsSimulationSamplerate()</slot>
+  <slot>lineEditSignalsSimulationNumberOfShownSamples()</slot>
   <slot>checkBoxHistogrammsPropertiesDataOutput(bool)</slot>
   <slot>checkBoxHistogrammsPropertiesSignalBeforeDecision(bool)</slot>
   <slot>checkBoxHistogrammsPropertiesSampledSignal(bool)</slot>
   <slot>checkBoxHistogrammsPropertiesErrorDistribution(bool)</slot>
   <slot>checkBoxHistogrammsSimulationAutomaticRangeEstimation(bool)</slot>
-  <slot>lineEditHistogrammsSimulationGranularity(QString)</slot>
+  <slot>lineEditHistogrammsSimulationGranularity()</slot>
   <slot>checkBoxBEPSimulationBEPSNRActivate(bool)</slot>
   <slot>checkBoxBEPSimulationBEPMUsActivate(bool)</slot>
   <slot>checkBoxBEPSimulationSimulationShowFirst(bool)</slot>
   <slot>checkBoxBEPSimulationSimulationShowHistogramms(bool)</slot>
-  <slot>lineEditBEPSimulationBEPSNRSNRRangeFrom(QString)</slot>
-  <slot>lineEditBEPSimulationBEPSNRSNRRangeTo(QString)</slot>
-  <slot>lineEditBEPSimulationBEPSNRGranularity(QString)</slot>
-  <slot>lineEditBEPSimulationBEPMUsNrOfUsers(QString)</slot>
-  <slot>lineEditBEPSimulationBEPSNRNrOfBitsToSimulate(QString)</slot>
-  <slot>lineEditBEPSimulationSimulationTimeSamples(QString)</slot>
+  <slot>lineEditBEPSimulationBEPSNRSNRRangeFrom()</slot>
+  <slot>lineEditBEPSimulationBEPSNRSNRRangeTo()</slot>
+  <slot>lineEditBEPSimulationBEPSNRGranularity()</slot>
+  <slot>lineEditBEPSimulationBEPMUsNrOfUsers()</slot>
+  <slot>lineEditBEPSimulationBEPSNRNrOfBitsToSimulate()</slot>
+  <slot>lineEditBEPSimulationSimulationTimeSamples()</slot>
  </slots>
 </ui>

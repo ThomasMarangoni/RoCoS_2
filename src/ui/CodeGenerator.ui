@@ -2567,9 +2567,9 @@ color: rgb(255, 255, 255)</string>
   </connection>
   <connection>
    <sender>lineEdit_msequence_register1_exponents</sender>
-   <signal>textEdited(QString)</signal>
+   <signal>editingFinished()</signal>
    <receiver>Dialog_CodeGenerator</receiver>
-   <slot>lineEditMSequencePropertiesRegister1Exponents(QString)</slot>
+   <slot>lineEditMSequencePropertiesRegister1Exponents()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>208</x>
@@ -2583,9 +2583,9 @@ color: rgb(255, 255, 255)</string>
   </connection>
   <connection>
    <sender>lineEdit_msequence_register1_initialload</sender>
-   <signal>textEdited(QString)</signal>
+   <signal>editingFinished()</signal>
    <receiver>Dialog_CodeGenerator</receiver>
-   <slot>lineEditMSequencePropertiesRegister1InitialLoad(QString)</slot>
+   <slot>lineEditMSequencePropertiesRegister1InitialLoad()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>208</x>
@@ -2711,9 +2711,9 @@ color: rgb(255, 255, 255)</string>
   </connection>
   <connection>
    <sender>lineEdit_mfamily_register1_exponents</sender>
-   <signal>textEdited(QString)</signal>
+   <signal>editingFinished()</signal>
    <receiver>Dialog_CodeGenerator</receiver>
-   <slot>lineEditMFamilyPropertiesRegister1Exponents(QString)</slot>
+   <slot>lineEditMFamilyPropertiesRegister1Exponents()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>208</x>
@@ -2727,9 +2727,9 @@ color: rgb(255, 255, 255)</string>
   </connection>
   <connection>
    <sender>lineEdit_mfamily_register1_initialload</sender>
-   <signal>textEdited(QString)</signal>
+   <signal>editingFinished()</signal>
    <receiver>Dialog_CodeGenerator</receiver>
-   <slot>lineEditMFamilyPropertiesRegister1InitialLoad(QString)</slot>
+   <slot>lineEditMFamilyPropertiesRegister1InitialLoad()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>208</x>
@@ -2743,9 +2743,9 @@ color: rgb(255, 255, 255)</string>
   </connection>
   <connection>
    <sender>lineEdit_mfamily_sequence_length</sender>
-   <signal>textEdited(QString)</signal>
+   <signal>editingFinished()</signal>
    <receiver>Dialog_CodeGenerator</receiver>
-   <slot>lineEditMFamilyPropertiesSequenceLength(QString)</slot>
+   <slot>lineEditMFamilyPropertiesSequenceLength()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>208</x>
@@ -2759,9 +2759,9 @@ color: rgb(255, 255, 255)</string>
   </connection>
   <connection>
    <sender>lineEdit_mfamily_sequence_distance</sender>
-   <signal>textEdited(QString)</signal>
+   <signal>editingFinished()</signal>
    <receiver>Dialog_CodeGenerator</receiver>
-   <slot>lineEditMFamilyPropertiesSequenceDistance(QString)</slot>
+   <slot>lineEditMFamilyPropertiesSequenceDistance()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>208</x>
@@ -2919,9 +2919,9 @@ color: rgb(255, 255, 255)</string>
   </connection>
   <connection>
    <sender>lineEdit_goldsequence_register1_exponents</sender>
-   <signal>textEdited(QString)</signal>
+   <signal>editingFinished()</signal>
    <receiver>Dialog_CodeGenerator</receiver>
-   <slot>lineEditGoldSequencePropertiesRegister1Exponents(QString)</slot>
+   <slot>lineEditGoldSequencePropertiesRegister1Exponents()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>208</x>
@@ -2935,9 +2935,9 @@ color: rgb(255, 255, 255)</string>
   </connection>
   <connection>
    <sender>lineEdit_goldsequence_register1_initialload</sender>
-   <signal>textEdited(QString)</signal>
+   <signal>editingFinished()</signal>
    <receiver>Dialog_CodeGenerator</receiver>
-   <slot>lineEditGoldSequencePropertiesRegister1InitialLoad(QString)</slot>
+   <slot>lineEditGoldSequencePropertiesRegister1InitialLoad()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>208</x>
@@ -2951,9 +2951,9 @@ color: rgb(255, 255, 255)</string>
   </connection>
   <connection>
    <sender>lineEdit_goldsequence_register2_exponents</sender>
-   <signal>textEdited(QString)</signal>
+   <signal>editingFinished()</signal>
    <receiver>Dialog_CodeGenerator</receiver>
-   <slot>lineEditGoldSequencePropertiesRegister2Exponents(QString)</slot>
+   <slot>lineEditGoldSequencePropertiesRegister2Exponents()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>402</x>
@@ -2967,9 +2967,9 @@ color: rgb(255, 255, 255)</string>
   </connection>
   <connection>
    <sender>lineEdit_goldsequence_register2_initialload</sender>
-   <signal>textEdited(QString)</signal>
+   <signal>editingFinished()</signal>
    <receiver>Dialog_CodeGenerator</receiver>
-   <slot>lineEditGoldSequencePropertiesRegister2InitialLoad(QString)</slot>
+   <slot>lineEditGoldSequencePropertiesRegister2InitialLoad()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>402</x>
@@ -2983,9 +2983,9 @@ color: rgb(255, 255, 255)</string>
   </connection>
   <connection>
    <sender>lineEdit_goldsequence_sequence_length</sender>
-   <signal>textEdited(QString)</signal>
+   <signal>editingFinished()</signal>
    <receiver>Dialog_CodeGenerator</receiver>
-   <slot>lineEditGoldSequencePropertiesSequenceLength(QString)</slot>
+   <slot>lineEditGoldSequencePropertiesSequenceLength()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>208</x>
@@ -2999,9 +2999,9 @@ color: rgb(255, 255, 255)</string>
   </connection>
   <connection>
    <sender>lineEdit_goldsequence_sequence_distances</sender>
-   <signal>textEdited(QString)</signal>
+   <signal>editingFinished()</signal>
    <receiver>Dialog_CodeGenerator</receiver>
-   <slot>lineEditGoldSequencePropertiesSequenceDistance(QString)</slot>
+   <slot>lineEditGoldSequencePropertiesSequenceDistance()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>208</x>
@@ -3127,9 +3127,9 @@ color: rgb(255, 255, 255)</string>
   </connection>
   <connection>
    <sender>lineEdit_goldfamily_register1_exponents</sender>
-   <signal>textEdited(QString)</signal>
+   <signal>editingFinished()</signal>
    <receiver>Dialog_CodeGenerator</receiver>
-   <slot>lineEditGoldFamilyPropertiesRegister1Exponents(QString)</slot>
+   <slot>lineEditGoldFamilyPropertiesRegister1Exponents()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>168</x>
@@ -3143,9 +3143,9 @@ color: rgb(255, 255, 255)</string>
   </connection>
   <connection>
    <sender>lineEdit_goldfamily_register1_initialload</sender>
-   <signal>textEdited(QString)</signal>
+   <signal>editingFinished()</signal>
    <receiver>Dialog_CodeGenerator</receiver>
-   <slot>lineEditGoldFamilyPropertiesRegister1InitialLoad(QString)</slot>
+   <slot>lineEditGoldFamilyPropertiesRegister1InitialLoad()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>190</x>
@@ -3159,9 +3159,9 @@ color: rgb(255, 255, 255)</string>
   </connection>
   <connection>
    <sender>lineEdit_goldfamily_register2_exponents</sender>
-   <signal>textEdited(QString)</signal>
+   <signal>editingFinished()</signal>
    <receiver>Dialog_CodeGenerator</receiver>
-   <slot>lineEditGoldFamilyPropertiesRegister2Exponents(QString)</slot>
+   <slot>lineEditGoldFamilyPropertiesRegister2Exponents()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>376</x>
@@ -3287,9 +3287,9 @@ color: rgb(255, 255, 255)</string>
   </connection>
   <connection>
    <sender>lineEdit_ogfsequence_register1_exponents</sender>
-   <signal>textEdited(QString)</signal>
+   <signal>editingFinished()</signal>
    <receiver>Dialog_CodeGenerator</receiver>
-   <slot>lineEditOGFSequencePropertiesRegister1Exponents(QString)</slot>
+   <slot>lineEditOGFSequencePropertiesRegister1Exponents()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>152</x>
@@ -3303,9 +3303,9 @@ color: rgb(255, 255, 255)</string>
   </connection>
   <connection>
    <sender>lineEdit_ogfsequence_register1_initialload</sender>
-   <signal>textEdited(QString)</signal>
+   <signal>editingFinished()</signal>
    <receiver>Dialog_CodeGenerator</receiver>
-   <slot>lineEditOGFSequencePropertiesRegister1InitialLoad(QString)</slot>
+   <slot>lineEditOGFSequencePropertiesRegister1InitialLoad()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>168</x>
@@ -3319,9 +3319,9 @@ color: rgb(255, 255, 255)</string>
   </connection>
   <connection>
    <sender>lineEdit_ogfsequence_register2_exponents</sender>
-   <signal>textEdited(QString)</signal>
+   <signal>editingFinished()</signal>
    <receiver>Dialog_CodeGenerator</receiver>
-   <slot>lineEditOGFSequencePropertiesRegister2Exponents(QString)</slot>
+   <slot>lineEditOGFSequencePropertiesRegister2Exponents()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>362</x>
@@ -3335,7 +3335,7 @@ color: rgb(255, 255, 255)</string>
   </connection>
   <connection>
    <sender>lineEdit_ogfsequence_register2_initialload</sender>
-   <signal>textEdited(QString)</signal>
+   <signal>editingFinished()</signal>
    <receiver>Dialog_CodeGenerator</receiver>
    <slot>pushButtonMFamilyClone()</slot>
    <hints>
@@ -3463,9 +3463,9 @@ color: rgb(255, 255, 255)</string>
   </connection>
   <connection>
    <sender>lineEdit_ogffamily_register1_exponents</sender>
-   <signal>textEdited(QString)</signal>
+   <signal>editingFinished()</signal>
    <receiver>Dialog_CodeGenerator</receiver>
-   <slot>lineEditOGFFamilyPropertiesRegister1Exponents(QString)</slot>
+   <slot>lineEditOGFFamilyPropertiesRegister1Exponents()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>168</x>
@@ -3479,9 +3479,9 @@ color: rgb(255, 255, 255)</string>
   </connection>
   <connection>
    <sender>lineEdit_ogffamily_register1_initialload</sender>
-   <signal>textEdited(QString)</signal>
+   <signal>editingFinished()</signal>
    <receiver>Dialog_CodeGenerator</receiver>
-   <slot>lineEditOGFFamilyPropertiesRegister1InitialLoad(QString)</slot>
+   <slot>lineEditOGFFamilyPropertiesRegister1InitialLoad()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>168</x>
@@ -3495,9 +3495,9 @@ color: rgb(255, 255, 255)</string>
   </connection>
   <connection>
    <sender>lineEdit_ogffamily_register2_exponents</sender>
-   <signal>textEdited(QString)</signal>
+   <signal>editingFinished()</signal>
    <receiver>Dialog_CodeGenerator</receiver>
-   <slot>lineEditOGFFamilyPropertiesRegister2Exponents(QString)</slot>
+   <slot>lineEditOGFFamilyPropertiesRegister2Exponents()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>362</x>
@@ -3623,9 +3623,9 @@ color: rgb(255, 255, 255)</string>
   </connection>
   <connection>
    <sender>lineEdit_kasamisequence_register1_exponents</sender>
-   <signal>textEdited(QString)</signal>
+   <signal>editingFinished()</signal>
    <receiver>Dialog_CodeGenerator</receiver>
-   <slot>lineEditKasamiSequencePropertiesRegister1Exponents(QString)</slot>
+   <slot>lineEditKasamiSequencePropertiesRegister1Exponents()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>168</x>
@@ -3639,9 +3639,9 @@ color: rgb(255, 255, 255)</string>
   </connection>
   <connection>
    <sender>lineEdit_kasamisequence_register1_initialload</sender>
-   <signal>textEdited(QString)</signal>
+   <signal>editingFinished()</signal>
    <receiver>Dialog_CodeGenerator</receiver>
-   <slot>lineEditKasamiSequencePropertiesRegister1InitialLoad(QString)</slot>
+   <slot>lineEditKasamiSequencePropertiesRegister1InitialLoad()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>168</x>
@@ -3767,9 +3767,9 @@ color: rgb(255, 255, 255)</string>
   </connection>
   <connection>
    <sender>lineEdit_kasamifamily_register1_exponents</sender>
-   <signal>textEdited(QString)</signal>
+   <signal>editingFinished()</signal>
    <receiver>Dialog_CodeGenerator</receiver>
-   <slot>lineEditKasamiFamilyPropertiesRegister1Exponents(QString)</slot>
+   <slot>lineEditKasamiFamilyPropertiesRegister1Exponents()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>168</x>
@@ -3783,9 +3783,9 @@ color: rgb(255, 255, 255)</string>
   </connection>
   <connection>
    <sender>lineEdit_kasamifamily_register1_initialload</sender>
-   <signal>textEdited(QString)</signal>
+   <signal>editingFinished()</signal>
    <receiver>Dialog_CodeGenerator</receiver>
-   <slot>lineEditKasamiFamilyPropertiesRegister1InitialLoad(QString)</slot>
+   <slot>lineEditKasamiFamilyPropertiesRegister1InitialLoad()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>168</x>
@@ -3799,9 +3799,9 @@ color: rgb(255, 255, 255)</string>
   </connection>
   <connection>
    <sender>lineEdit_kasamifamily_register2_exponents</sender>
-   <signal>textEdited(QString)</signal>
+   <signal>editingFinished()</signal>
    <receiver>Dialog_CodeGenerator</receiver>
-   <slot>lineEditKasamiFamilyPropertiesRegister2Exponents(QString)</slot>
+   <slot>lineEditKasamiFamilyPropertiesRegister2Exponents()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>362</x>
@@ -3815,9 +3815,9 @@ color: rgb(255, 255, 255)</string>
   </connection>
   <connection>
    <sender>lineEdit_kasamifamily_register2_initialload</sender>
-   <signal>textEdited(QString)</signal>
+   <signal>editingFinished()</signal>
    <receiver>Dialog_CodeGenerator</receiver>
-   <slot>lineEditKasamiFamilyPropertiesRegister2InitialLoad(QString)</slot>
+   <slot>lineEditKasamiFamilyPropertiesRegister2InitialLoad()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>362</x>
@@ -3943,9 +3943,9 @@ color: rgb(255, 255, 255)</string>
   </connection>
   <connection>
    <sender>lineEdit_ovsfsequence_sequence_length</sender>
-   <signal>textEdited(QString)</signal>
+   <signal>editingFinished()</signal>
    <receiver>Dialog_CodeGenerator</receiver>
-   <slot>lineEditOVSFSequenceSequenceLength(QString)</slot>
+   <slot>lineEditOVSFSequenceSequenceLength()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>168</x>
@@ -4184,8 +4184,8 @@ color: rgb(255, 255, 255)</string>
  </connections>
  <slots>
   <slot>tabs(int)</slot>
-  <slot>lineEditMSequencePropertiesRegister1Exponents(QString)</slot>
-  <slot>lineEditMSequencePropertiesRegister1InitialLoad(QString)</slot>
+  <slot>lineEditMSequencePropertiesRegister1Exponents()</slot>
+  <slot>lineEditMSequencePropertiesRegister1InitialLoad()</slot>
   <slot>listWidgetMSequence(QListWidgetItem*,QListWidgetItem*)</slot>
   <slot>pushButtonMSequenceGenerateSequence()</slot>
   <slot>pushButtonMSequenceAFKAnalyse()</slot>
@@ -4193,10 +4193,10 @@ color: rgb(255, 255, 255)</string>
   <slot>pushButtonMSequenceDeleteAll()</slot>
   <slot>pushButtonMSequenceClone()</slot>
   <slot>comboBoxMSequence(int)</slot>
-  <slot>lineEditMFamilyPropertiesRegister1Exponents(QString)</slot>
-  <slot>lineEditMFamilyPropertiesRegister1InitialLoad(QString)</slot>
-  <slot>lineEditMFamilyPropertiesSequenceLength(QString)</slot>
-  <slot>lineEditMFamilyPropertiesSequenceDistance(QString)</slot>
+  <slot>lineEditMFamilyPropertiesRegister1Exponents()</slot>
+  <slot>lineEditMFamilyPropertiesRegister1InitialLoad()</slot>
+  <slot>lineEditMFamilyPropertiesSequenceLength()</slot>
+  <slot>lineEditMFamilyPropertiesSequenceDistance()</slot>
   <slot>listWidgetMFamily1(QListWidgetItem*,QListWidgetItem*)</slot>
   <slot>listWidgetMFamily2(QListWidgetItem*,QListWidgetItem*)</slot>
   <slot>pushButtonMFamilyGenerateSequence()</slot>
@@ -4205,12 +4205,12 @@ color: rgb(255, 255, 255)</string>
   <slot>pushButtonMFamilyDeleteAll()</slot>
   <slot>pushButtonMFamilyClone()</slot>
   <slot>comboBoxMFamily(int)</slot>
-  <slot>lineEditGoldSequencePropertiesRegister1Exponents(QString)</slot>
-  <slot>lineEditGoldSequencePropertiesRegister1InitialLoad(QString)</slot>
-  <slot>lineEditGoldSequencePropertiesRegister2Exponents(QString)</slot>
-  <slot>lineEditGoldSequencePropertiesRegister2InitialLoad(QString)</slot>
-  <slot>lineEditGoldSequencePropertiesSequenceLength(QString)</slot>
-  <slot>lineEditGoldSequencePropertiesSequenceDistance(QString)</slot>
+  <slot>lineEditGoldSequencePropertiesRegister1Exponents()</slot>
+  <slot>lineEditGoldSequencePropertiesRegister1InitialLoad()</slot>
+  <slot>lineEditGoldSequencePropertiesRegister2Exponents()</slot>
+  <slot>lineEditGoldSequencePropertiesRegister2InitialLoad()</slot>
+  <slot>lineEditGoldSequencePropertiesSequenceLength()</slot>
+  <slot>lineEditGoldSequencePropertiesSequenceDistance()</slot>
   <slot>listWidgetGoldSequence(QListWidgetItem*,QListWidgetItem*)</slot>
   <slot>pushButtonGoldSequenceGenerateSequence()</slot>
   <slot>pushButtonGoldSequenceAFKAnalyse()</slot>
@@ -4218,9 +4218,9 @@ color: rgb(255, 255, 255)</string>
   <slot>pushButtonGoldSequenceDeleteAll()</slot>
   <slot>pushButtonGoldSequenceClone()</slot>
   <slot>comboBoxGoldSequence(int)</slot>
-  <slot>lineEditGoldFamilyPropertiesRegister1Exponents(QString)</slot>
-  <slot>lineEditGoldFamilyPropertiesRegister1InitialLoad(QString)</slot>
-  <slot>lineEditGoldFamilyPropertiesRegister2Exponents(QString)</slot>
+  <slot>lineEditGoldFamilyPropertiesRegister1Exponents()</slot>
+  <slot>lineEditGoldFamilyPropertiesRegister1InitialLoad()</slot>
+  <slot>lineEditGoldFamilyPropertiesRegister2Exponents()</slot>
   <slot>listWidgetGoldFamily(QListWidgetItem*,QListWidgetItem*)</slot>
   <slot>pushButtonGoldFamilyGenerateSequence()</slot>
   <slot>pushButtonGoldFamilyAFKAnalyse()</slot>
@@ -4228,10 +4228,10 @@ color: rgb(255, 255, 255)</string>
   <slot>pushButtonGoldFamilyDeleteAll()</slot>
   <slot>pushButtonGoldFamilyClone()</slot>
   <slot>comboBoxGoldFamily(int)</slot>
-  <slot>lineEditOGFSequencePropertiesRegister1Exponents(QString)</slot>
-  <slot>lineEditOGFSequencePropertiesRegister1InitialLoad(QString)</slot>
-  <slot>lineEditOGFSequencePropertiesRegister2Exponents(QString)</slot>
-  <slot>lineEditOGFSequencePropertiesRegister2InitialLoad(QString)</slot>
+  <slot>lineEditOGFSequencePropertiesRegister1Exponents()</slot>
+  <slot>lineEditOGFSequencePropertiesRegister1InitialLoad()</slot>
+  <slot>lineEditOGFSequencePropertiesRegister2Exponents()</slot>
+  <slot>lineEditOGFSequencePropertiesRegister2InitialLoad()</slot>
   <slot>listWidgetOGFSequence(QListWidgetItem*,QListWidgetItem*)</slot>
   <slot>pushButtonOGFSequenceGenerateSequence()</slot>
   <slot>pushButtonOGFSequenceAFKAnalyse()</slot>
@@ -4239,9 +4239,9 @@ color: rgb(255, 255, 255)</string>
   <slot>pushButtonOGFSequenceDeleteAll()</slot>
   <slot>pushButtonOGFSequenceClone()</slot>
   <slot>comboBoxOGFSequence(int)</slot>
-  <slot>lineEditOGFFamilyPropertiesRegister1Exponents(QString)</slot>
-  <slot>lineEditOGFFamilyPropertiesRegister1InitialLoad(QString)</slot>
-  <slot>lineEditOGFFamilyPropertiesRegister2Exponents(QString)</slot>
+  <slot>lineEditOGFFamilyPropertiesRegister1Exponents()</slot>
+  <slot>lineEditOGFFamilyPropertiesRegister1InitialLoad()</slot>
+  <slot>lineEditOGFFamilyPropertiesRegister2Exponents()</slot>
   <slot>listWidgetOGFFamily(QListWidgetItem*,QListWidgetItem*)</slot>
   <slot>pushButtonOGFFamilyGenerateSequence()</slot>
   <slot>pushButtonOGFFamilyAFKAnalyse()</slot>
@@ -4249,10 +4249,10 @@ color: rgb(255, 255, 255)</string>
   <slot>pushButtonOGFFamilyDeleteAll()</slot>
   <slot>pushButtonOGFFamilyClone()</slot>
   <slot>comboBoxOGFFamily(int)</slot>
-  <slot>lineEditKasamiFamilyPropertiesRegister1Exponents(QString)</slot>
-  <slot>lineEditKasamiFamilyPropertiesRegister1InitialLoad(QString)</slot>
-  <slot>lineEditKasamiFamilyPropertiesRegister2Exponents(QString)</slot>
-  <slot>lineEditKasamiFamilyPropertiesRegister2InitialLoad(QString)</slot>
+  <slot>lineEditKasamiFamilyPropertiesRegister1Exponents()</slot>
+  <slot>lineEditKasamiFamilyPropertiesRegister1InitialLoad()</slot>
+  <slot>lineEditKasamiFamilyPropertiesRegister2Exponents()</slot>
+  <slot>lineEditKasamiFamilyPropertiesRegister2InitialLoad()</slot>
   <slot>listWidgetKasamiFamily(QListWidgetItem*,QListWidgetItem*)</slot>
   <slot>pushButtonKasamiFamilyGenerateSequence()</slot>
   <slot>pushButtonKasamiFamilyAFKAnalyse()</slot>
@@ -4260,8 +4260,8 @@ color: rgb(255, 255, 255)</string>
   <slot>pushButtonKasamiFamilyDeleteAll()</slot>
   <slot>pushButtonKasamiFamilyClone()</slot>
   <slot>comboBoxKasamiFamily(int)</slot>
-  <slot>lineEditKasamiSequencePropertiesRegister1Exponents(QString)</slot>
-  <slot>lineEditKasamiSequencePropertiesRegister1InitialLoad(QString)</slot>
+  <slot>lineEditKasamiSequencePropertiesRegister1Exponents()</slot>
+  <slot>lineEditKasamiSequencePropertiesRegister1InitialLoad()</slot>
   <slot>listWidgetKasamiSequence(QListWidgetItem*,QListWidgetItem*)</slot>
   <slot>pushButtonKasamiSequenceGenerateSequence()</slot>
   <slot>pushButtonKasamiSequenceAFKAnalyse()</slot>
@@ -4269,7 +4269,7 @@ color: rgb(255, 255, 255)</string>
   <slot>pushButtonKasamiSequenceDeleteAll()</slot>
   <slot>pushButtonKasamiSequenceClone()</slot>
   <slot>comboBoxKasamiSequence(int)</slot>
-  <slot>lineEditOVSFSequenceSequenceLength(QString)</slot>
+  <slot>lineEditOVSFSequenceSequenceLength()</slot>
   <slot>listWidgetOVSFSequence(QListWidgetItem*,QListWidgetItem*)</slot>
   <slot>pushButtonOVSFSequenceGenerateSequence()</slot>
   <slot>pushButtonOVSFSequenceAFKAnalyse()</slot>

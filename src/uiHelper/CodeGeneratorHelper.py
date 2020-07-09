@@ -6,12 +6,13 @@ class CodeGeneratorHelper(QtWidgets.QDialog):
         super().__init__()
 
     def tabs(self, index):
-        print("Changed to Tab with index " + str(index))
+        sender = self.sender()
+        print("Name: " + sender.tabText(index) + " - Index: " + str(index))
 
-    def lineEditMSequencePropertiesRegister1Exponents(self, text):
+    def lineEditMSequencePropertiesRegister1Exponents(self):
         print("Not Implemented")
 
-    def lineEditMSequencePropertiesRegister1InitialLoad(self, text):
+    def lineEditMSequencePropertiesRegister1InitialLoad(self):
         print("Not Implemented")
 
     def listWidgetMSequence(self, current, previous):
@@ -35,16 +36,16 @@ class CodeGeneratorHelper(QtWidgets.QDialog):
     def comboBoxMSequence(self, index):
         print("Not Implemented")
 
-    def lineEditMFamilyPropertiesRegister1Exponents(self, text):
+    def lineEditMFamilyPropertiesRegister1Exponents(self):
         print("Not Implemented")
 
-    def lineEditMFamilyPropertiesRegister1InitialLoad(self, text):
+    def lineEditMFamilyPropertiesRegister1InitialLoad(self):
         print("Not Implemented")
 
-    def lineEditMFamilyPropertiesSequenceLength(self, text):
+    def lineEditMFamilyPropertiesSequenceLength(self):
         print("Not Implemented")
 
-    def lineEditMFamilyPropertiesSequenceDistance(self, text):
+    def lineEditMFamilyPropertiesSequenceDistance(self):
         print("Not Implemented")
 
     def listWidgetMFamily1(self, current, previous):
@@ -71,22 +72,22 @@ class CodeGeneratorHelper(QtWidgets.QDialog):
     def comboBoxMFamily(self, index):
         print("Not Implemented")
 
-    def lineEditGoldSequencePropertiesRegister1Exponents(self, text):
+    def lineEditGoldSequencePropertiesRegister1Exponents(self):
         print("Not Implemented")
 
-    def lineEditGoldSequencePropertiesRegister1InitialLoad(self, text):
+    def lineEditGoldSequencePropertiesRegister1InitialLoad(self):
         print("Not Implemented")
 
-    def lineEditGoldSequencePropertiesRegister2Exponents(self, text):
+    def lineEditGoldSequencePropertiesRegister2Exponents(self):
         print("Not Implemented")
 
-    def lineEditGoldSequencePropertiesRegister2InitialLoad(self, text):
+    def lineEditGoldSequencePropertiesRegister2InitialLoad(self):
         print("Not Implemented")
 
-    def lineEditGoldSequencePropertiesSequenceLength(self, text):
+    def lineEditGoldSequencePropertiesSequenceLength(self):
         print("Not Implemented")
 
-    def lineEditGoldSequencePropertiesSequenceDistance(self, text):
+    def lineEditGoldSequencePropertiesSequenceDistance(self):
         print("Not Implemented")
 
     def listWidgetGoldSequence(self, current, previous):
@@ -110,13 +111,13 @@ class CodeGeneratorHelper(QtWidgets.QDialog):
     def comboBoxGoldSequence(self, index):
         print("Not Implemented")
 
-    def lineEditGoldFamilyPropertiesRegister1Exponents(self, text):
+    def lineEditGoldFamilyPropertiesRegister1Exponents(self):
         print("Not Implemented")
 
-    def lineEditGoldFamilyPropertiesRegister1InitialLoad(self, text):
+    def lineEditGoldFamilyPropertiesRegister1InitialLoad(self):
         print("Not Implemented")
 
-    def lineEditGoldFamilyPropertiesRegister2Exponents(self, text):
+    def lineEditGoldFamilyPropertiesRegister2Exponents(self):
         print("Not Implemented")
 
     def listWidgetGoldFamily(self, current, previous):
@@ -140,16 +141,16 @@ class CodeGeneratorHelper(QtWidgets.QDialog):
     def comboBoxGoldFamily(self, index):
         print("Not Implemented")
 
-    def lineEditOGFSequencePropertiesRegister1Exponents(self, text):
+    def lineEditOGFSequencePropertiesRegister1Exponents(self):
         print("Not Implemented")
 
-    def lineEditOGFSequencePropertiesRegister1InitialLoad(self, text):
+    def lineEditOGFSequencePropertiesRegister1InitialLoad(self):
         print("Not Implemented")
 
-    def lineEditOGFSequencePropertiesRegister2Exponents(self, text):
+    def lineEditOGFSequencePropertiesRegister2Exponents(self):
         print("Not Implemented")
 
-    def lineEditOGFSequencePropertiesRegister2InitialLoad(self, text):
+    def lineEditOGFSequencePropertiesRegister2InitialLoad(self):
         print("Not Implemented")
 
     def listWidgetOGFSequence(self, current, previous):
@@ -173,13 +174,13 @@ class CodeGeneratorHelper(QtWidgets.QDialog):
     def comboBoxOGFSequence(self, index):
         print("Not Implemented")
 
-    def lineEditOGFFamilyPropertiesRegister1Exponents(self, text):
+    def lineEditOGFFamilyPropertiesRegister1Exponents(self):
         print("Not Implemented")
 
-    def lineEditOGFFamilyPropertiesRegister1InitialLoad(self, text):
+    def lineEditOGFFamilyPropertiesRegister1InitialLoad(self):
         print("Not Implemented")
 
-    def lineEditOGFFamilyPropertiesRegister2Exponents(self, text):
+    def lineEditOGFFamilyPropertiesRegister2Exponents(self):
         print("Not Implemented")
 
     def listWidgetOGFFamily(self, current, previous):
@@ -203,16 +204,16 @@ class CodeGeneratorHelper(QtWidgets.QDialog):
     def comboBoxOGFFamily(self, index):
         print("Not Implemented")
 
-    def lineEditKasamiFamilyPropertiesRegister1Exponents(self, text):
+    def lineEditKasamiFamilyPropertiesRegister1Exponents(self):
         print("Not Implemented")
 
-    def lineEditKasamiFamilyPropertiesRegister1InitialLoad(self, text):
+    def lineEditKasamiFamilyPropertiesRegister1InitialLoad(self):
         print("Not Implemented")
 
-    def lineEditKasamiFamilyPropertiesRegister2Exponents(self, text):
+    def lineEditKasamiFamilyPropertiesRegister2Exponents(self):
         print("Not Implemented")
 
-    def lineEditKasamiFamilyPropertiesRegister2InitialLoad(self, text):
+    def lineEditKasamiFamilyPropertiesRegister2InitialLoad(self):
         print("Not Implemented")
 
     def listWidgetKasamiFamily(self, current, previous):
@@ -236,10 +237,10 @@ class CodeGeneratorHelper(QtWidgets.QDialog):
     def comboBoxKasamiFamily(self, index):
         print("Not Implemented")
 
-    def lineEditKasamiSequencePropertiesRegister1Exponents(self, text):
+    def lineEditKasamiSequencePropertiesRegister1Exponents(self):
         print("Not Implemented")
 
-    def lineEditKasamiSequencePropertiesRegister1InitialLoad(self, text):
+    def lineEditKasamiSequencePropertiesRegister1InitialLoad(self):
         print("Not Implemented")
 
     def listWidgetKasamiSequence(self, current, previous):
@@ -263,7 +264,7 @@ class CodeGeneratorHelper(QtWidgets.QDialog):
     def comboBoxKasamiSequence(self, index):
         print("Not Implemented")
 
-    def lineEditOVSFSequenceSequenceLength(self, text):
+    def lineEditOVSFSequenceSequenceLength(self):
         print("Not Implemented")
 
     def listWidgetOVSFSequence(self, current, previous):

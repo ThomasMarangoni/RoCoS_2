@@ -1,6 +1,6 @@
 from PyQt5 import QtWidgets
 
-class SimulationsControlHelper(QtWidgets.QDialog):
+class SimulationControlHelper(QtWidgets.QDialog):
 
     def __init__(self):
         super().__init__()
@@ -50,13 +50,13 @@ class SimulationsControlHelper(QtWidgets.QDialog):
     def checkBoxSignalsShowRunningWindow(self, toggled):
         print("Not Implemented")
 
-    def lineEditSignalsSimulationBitsFrame(self, text):
+    def lineEditSignalsSimulationBitsFrame(self):
         print("Not Implemented")
 
-    def lineEditSignalsSimulationSamplerate(self, text):
+    def lineEditSignalsSimulationSamplerate(self):
         print("Not Implemented")
 
-    def lineEditSignalsSimulationNumberOfShownSamples(self, text):
+    def lineEditSignalsSimulationNumberOfShownSamples(self):
         print("Not Implemented")
 
     def checkBoxHistogrammsPropertiesDataOutput(self, toggled):
@@ -74,7 +74,7 @@ class SimulationsControlHelper(QtWidgets.QDialog):
     def checkBoxHistogrammsSimulationAutomaticRangeEstimation(self, toggled):
         print("Not Implemented")
 
-    def lineEditHistogrammsSimulationGranularity(self, text):
+    def lineEditHistogrammsSimulationGranularity(self):
         print("Not Implemented")
 
     def checkBoxBEPSimulationBEPSNRActivate(self, toggled):
@@ -89,20 +89,20 @@ class SimulationsControlHelper(QtWidgets.QDialog):
     def checkBoxBEPSimulationSimulationShowHistogramms(self, toggled):
         print("Not Implemented")
 
-    def lineEditBEPSimulationBEPSNRSNRRangeFrom(self, text):
+    def lineEditBEPSimulationBEPSNRSNRRangeFrom(self):
         print("Not Implemented")
 
-    def lineEditBEPSimulationBEPSNRSNRRangeTo(self, text):
+    def lineEditBEPSimulationBEPSNRSNRRangeTo(self):
         print("Not Implemented")
 
-    def lineEditBEPSimulationBEPSNRGranularity(self, text):
+    def lineEditBEPSimulationBEPSNRGranularity(self):
         print("Not Implemented")
 
-    def lineEditBEPSimulationBEPMUsNrOfUsers(self, text):
+    def lineEditBEPSimulationBEPMUsNrOfUsers(self):
         print("Not Implemented")
 
-    def lineEditBEPSimulationBEPSNRNrOfBitsToSimulate(self, text):
+    def lineEditBEPSimulationBEPSNRNrOfBitsToSimulate(self):
         print("Not Implemented")
 
-    def lineEditBEPSimulationSimulationTimeSamples(self, text):
+    def lineEditBEPSimulationSimulationTimeSamples(self):
         print("Not Implemented")

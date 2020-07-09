@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1862</width>
-    <height>1076</height>
+    <height>968</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -18,7 +18,7 @@
     <item row="0" column="0">
      <widget class="QGroupBox" name="group_transmitter">
       <property name="sizePolicy">
-       <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+       <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
         <horstretch>0</horstretch>
         <verstretch>0</verstretch>
        </sizepolicy>
@@ -461,7 +461,7 @@
                 <property name="minimumSize">
                  <size>
                   <width>0</width>
-                  <height>130</height>
+                  <height>100</height>
                  </size>
                 </property>
                </widget>
@@ -523,7 +523,7 @@
                 <property name="minimumSize">
                  <size>
                   <width>0</width>
-                  <height>130</height>
+                  <height>100</height>
                  </size>
                 </property>
                </widget>
@@ -539,7 +539,7 @@
                 <property name="minimumSize">
                  <size>
                   <width>0</width>
-                  <height>130</height>
+                  <height>100</height>
                  </size>
                 </property>
                </widget>
@@ -596,7 +596,7 @@
     <item row="0" column="2">
      <widget class="QGroupBox" name="group_receiver">
       <property name="sizePolicy">
-       <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+       <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
         <horstretch>0</horstretch>
         <verstretch>0</verstretch>
        </sizepolicy>
@@ -611,13 +611,207 @@
        <string>Receiver</string>
       </property>
       <layout class="QGridLayout" name="gridLayout_24">
-       <item row="1" column="0">
-        <widget class="QGroupBox" name="groupBox_18">
+       <item row="0" column="0">
+        <widget class="QGroupBox" name="group_receiver_ss_sequence">
          <property name="sizePolicy">
-          <sizepolicy hsizetype="Preferred" vsizetype="Ignored">
+          <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
            <horstretch>0</horstretch>
            <verstretch>0</verstretch>
           </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="title">
+          <string>SS Sequence</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_4">
+          <item>
+           <widget class="QTabWidget" name="tabWidget_receiver_ss_sequence">
+            <property name="currentIndex">
+             <number>0</number>
+            </property>
+            <widget class="QWidget" name="tab_receiver_antipodal">
+             <attribute name="title">
+              <string>Antipodal DS/SS System</string>
+             </attribute>
+             <layout class="QGridLayout" name="gridLayout_22">
+              <item row="2" column="0">
+               <widget class="QPushButton" name="pushButton_receiver_antipodal_generate_sequence">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>40</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>Generate Sequence</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="1">
+               <widget class="QPushButton" name="pushButton_receiver_antipodal_analyse_sequence">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>40</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>Analyse Sequence</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="2">
+               <widget class="QPushButton" name="pushButton_receiver_antipodal_analyse_kkf">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>40</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>Analyse KKF</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0" colspan="3">
+               <spacer name="verticalSpacer_12">
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>40</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="0" column="0" colspan="3">
+               <widget class="QListWidget" name="listWidget_receiver_antipodal">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Expanding" vsizetype="Ignored">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>100</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="tab_receiver_orthogonal">
+             <attribute name="title">
+              <string>Orthogonal DS/SS System</string>
+             </attribute>
+             <layout class="QGridLayout" name="gridLayout_23">
+              <item row="2" column="0">
+               <widget class="QPushButton" name="pushButton_receiver_orthogonal_generate_sequence">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>40</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>Generate Sequence</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="1">
+               <widget class="QPushButton" name="pushButton_receiver_orthogonal_analyse_sequence">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>40</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>Analyse Sequence</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="2">
+               <widget class="QPushButton" name="pushButton_receiver_orthogonal_analyse_kkf">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>40</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>Analyse KKF</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="0" colspan="3">
+               <widget class="QListWidget" name="listWidget_receiver_orthogonal_1">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Expanding" vsizetype="Ignored">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>100</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0" colspan="3">
+               <widget class="QListWidget" name="listWidget_receiver_orthogonal_2">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Expanding" vsizetype="Ignored">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>100</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushbutton_ss_sequence_clone">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Clone Transmitter Setiings</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QGroupBox" name="groupBox_18">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>300</height>
+          </size>
          </property>
          <property name="title">
           <string>Filter</string>
@@ -773,16 +967,10 @@
               <string>Low Pass Filter</string>
              </attribute>
              <layout class="QGridLayout" name="gridLayout_28">
-              <item row="0" column="5">
-               <widget class="QPushButton" name="pushButton_receiver_filter_low_pass_filter_show_impulseresponse">
-                <property name="minimumSize">
-                 <size>
-                  <width>0</width>
-                  <height>40</height>
-                 </size>
-                </property>
+              <item row="0" column="0">
+               <widget class="QLabel" name="label_33">
                 <property name="text">
-                 <string>Show Impulseresponse</string>
+                 <string>Delay</string>
                 </property>
                </widget>
               </item>
@@ -790,13 +978,6 @@
                <widget class="QLabel" name="label_38">
                 <property name="text">
                  <string>equals 0.0 chipdurations</string>
-                </property>
-               </widget>
-              </item>
-              <item row="0" column="2">
-               <widget class="QLabel" name="label_32">
-                <property name="text">
-                 <string>sec</string>
                 </property>
                </widget>
               </item>
@@ -813,15 +994,41 @@
                 </property>
                </spacer>
               </item>
-              <item row="0" column="0">
-               <widget class="QLabel" name="label_33">
+              <item row="0" column="5">
+               <widget class="QPushButton" name="pushButton_receiver_filter_low_pass_filter_show_impulseresponse">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>40</height>
+                 </size>
+                </property>
                 <property name="text">
-                 <string>Delay</string>
+                 <string>Show Impulseresponse</string>
                 </property>
                </widget>
               </item>
               <item row="1" column="0" colspan="6">
-               <widget class="QGraphicsView" name="graphicsView_receiver_filter_low_pass_filter"/>
+               <widget class="QGraphicsView" name="graphicsView_receiver_filter_low_pass_filter">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>160</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="2">
+               <widget class="QLabel" name="label_32">
+                <property name="text">
+                 <string>sec</string>
+                </property>
+               </widget>
               </item>
               <item row="0" column="1">
                <widget class="QLineEdit" name="lineEdit_receiver_filter_low_pass_filter_delay">
@@ -853,6 +1060,41 @@
                 </property>
                </widget>
               </item>
+              <item row="0" column="3">
+               <widget class="QLabel" name="label_39">
+                <property name="text">
+                 <string>equals 0.0 chipdurations</string>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="0" colspan="5">
+               <widget class="QGroupBox" name="groupBox_19">
+                <property name="enabled">
+                 <bool>true</bool>
+                </property>
+                <property name="title">
+                 <string>List of Rakefingers</string>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_30">
+                 <item row="0" column="0">
+                  <widget class="QListWidget" name="listWidget_receiver_filter_rake_receiver_rakefingers">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Expanding" vsizetype="Ignored">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>100</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
               <item row="0" column="1">
                <widget class="QLineEdit" name="lineEdit_receiver_filter_rake_receiver_delay">
                 <property name="minimumSize">
@@ -866,13 +1108,6 @@
                   <width>80</width>
                   <height>16777215</height>
                  </size>
-                </property>
-               </widget>
-              </item>
-              <item row="0" column="3">
-               <widget class="QLabel" name="label_39">
-                <property name="text">
-                 <string>equals 0.0 chipdurations</string>
                 </property>
                </widget>
               </item>
@@ -902,19 +1137,6 @@
                  <string>Add to List</string>
                 </property>
                </widget>
-              </item>
-              <item row="0" column="4">
-               <spacer name="horizontalSpacer_8">
-                <property name="orientation">
-                 <enum>Qt::Horizontal</enum>
-                </property>
-                <property name="sizeHint" stdset="0">
-                 <size>
-                  <width>40</width>
-                  <height>20</height>
-                 </size>
-                </property>
-               </spacer>
               </item>
               <item row="1" column="1">
                <widget class="QLineEdit" name="lineEdit_receiver_filter_rake_receiver_procent">
@@ -992,224 +1214,21 @@
                 </item>
                </layout>
               </item>
-              <item row="4" column="0" colspan="5">
-               <widget class="QGroupBox" name="groupBox_19">
-                <property name="enabled">
-                 <bool>true</bool>
-                </property>
-                <property name="title">
-                 <string>List of Rakefingers</string>
-                </property>
-                <layout class="QGridLayout" name="gridLayout_30">
-                 <item row="0" column="0">
-                  <widget class="QListWidget" name="listWidget_receiver_filter_rake_receiver_rakefingers">
-                   <property name="sizePolicy">
-                    <sizepolicy hsizetype="Expanding" vsizetype="Ignored">
-                     <horstretch>0</horstretch>
-                     <verstretch>0</verstretch>
-                    </sizepolicy>
-                   </property>
-                  </widget>
-                 </item>
-                </layout>
-               </widget>
-              </item>
-             </layout>
-            </widget>
-           </widget>
-          </item>
-         </layout>
-        </widget>
-       </item>
-       <item row="0" column="0">
-        <widget class="QGroupBox" name="group_receiver_ss_sequence">
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="minimumSize">
-          <size>
-           <width>0</width>
-           <height>0</height>
-          </size>
-         </property>
-         <property name="title">
-          <string>SS Sequence</string>
-         </property>
-         <layout class="QVBoxLayout" name="verticalLayout_4">
-          <item>
-           <widget class="QTabWidget" name="tabWidget_receiver_ss_sequence">
-            <property name="currentIndex">
-             <number>1</number>
-            </property>
-            <widget class="QWidget" name="tab_receiver_antipodal">
-             <attribute name="title">
-              <string>Antipodal DS/SS System</string>
-             </attribute>
-             <layout class="QGridLayout" name="gridLayout_22">
-              <item row="2" column="0">
-               <widget class="QPushButton" name="pushButton_receiver_antipodal_generate_sequence">
-                <property name="minimumSize">
-                 <size>
-                  <width>0</width>
-                  <height>40</height>
-                 </size>
-                </property>
-                <property name="text">
-                 <string>Generate Sequence</string>
-                </property>
-               </widget>
-              </item>
-              <item row="2" column="1">
-               <widget class="QPushButton" name="pushButton_receiver_antipodal_analyse_sequence">
-                <property name="minimumSize">
-                 <size>
-                  <width>0</width>
-                  <height>40</height>
-                 </size>
-                </property>
-                <property name="text">
-                 <string>Analyse Sequence</string>
-                </property>
-               </widget>
-              </item>
-              <item row="2" column="2">
-               <widget class="QPushButton" name="pushButton_receiver_antipodal_analyse_kkf">
-                <property name="minimumSize">
-                 <size>
-                  <width>0</width>
-                  <height>40</height>
-                 </size>
-                </property>
-                <property name="text">
-                 <string>Analyse KKF</string>
-                </property>
-               </widget>
-              </item>
-              <item row="1" column="0" colspan="3">
-               <spacer name="verticalSpacer_12">
+              <item row="0" column="4">
+               <spacer name="horizontalSpacer_8">
                 <property name="orientation">
-                 <enum>Qt::Vertical</enum>
+                 <enum>Qt::Horizontal</enum>
                 </property>
                 <property name="sizeHint" stdset="0">
                  <size>
-                  <width>20</width>
-                  <height>40</height>
+                  <width>40</width>
+                  <height>20</height>
                  </size>
                 </property>
                </spacer>
               </item>
-              <item row="0" column="0" colspan="3">
-               <widget class="QListWidget" name="listWidget_receiver_antipodal">
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="Expanding" vsizetype="Ignored">
-                  <horstretch>0</horstretch>
-                  <verstretch>0</verstretch>
-                 </sizepolicy>
-                </property>
-                <property name="minimumSize">
-                 <size>
-                  <width>0</width>
-                  <height>130</height>
-                 </size>
-                </property>
-               </widget>
-              </item>
              </layout>
             </widget>
-            <widget class="QWidget" name="tab_receiver_orthogonal">
-             <attribute name="title">
-              <string>Orthogonal DS/SS System</string>
-             </attribute>
-             <layout class="QGridLayout" name="gridLayout_23">
-              <item row="2" column="0">
-               <widget class="QPushButton" name="pushButton_receiver_orthogonal_generate_sequence">
-                <property name="minimumSize">
-                 <size>
-                  <width>0</width>
-                  <height>40</height>
-                 </size>
-                </property>
-                <property name="text">
-                 <string>Generate Sequence</string>
-                </property>
-               </widget>
-              </item>
-              <item row="2" column="1">
-               <widget class="QPushButton" name="pushButton_receiver_orthogonal_analyse_sequence">
-                <property name="minimumSize">
-                 <size>
-                  <width>0</width>
-                  <height>40</height>
-                 </size>
-                </property>
-                <property name="text">
-                 <string>Analyse Sequence</string>
-                </property>
-               </widget>
-              </item>
-              <item row="2" column="2">
-               <widget class="QPushButton" name="pushButton_receiver_orthogonal_analyse_kkf">
-                <property name="minimumSize">
-                 <size>
-                  <width>0</width>
-                  <height>40</height>
-                 </size>
-                </property>
-                <property name="text">
-                 <string>Analyse KKF</string>
-                </property>
-               </widget>
-              </item>
-              <item row="0" column="0" colspan="3">
-               <widget class="QListWidget" name="listWidget_receiver_orthogonal_1">
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="Expanding" vsizetype="Ignored">
-                  <horstretch>0</horstretch>
-                  <verstretch>0</verstretch>
-                 </sizepolicy>
-                </property>
-                <property name="minimumSize">
-                 <size>
-                  <width>0</width>
-                  <height>130</height>
-                 </size>
-                </property>
-               </widget>
-              </item>
-              <item row="1" column="0" colspan="3">
-               <widget class="QListWidget" name="listWidget_receiver_orthogonal_2">
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="Expanding" vsizetype="Ignored">
-                  <horstretch>0</horstretch>
-                  <verstretch>0</verstretch>
-                 </sizepolicy>
-                </property>
-                <property name="minimumSize">
-                 <size>
-                  <width>0</width>
-                  <height>130</height>
-                 </size>
-                </property>
-               </widget>
-              </item>
-             </layout>
-            </widget>
-           </widget>
-          </item>
-          <item>
-           <widget class="QPushButton" name="pushbutton_ss_sequence_clone">
-            <property name="minimumSize">
-             <size>
-              <width>0</width>
-              <height>40</height>
-             </size>
-            </property>
-            <property name="text">
-             <string>Clone Transmitter Setiings</string>
-            </property>
            </widget>
           </item>
          </layout>
@@ -1218,10 +1237,26 @@
       </layout>
      </widget>
     </item>
+    <item row="2" column="0" colspan="3">
+     <widget class="QGraphicsView" name="graphicsView">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>160</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>16777215</height>
+       </size>
+      </property>
+     </widget>
+    </item>
     <item row="0" column="1">
      <widget class="QGroupBox" name="group_channel">
       <property name="sizePolicy">
-       <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+       <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
         <horstretch>0</horstretch>
         <verstretch>0</verstretch>
        </sizepolicy>
@@ -1236,148 +1271,10 @@
        <string>Channel</string>
       </property>
       <layout class="QGridLayout" name="gridLayout_8">
-       <item row="1" column="1">
-        <layout class="QGridLayout" name="gridLayout_32">
-         <item row="1" column="1">
-          <widget class="QLineEdit" name="lineEdit_channel_cw">
-           <property name="minimumSize">
-            <size>
-             <width>60</width>
-             <height>0</height>
-            </size>
-           </property>
-           <property name="maximumSize">
-            <size>
-             <width>80</width>
-             <height>16777215</height>
-            </size>
-           </property>
-          </widget>
-         </item>
-         <item row="2" column="1">
-          <widget class="QLineEdit" name="lineEdit_channel_mw">
-           <property name="minimumSize">
-            <size>
-             <width>60</width>
-             <height>0</height>
-            </size>
-           </property>
-           <property name="maximumSize">
-            <size>
-             <width>80</width>
-             <height>16777215</height>
-            </size>
-           </property>
-          </widget>
-         </item>
-         <item row="0" column="0">
-          <widget class="QCheckBox" name="checkBox_channel_awgn">
-           <property name="text">
-            <string>AWGN</string>
-           </property>
-          </widget>
-         </item>
-         <item row="1" column="0">
-          <widget class="QCheckBox" name="checkBox_channel_cw">
-           <property name="text">
-            <string>number of CW</string>
-           </property>
-          </widget>
-         </item>
-         <item row="2" column="0">
-          <widget class="QCheckBox" name="checkBox_channel_mw">
-           <property name="text">
-            <string>number of MW</string>
-           </property>
-          </widget>
-         </item>
-        </layout>
-       </item>
-       <item row="1" column="3">
-        <widget class="QGroupBox" name="groupBox_8">
-         <property name="title">
-          <string>Channel Summary</string>
-         </property>
-         <layout class="QGridLayout" name="gridLayout_9">
-          <item row="3" column="0" colspan="3">
-           <widget class="QGroupBox" name="groupBox_10">
-            <property name="title">
-             <string>MU</string>
-            </property>
-            <layout class="QGridLayout" name="gridLayout_10">
-             <item row="0" column="0">
-              <widget class="QCheckBox" name="checkBox_channel_mu_users">
-               <property name="text">
-                <string>number of User</string>
-               </property>
-              </widget>
-             </item>
-             <item row="0" column="1">
-              <widget class="QLineEdit" name="lineEdit__channel_mu_users">
-               <property name="minimumSize">
-                <size>
-                 <width>60</width>
-                 <height>0</height>
-                </size>
-               </property>
-               <property name="maximumSize">
-                <size>
-                 <width>80</width>
-                 <height>16777215</height>
-                </size>
-               </property>
-              </widget>
-             </item>
-             <item row="1" column="0" colspan="2">
-              <widget class="QRadioButton" name="radioButton_channel_mu_scdma">
-               <property name="text">
-                <string>S-CDMA</string>
-               </property>
-              </widget>
-             </item>
-             <item row="2" column="0" colspan="2">
-              <widget class="QRadioButton" name="radioButton_channel_mu_acdma">
-               <property name="text">
-                <string>A-CDMA</string>
-               </property>
-              </widget>
-             </item>
-            </layout>
-           </widget>
-          </item>
-         </layout>
-        </widget>
-       </item>
-       <item row="2" column="1" colspan="4">
-        <spacer name="verticalSpacer_9">
-         <property name="orientation">
-          <enum>Qt::Vertical</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>20</width>
-           <height>40</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
-       <item row="1" column="4">
-        <spacer name="horizontalSpacer">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>40</width>
-           <height>20</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
        <item row="0" column="0" colspan="5">
         <widget class="QTabWidget" name="tabWidget_channel">
          <property name="currentIndex">
-          <number>4</number>
+          <number>0</number>
          </property>
          <widget class="QWidget" name="awgn">
           <attribute name="title">
@@ -1861,6 +1758,69 @@
          </widget>
         </widget>
        </item>
+       <item row="1" column="1">
+        <layout class="QGridLayout" name="gridLayout_32">
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="lineEdit_channel_cw">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>60</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>80</width>
+             <height>16777215</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLineEdit" name="lineEdit_channel_mw">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>60</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>80</width>
+             <height>16777215</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QCheckBox" name="checkBox_channel_awgn">
+           <property name="text">
+            <string>AWGN</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QCheckBox" name="checkBox_channel_cw">
+           <property name="text">
+            <string>number of CW</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QCheckBox" name="checkBox_channel_mw">
+           <property name="text">
+            <string>number of MW</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
        <item row="1" column="2">
         <spacer name="horizontalSpacer_11">
          <property name="orientation">
@@ -1874,26 +1834,94 @@
          </property>
         </spacer>
        </item>
+       <item row="1" column="3">
+        <widget class="QGroupBox" name="groupBox_8">
+         <property name="title">
+          <string>Channel Summary</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_9">
+          <item row="3" column="0" colspan="3">
+           <widget class="QGroupBox" name="groupBox_10">
+            <property name="title">
+             <string>MU</string>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_10">
+             <item row="0" column="0">
+              <widget class="QCheckBox" name="checkBox_channel_mu_users">
+               <property name="text">
+                <string>number of User</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLineEdit" name="lineEdit__channel_mu_users">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>60</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>80</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0" colspan="2">
+              <widget class="QRadioButton" name="radioButton_channel_mu_scdma">
+               <property name="text">
+                <string>S-CDMA</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0" colspan="2">
+              <widget class="QRadioButton" name="radioButton_channel_mu_acdma">
+               <property name="text">
+                <string>A-CDMA</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="1" column="4">
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="2" column="3">
+        <spacer name="verticalSpacer_9">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
       </layout>
      </widget>
     </item>
-    <item row="2" column="0" colspan="3">
-     <widget class="QGraphicsView" name="graphicsView">
-      <property name="minimumSize">
-       <size>
-        <width>0</width>
-        <height>160</height>
-       </size>
-      </property>
-      <property name="maximumSize">
-       <size>
-        <width>16777215</width>
-        <height>16777215</height>
-       </size>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="0" colspan="3">
+    <item row="1" column="0">
      <spacer name="verticalSpacer_10">
       <property name="orientation">
        <enum>Qt::Vertical</enum>
@@ -1942,10 +1970,11 @@
     <addaction name="separator"/>
     <addaction name="actionExit"/>
    </widget>
-   <widget class="QMenu" name="menuSimulate">
+   <widget class="QMenu" name="menuSimulation">
     <property name="title">
-     <string>Simulate</string>
+     <string>Simulation</string>
     </property>
+    <addaction name="actionSimulationControl"/>
    </widget>
    <widget class="QMenu" name="menuHelp">
     <property name="title">
@@ -1957,7 +1986,7 @@
     <addaction name="actionAbout"/>
    </widget>
    <addaction name="menuFile"/>
-   <addaction name="menuSimulate"/>
+   <addaction name="menuSimulation"/>
    <addaction name="menuHelp"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
@@ -2003,19 +2032,15 @@
     </font>
    </property>
   </action>
-  <action name="actionSimulate">
-   <property name="text">
-    <string>Simulate</string>
+  <action name="actionSimulation">
+   <property name="enabled">
+    <bool>true</bool>
    </property>
-  </action>
-  <action name="actionOptions">
    <property name="text">
-    <string>Settings</string>
+    <string>Simulation</string>
    </property>
-  </action>
-  <action name="actionSettings">
-   <property name="text">
-    <string>Settings</string>
+   <property name="toolTip">
+    <string>Simulation</string>
    </property>
   </action>
   <action name="actionOpen">
@@ -2026,6 +2051,9 @@
     <font>
      <family>Liberation Sans</family>
     </font>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
    </property>
   </action>
   <action name="actionSave">
@@ -2041,6 +2069,9 @@
      <family>Liberation Sans</family>
     </font>
    </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
   </action>
   <action name="actionSave_As">
    <property name="text">
@@ -2050,6 +2081,9 @@
     <font>
      <family>Liberation Sans</family>
     </font>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+S</string>
    </property>
   </action>
   <action name="actionExit">
@@ -2066,11 +2100,6 @@
     </font>
    </property>
   </action>
-  <action name="actionClose">
-   <property name="text">
-    <string>Close</string>
-   </property>
-  </action>
   <action name="actionPrint">
    <property name="icon">
     <iconset resource="resources/resources.qrc">
@@ -2083,6 +2112,9 @@
     <font>
      <family>Liberation Sans</family>
     </font>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+P</string>
    </property>
   </action>
   <action name="actionSave_Image">
@@ -2111,6 +2143,17 @@
     <font>
      <family>Liberation Sans</family>
     </font>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actionSimulationControl">
+   <property name="text">
+    <string>Control</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+R</string>
    </property>
   </action>
  </widget>
@@ -2203,8 +2246,8 @@
    <slot>pushButtonGenerateSequence()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>67</x>
-     <y>437</y>
+     <x>102</x>
+     <y>377</y>
     </hint>
     <hint type="destinationlabel">
      <x>5</x>
@@ -2219,11 +2262,11 @@
    <slot>pushButtonGenerateSequence()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>157</x>
-     <y>427</y>
+     <x>192</x>
+     <y>377</y>
     </hint>
     <hint type="destinationlabel">
-     <x>-1</x>
+     <x>0</x>
      <y>437</y>
     </hint>
    </hints>
@@ -2235,8 +2278,8 @@
    <slot>pushButtonGenerateSequence()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>1300</x>
-     <y>437</y>
+     <x>1452</x>
+     <y>377</y>
     </hint>
     <hint type="destinationlabel">
      <x>1860</x>
@@ -2251,11 +2294,11 @@
    <slot>pushButtonGenerateSequence()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>1300</x>
-     <y>437</y>
+     <x>1452</x>
+     <y>377</y>
     </hint>
     <hint type="destinationlabel">
-     <x>1866</x>
+     <x>1861</x>
      <y>437</y>
     </hint>
    </hints>
@@ -2267,8 +2310,8 @@
    <slot>pushButtonPulseshapeShow()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>252</x>
-     <y>533</y>
+     <x>320</x>
+     <y>477</y>
     </hint>
     <hint type="destinationlabel">
      <x>1</x>
@@ -2283,11 +2326,11 @@
    <slot>pushButtonPulseshapeProperties()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>270</x>
-     <y>572</y>
+     <x>320</x>
+     <y>523</y>
     </hint>
     <hint type="destinationlabel">
-     <x>-1</x>
+     <x>0</x>
      <y>577</y>
     </hint>
    </hints>
@@ -2299,8 +2342,8 @@
    <slot>pushButtonTransmitterAntipodalAnalyseSequence()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>248</x>
-     <y>437</y>
+     <x>283</x>
+     <y>377</y>
     </hint>
     <hint type="destinationlabel">
      <x>4</x>
@@ -2315,8 +2358,8 @@
    <slot>pushButtonTransmitterAntipodalAnalyseKKF()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>431</x>
-     <y>437</y>
+     <x>466</x>
+     <y>377</y>
     </hint>
     <hint type="destinationlabel">
      <x>1</x>
@@ -2331,11 +2374,11 @@
    <slot>pushButtonTransmitterOthogonalAnalyseSequence()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>278</x>
-     <y>422</y>
+     <x>402</x>
+     <y>377</y>
     </hint>
     <hint type="destinationlabel">
-     <x>-5</x>
+     <x>0</x>
      <y>364</y>
     </hint>
    </hints>
@@ -2347,8 +2390,8 @@
    <slot>pushButtonTransmitterOthogonalAnalyseKKF()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>423</x>
-     <y>419</y>
+     <x>584</x>
+     <y>377</y>
     </hint>
     <hint type="destinationlabel">
      <x>5</x>
@@ -2363,8 +2406,8 @@
    <slot>pushButtonCloneTransmitterSettings()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>1781</x>
-     <y>483</y>
+     <x>1828</x>
+     <y>434</y>
     </hint>
     <hint type="destinationlabel">
      <x>1861</x>
@@ -2379,8 +2422,8 @@
    <slot>pushButtonReceiverOthogonalAnalyseSequence()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>1481</x>
-     <y>437</y>
+     <x>1635</x>
+     <y>377</y>
     </hint>
     <hint type="destinationlabel">
      <x>1858</x>
@@ -2395,8 +2438,8 @@
    <slot>pushButtonTransmitterOthogonalAnalyseKKF()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>1664</x>
-     <y>437</y>
+     <x>1817</x>
+     <y>377</y>
     </hint>
     <hint type="destinationlabel">
      <x>1861</x>
@@ -2411,8 +2454,8 @@
    <slot>pushButtonReceiverAntipodalAnalyseSequence()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>1481</x>
-     <y>437</y>
+     <x>1635</x>
+     <y>377</y>
     </hint>
     <hint type="destinationlabel">
      <x>1860</x>
@@ -2427,8 +2470,8 @@
    <slot>pushButtonTransmitterAntipodalAnalyseKKF()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>1664</x>
-     <y>437</y>
+     <x>1817</x>
+     <y>377</y>
     </hint>
     <hint type="destinationlabel">
      <x>1855</x>
@@ -2443,8 +2486,8 @@
    <slot>pushButtonFilterLowPassShowImpulseresponse()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>1682</x>
-     <y>618</y>
+     <x>1817</x>
+     <y>558</y>
     </hint>
     <hint type="destinationlabel">
      <x>1857</x>
@@ -2459,8 +2502,8 @@
    <slot>pushButtonFilterRakeReceiverAddToList()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>1727</x>
-     <y>621</y>
+     <x>1817</x>
+     <y>564</y>
     </hint>
     <hint type="destinationlabel">
      <x>1856</x>
@@ -2476,7 +2519,7 @@
    <hints>
     <hint type="sourcelabel">
      <x>1816</x>
-     <y>800</y>
+     <y>722</y>
     </hint>
     <hint type="destinationlabel">
      <x>1861</x>
@@ -2523,8 +2566,8 @@
    <slot>pushButtonGenerateSequence()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>1172</x>
-     <y>179</y>
+     <x>1199</x>
+     <y>172</y>
     </hint>
     <hint type="destinationlabel">
      <x>725</x>
@@ -2539,8 +2582,8 @@
    <slot>pushButtonChannelMUAnalyseSequence()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>1172</x>
-     <y>240</y>
+     <x>1199</x>
+     <y>226</y>
     </hint>
     <hint type="destinationlabel">
      <x>433</x>
@@ -2555,8 +2598,8 @@
    <slot>pushButtonChannelMUAnalyseKKF()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>1172</x>
-     <y>301</y>
+     <x>1199</x>
+     <y>280</y>
     </hint>
     <hint type="destinationlabel">
      <x>1229</x>
@@ -2572,7 +2615,7 @@
    <hints>
     <hint type="sourcelabel">
      <x>990</x>
-     <y>364</y>
+     <y>338</y>
     </hint>
     <hint type="destinationlabel">
      <x>618</x>
@@ -2582,13 +2625,13 @@
   </connection>
   <connection>
    <sender>lineEdit_transmitter_pulseshape_samples</sender>
-   <signal>textEdited(QString)</signal>
+   <signal>editingFinished()</signal>
    <receiver>MainWindow</receiver>
-   <slot>lineEditTransmitterPulseshapeSamples(QString)</slot>
+   <slot>lineEditTransmitterPulseshapeSamples()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>205</x>
-     <y>550</y>
+     <y>490</y>
     </hint>
     <hint type="destinationlabel">
      <x>1</x>
@@ -2598,29 +2641,29 @@
   </connection>
   <connection>
    <sender>lineEdit_transmitter_pulseshape_duration</sender>
-   <signal>textEdited(QString)</signal>
+   <signal>editingFinished()</signal>
    <receiver>MainWindow</receiver>
-   <slot>lineEditTransmitterPulseshapeDuration(QString)</slot>
+   <slot>lineEditTransmitterPulseshapeDuration()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>194</x>
-     <y>574</y>
+     <x>205</x>
+     <y>522</y>
     </hint>
     <hint type="destinationlabel">
-     <x>-4</x>
+     <x>0</x>
      <y>490</y>
     </hint>
    </hints>
   </connection>
   <connection>
    <sender>lineEdit_transmitter_signalresults_chiprate</sender>
-   <signal>textEdited(QString)</signal>
+   <signal>editingFinished()</signal>
    <receiver>MainWindow</receiver>
-   <slot>lineEditTransmitterSignalResultsChipRate(QString)</slot>
+   <slot>lineEditTransmitterSignalResultsChipRate()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>202</x>
-     <y>655</y>
+     <y>595</y>
     </hint>
     <hint type="destinationlabel">
      <x>1</x>
@@ -2630,13 +2673,13 @@
   </connection>
   <connection>
    <sender>lineEdit_transmitter_signalresults_bitduration</sender>
-   <signal>textEdited(QString)</signal>
+   <signal>editingFinished()</signal>
    <receiver>MainWindow</receiver>
-   <slot>lineEditTransmitterSignalResultsBitDuration(QString)</slot>
+   <slot>lineEditTransmitterSignalResultsBitDuration()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>202</x>
-     <y>684</y>
+     <y>624</y>
     </hint>
     <hint type="destinationlabel">
      <x>1</x>
@@ -2646,13 +2689,13 @@
   </connection>
   <connection>
    <sender>lineEdit_transmitter_signalresults_bitrate</sender>
-   <signal>textEdited(QString)</signal>
+   <signal>editingFinished()</signal>
    <receiver>MainWindow</receiver>
-   <slot>lineEditTransmitterSignalResultsBitRate(QString)</slot>
+   <slot>lineEditTransmitterSignalResultsBitRate()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>202</x>
-     <y>713</y>
+     <y>653</y>
     </hint>
     <hint type="destinationlabel">
      <x>3</x>
@@ -2662,13 +2705,13 @@
   </connection>
   <connection>
    <sender>lineEdit_transmitter_signalresults_samplerate</sender>
-   <signal>textEdited(QString)</signal>
+   <signal>editingFinished()</signal>
    <receiver>MainWindow</receiver>
-   <slot>lineEditTransmitterSignalResultsSampleRate(QString)</slot>
+   <slot>lineEditTransmitterSignalResultsSampleRate()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>202</x>
-     <y>742</y>
+     <y>682</y>
     </hint>
     <hint type="destinationlabel">
      <x>2</x>
@@ -2678,29 +2721,29 @@
   </connection>
   <connection>
    <sender>lineEdit_transmitter_signalresults_oversampling</sender>
-   <signal>textEdited(QString)</signal>
+   <signal>editingFinished()</signal>
    <receiver>MainWindow</receiver>
-   <slot>lineEditTransmitterSignalResultsOversampling(QString)</slot>
+   <slot>lineEditTransmitterSignalResultsOversampling()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>202</x>
-     <y>771</y>
+     <y>711</y>
     </hint>
     <hint type="destinationlabel">
-     <x>-3</x>
+     <x>0</x>
      <y>788</y>
     </hint>
    </hints>
   </connection>
   <connection>
    <sender>lineEdit_transmitter_signalparameter_chipamplitude</sender>
-   <signal>textEdited(QString)</signal>
+   <signal>editingFinished()</signal>
    <receiver>MainWindow</receiver>
-   <slot>lineEditTransmitterSignalParameterChipAmplitude(QString)</slot>
+   <slot>lineEditTransmitterSignalParameterChipAmplitude()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>439</x>
-     <y>655</y>
+     <y>595</y>
     </hint>
     <hint type="destinationlabel">
      <x>3</x>
@@ -2710,13 +2753,13 @@
   </connection>
   <connection>
    <sender>lineEdit_transmitter_signalparameter_chipduration</sender>
-   <signal>textEdited(QString)</signal>
+   <signal>editingFinished()</signal>
    <receiver>MainWindow</receiver>
-   <slot>lineEditTransmitterSignalParameterChipDuration(QString)</slot>
+   <slot>lineEditTransmitterSignalParameterChipDuration()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>439</x>
-     <y>684</y>
+     <y>624</y>
     </hint>
     <hint type="destinationlabel">
      <x>2</x>
@@ -2726,9 +2769,9 @@
   </connection>
   <connection>
    <sender>lineEdit_channel_awgn_snr</sender>
-   <signal>textEdited(QString)</signal>
+   <signal>editingFinished()</signal>
    <receiver>MainWindow</receiver>
-   <slot>lineEditChannelAWGNPropertiesSNR(QString)</slot>
+   <slot>lineEditChannelAWGNPropertiesSNR()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>828</x>
@@ -2742,9 +2785,9 @@
   </connection>
   <connection>
    <sender>lineEdit_channel_awgn_stddev</sender>
-   <signal>textEdited(QString)</signal>
+   <signal>editingFinished()</signal>
    <receiver>MainWindow</receiver>
-   <slot>lineEditChannelAWGNPropertiesStdDev(QString)</slot>
+   <slot>lineEditChannelAWGNPropertiesStdDev()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>828</x>
@@ -2758,9 +2801,9 @@
   </connection>
   <connection>
    <sender>lineEdit_channel_cw_frequency</sender>
-   <signal>textEdited(QString)</signal>
+   <signal>editingFinished()</signal>
    <receiver>MainWindow</receiver>
-   <slot>lineEditChannelCWHz(QString)</slot>
+   <slot>lineEditChannelCWHz()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>740</x>
@@ -2774,9 +2817,9 @@
   </connection>
   <connection>
    <sender>lineEdit_channel_cw_procent</sender>
-   <signal>textEdited(QString)</signal>
+   <signal>editingFinished()</signal>
    <receiver>MainWindow</receiver>
-   <slot>lineEditChannelCWPercentage(QString)</slot>
+   <slot>lineEditChannelCWPercentage()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>740</x>
@@ -2790,9 +2833,9 @@
   </connection>
   <connection>
    <sender>lineEdit_channel_mw_seconds</sender>
-   <signal>textEdited(QString)</signal>
+   <signal>editingFinished()</signal>
    <receiver>MainWindow</receiver>
-   <slot>lineEditChannelMWs(QString)</slot>
+   <slot>lineEditChannelMWs()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>740</x>
@@ -2806,9 +2849,9 @@
   </connection>
   <connection>
    <sender>lineEdit_channel_mw_procent</sender>
-   <signal>textEdited(QString)</signal>
+   <signal>editingFinished()</signal>
    <receiver>MainWindow</receiver>
-   <slot>lineEditChannelMWPercentage(QString)</slot>
+   <slot>lineEditChannelMWPercentage()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>740</x>
@@ -2822,13 +2865,13 @@
   </connection>
   <connection>
    <sender>lineEdit_channel_mu_procent</sender>
-   <signal>textEdited(QString)</signal>
+   <signal>editingFinished()</signal>
    <receiver>MainWindow</receiver>
-   <slot>lineEditChannelMUPercentage(QString)</slot>
+   <slot>lineEditChannelMUPercentage()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>741</x>
-     <y>355</y>
+     <y>329</y>
     </hint>
     <hint type="destinationlabel">
      <x>603</x>
@@ -2838,13 +2881,13 @@
   </connection>
   <connection>
    <sender>lineEdit_channel_cw</sender>
-   <signal>textEdited(QString)</signal>
+   <signal>editingFinished()</signal>
    <receiver>MainWindow</receiver>
-   <slot>lineEditChannelNumberOfCW(QString)</slot>
+   <slot>lineEditChannelNumberOfCW()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>844</x>
-     <y>725</y>
+     <y>676</y>
     </hint>
     <hint type="destinationlabel">
      <x>628</x>
@@ -2854,13 +2897,13 @@
   </connection>
   <connection>
    <sender>lineEdit_channel_mw</sender>
-   <signal>textEdited(QString)</signal>
+   <signal>editingFinished()</signal>
    <receiver>MainWindow</receiver>
-   <slot>lineEditChannelNumberOfMW(QString)</slot>
+   <slot>lineEditChannelNumberOfMW()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>844</x>
-     <y>774</y>
+     <y>725</y>
     </hint>
     <hint type="destinationlabel">
      <x>643</x>
@@ -2870,13 +2913,13 @@
   </connection>
   <connection>
    <sender>lineEdit__channel_mu_users</sender>
-   <signal>textEdited(QString)</signal>
+   <signal>editingFinished()</signal>
    <receiver>MainWindow</receiver>
-   <slot>lineEditChannelNumberOfMU(QString)</slot>
+   <slot>lineEditChannelNumberOfMU()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>1140</x>
-     <y>717</y>
+     <y>668</y>
     </hint>
     <hint type="destinationlabel">
      <x>1055</x>
@@ -2886,13 +2929,13 @@
   </connection>
   <connection>
    <sender>lineEdit_receiver_filter_integrate_and_dump_delay</sender>
-   <signal>textEdited(QString)</signal>
+   <signal>editingFinished()</signal>
    <receiver>MainWindow</receiver>
-   <slot>lineEditReceiverFilterIntegrateAndDumpDelay(QString)</slot>
+   <slot>lineEditReceiverFilterIntegrateAndDumpDelay()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>1357</x>
-     <y>584</y>
+     <y>524</y>
     </hint>
     <hint type="destinationlabel">
      <x>1270</x>
@@ -2902,13 +2945,13 @@
   </connection>
   <connection>
    <sender>lineEdit_receiver_filter_matched_filter_delay</sender>
-   <signal>textEdited(QString)</signal>
+   <signal>editingFinished()</signal>
    <receiver>MainWindow</receiver>
-   <slot>lineEditReceiverFilterMatchedFilter(QString)</slot>
+   <slot>lineEditReceiverFilterMatchedFilter()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>1357</x>
-     <y>584</y>
+     <y>524</y>
     </hint>
     <hint type="destinationlabel">
      <x>1346</x>
@@ -2918,13 +2961,13 @@
   </connection>
   <connection>
    <sender>lineEdit_receiver_filter_low_pass_filter_delay</sender>
-   <signal>textEdited(QString)</signal>
+   <signal>editingFinished()</signal>
    <receiver>MainWindow</receiver>
-   <slot>lineEditReceiverFilterLowPassFilterDelay(QString)</slot>
+   <slot>lineEditReceiverFilterLowPassFilterDelay()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>1377</x>
-     <y>589</y>
+     <x>1397</x>
+     <y>549</y>
     </hint>
     <hint type="destinationlabel">
      <x>1313</x>
@@ -2934,13 +2977,13 @@
   </connection>
   <connection>
    <sender>lineEdit_receiver_filter_rake_receiver_delay</sender>
-   <signal>textEdited(QString)</signal>
+   <signal>editingFinished()</signal>
    <receiver>MainWindow</receiver>
-   <slot>lineEditReceiverFilterRakeReceiverDelay(QString)</slot>
+   <slot>lineEditReceiverFilterRakeReceiverDelay()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>1355</x>
-     <y>595</y>
+     <x>1397</x>
+     <y>541</y>
     </hint>
     <hint type="destinationlabel">
      <x>1858</x>
@@ -2950,13 +2993,13 @@
   </connection>
   <connection>
    <sender>lineEdit_receiver_filter_rake_receiver_procent</sender>
-   <signal>textEdited(QString)</signal>
+   <signal>editingFinished()</signal>
    <receiver>MainWindow</receiver>
-   <slot>lineEditReceiverFilterRakeReceiverPercentage(QString)</slot>
+   <slot>lineEditReceiverFilterRakeReceiverPercentage()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>1397</x>
-     <y>630</y>
+     <y>570</y>
     </hint>
     <hint type="destinationlabel">
      <x>1861</x>
@@ -2971,8 +3014,8 @@
    <slot>checkBoxChannelAWGN(bool)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>655</x>
-     <y>661</y>
+     <x>758</x>
+     <y>627</y>
     </hint>
     <hint type="destinationlabel">
      <x>793</x>
@@ -2987,8 +3030,8 @@
    <slot>checkBoxChannelNumberOfCW(bool)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>648</x>
-     <y>709</y>
+     <x>758</x>
+     <y>675</y>
     </hint>
     <hint type="destinationlabel">
      <x>644</x>
@@ -3003,8 +3046,8 @@
    <slot>checkBoxChannelNumberOfMW(bool)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>679</x>
-     <y>766</y>
+     <x>758</x>
+     <y>724</y>
     </hint>
     <hint type="destinationlabel">
      <x>768</x>
@@ -3019,8 +3062,8 @@
    <slot>checkBoxChannelMUNumberOfUsers(bool)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>1005</x>
-     <y>714</y>
+     <x>1054</x>
+     <y>667</y>
     </hint>
     <hint type="destinationlabel">
      <x>1214</x>
@@ -3051,8 +3094,8 @@
    <slot>listWidgetTransmitterSSSequenceOrthogonal2(QListWidgetItem*,QListWidgetItem*)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>465</x>
-     <y>334</y>
+     <x>500</x>
+     <y>331</y>
     </hint>
     <hint type="destinationlabel">
      <x>233</x>
@@ -3067,8 +3110,8 @@
    <slot>listWidgetTransmitterSSSequenceAntipodal(QListWidgetItem*,QListWidgetItem*)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>205</x>
-     <y>159</y>
+     <x>125</x>
+     <y>223</y>
     </hint>
     <hint type="destinationlabel">
      <x>279</x>
@@ -3083,11 +3126,11 @@
    <slot>listWidgetReceiverSSSequenceAntipodal(QListWidgetItem*,QListWidgetItem*)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>1448</x>
-     <y>193</y>
+     <x>1358</x>
+     <y>223</y>
     </hint>
     <hint type="destinationlabel">
-     <x>1864</x>
+     <x>1861</x>
      <y>150</y>
     </hint>
    </hints>
@@ -3131,8 +3174,8 @@
    <slot>listWidgetReceiverFilterRakeReceiver(QListWidgetItem*,QListWidgetItem*)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>1579</x>
-     <y>726</y>
+     <x>1626</x>
+     <y>717</y>
     </hint>
     <hint type="destinationlabel">
      <x>1861</x>
@@ -3147,8 +3190,8 @@
    <slot>listWidgetChannelCW(QListWidgetItem*,QListWidgetItem*)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>920</x>
-     <y>482</y>
+     <x>1200</x>
+     <y>479</y>
     </hint>
     <hint type="destinationlabel">
      <x>1238</x>
@@ -3163,8 +3206,8 @@
    <slot>listWidgetChannelMW(QListWidgetItem*,QListWidgetItem*)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>995</x>
-     <y>464</y>
+     <x>1200</x>
+     <y>479</y>
     </hint>
     <hint type="destinationlabel">
      <x>1240</x>
@@ -3179,8 +3222,8 @@
    <slot>listWidgetChannelMUNewUser(QListWidgetItem*,QListWidgetItem*)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>906</x>
-     <y>222</y>
+     <x>1065</x>
+     <y>238</y>
     </hint>
     <hint type="destinationlabel">
      <x>1240</x>
@@ -3195,8 +3238,8 @@
    <slot>listWidgetChannelMU(QListWidgetItem*,QListWidgetItem*)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>930</x>
-     <y>487</y>
+     <x>1200</x>
+     <y>556</y>
     </hint>
     <hint type="destinationlabel">
      <x>1239</x>
@@ -3232,7 +3275,7 @@
     </hint>
     <hint type="destinationlabel">
      <x>1003</x>
-     <y>-1</y>
+     <y>0</y>
     </hint>
    </hints>
   </connection>
@@ -3248,7 +3291,7 @@
     </hint>
     <hint type="destinationlabel">
      <x>1651</x>
-     <y>-4</y>
+     <y>0</y>
     </hint>
    </hints>
   </connection>
@@ -3275,8 +3318,8 @@
    <slot>comboBoxTransmitterPulseshape(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>155</x>
-     <y>503</y>
+     <x>188</x>
+     <y>460</y>
     </hint>
     <hint type="destinationlabel">
      <x>1</x>
@@ -3291,8 +3334,8 @@
    <slot>radioButtonChannelMUSCDMA(bool)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>944</x>
-     <y>730</y>
+     <x>1140</x>
+     <y>695</y>
     </hint>
     <hint type="destinationlabel">
      <x>1238</x>
@@ -3307,8 +3350,8 @@
    <slot>radioButtonChannelMUACDMA(bool)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>971</x>
-     <y>767</y>
+     <x>1140</x>
+     <y>722</y>
     </hint>
     <hint type="destinationlabel">
      <x>1241</x>
@@ -3323,8 +3366,8 @@
    <slot>radioButtonReceiverFilterRakeReceiverFingerTypesIntegrateAndDump(bool)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>1711</x>
-     <y>679</y>
+     <x>1804</x>
+     <y>622</y>
     </hint>
     <hint type="destinationlabel">
      <x>1858</x>
@@ -3339,8 +3382,8 @@
    <slot>radioButtonReceiverFilterRakeReceiverFingerTypesMatchedFilter(bool)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>1728</x>
-     <y>711</y>
+     <x>1804</x>
+     <y>643</y>
     </hint>
     <hint type="destinationlabel">
      <x>1857</x>
@@ -3355,12 +3398,76 @@
    <slot>radioButtonReceiverFilterRakeReceiverFingerTypesLowPassFilter(bool)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>1698</x>
-     <y>733</y>
+     <x>1804</x>
+     <y>664</y>
     </hint>
     <hint type="destinationlabel">
-     <x>1864</x>
+     <x>1861</x>
      <y>737</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox_channel_cw</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>lineEdit_channel_cw</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>722</x>
+     <y>668</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>812</x>
+     <y>671</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox_channel_mw</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>lineEdit_channel_mw</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>704</x>
+     <y>719</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>799</x>
+     <y>717</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox_channel_mu_users</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>lineEdit__channel_mu_users</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>947</x>
+     <y>657</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1116</x>
+     <y>660</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionSimulationControl</sender>
+   <signal>triggered(bool)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>actionSimulationControl(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>930</x>
+     <y>483</y>
     </hint>
    </hints>
   </connection>
@@ -3386,30 +3493,30 @@
   <slot>pushButtonChannelMUAnalyseSequence()</slot>
   <slot>pushButtonChannelMUAnalyseKKF()</slot>
   <slot>pushButtonChannelMUAddToList()</slot>
-  <slot>lineEditTransmitterPulseshapeSamples(QString)</slot>
-  <slot>lineEditTransmitterPulseshapeDuration(QString)</slot>
-  <slot>lineEditTransmitterSignalResultsChipRate(QString)</slot>
-  <slot>lineEditTransmitterSignalResultsBitDuration(QString)</slot>
-  <slot>lineEditTransmitterSignalResultsBitRate(QString)</slot>
-  <slot>lineEditTransmitterSignalResultsSampleRate(QString)</slot>
-  <slot>lineEditTransmitterSignalResultsOversampling(QString)</slot>
-  <slot>lineEditTransmitterSignalParameterChipAmplitude(QString)</slot>
-  <slot>lineEditTransmitterSignalParameterChipDuration(QString)</slot>
-  <slot>lineEditChannelAWGNPropertiesSNR(QString)</slot>
-  <slot>lineEditChannelAWGNPropertiesStdDev(QString)</slot>
-  <slot>lineEditChannelCWHz(QString)</slot>
-  <slot>lineEditChannelCWPercentage(QString)</slot>
-  <slot>lineEditChannelMWs(QString)</slot>
-  <slot>lineEditChannelMWPercentage(QString)</slot>
-  <slot>lineEditChannelMUPercentage(QString)</slot>
-  <slot>lineEditChannelNumberOfCW(QString)</slot>
-  <slot>lineEditChannelNumberOfMW(QString)</slot>
-  <slot>lineEditChannelNumberOfMU(QString)</slot>
-  <slot>lineEditReceiverFilterIntegrateAndDumpDelay(QString)</slot>
-  <slot>lineEditReceiverFilterMatchedFilter(QString)</slot>
-  <slot>lineEditReceiverFilterLowPassFilterDelay(QString)</slot>
-  <slot>lineEditReceiverFilterRakeReceiverDelay(QString)</slot>
-  <slot>lineEditReceiverFilterRakeReceiverPercentage(QString)</slot>
+  <slot>lineEditTransmitterPulseshapeSamples()</slot>
+  <slot>lineEditTransmitterPulseshapeDuration()</slot>
+  <slot>lineEditTransmitterSignalResultsChipRate()</slot>
+  <slot>lineEditTransmitterSignalResultsBitDuration()</slot>
+  <slot>lineEditTransmitterSignalResultsBitRate()</slot>
+  <slot>lineEditTransmitterSignalResultsSampleRate()</slot>
+  <slot>lineEditTransmitterSignalResultsOversampling()</slot>
+  <slot>lineEditTransmitterSignalParameterChipAmplitude()</slot>
+  <slot>lineEditTransmitterSignalParameterChipDuration()</slot>
+  <slot>lineEditChannelAWGNPropertiesSNR()</slot>
+  <slot>lineEditChannelAWGNPropertiesStdDev()</slot>
+  <slot>lineEditChannelCWHz()</slot>
+  <slot>lineEditChannelCWPercentage()</slot>
+  <slot>lineEditChannelMWs()</slot>
+  <slot>lineEditChannelMWPercentage()</slot>
+  <slot>lineEditChannelMUPercentage()</slot>
+  <slot>lineEditChannelNumberOfCW()</slot>
+  <slot>lineEditChannelNumberOfMW()</slot>
+  <slot>lineEditChannelNumberOfMU()</slot>
+  <slot>lineEditReceiverFilterIntegrateAndDumpDelay()</slot>
+  <slot>lineEditReceiverFilterMatchedFilter()</slot>
+  <slot>lineEditReceiverFilterLowPassFilterDelay()</slot>
+  <slot>lineEditReceiverFilterRakeReceiverDelay()</slot>
+  <slot>lineEditReceiverFilterRakeReceiverPercentage()</slot>
   <slot>tabWidgetTransmitterSSSequence(int)</slot>
   <slot>tabWidgetChannel(int)</slot>
   <slot>tabWidgetReceiverSSSequence(int)</slot>
@@ -3435,5 +3542,6 @@
   <slot>listWidgetChannelMW(QListWidgetItem*,QListWidgetItem*)</slot>
   <slot>listWidgetChannelMU(QListWidgetItem*,QListWidgetItem*)</slot>
   <slot>listWidgetChannelMUNewUser(QListWidgetItem*,QListWidgetItem*)</slot>
+  <slot>actionSimulationControl(bool)</slot>
  </slots>
 </ui>
