@@ -1,6 +1,6 @@
 from PyQt5 import QtWidgets
 
-class SimulationsControlHelper(QtWidgets.QMainWindow):
+class SimulationsControlHelper(QtWidgets.QDialog):
 
     def __init__(self):
         super().__init__()

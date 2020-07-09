@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file '/home/thomas/Documents/RoCoS_2/src/ui/Analyse.ui'
+# Form implementation generated from reading ui file '/home/tmarangoni/documents/RoCoS_2/src/ui/Analyse.ui'
 #
 # Created by: PyQt5 UI code generator 5.14.2
 #

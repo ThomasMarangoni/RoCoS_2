@@ -2582,9 +2582,9 @@
   </connection>
   <connection>
    <sender>lineEdit_transmitter_pulseshape_samples</sender>
-   <signal>editingFinished()</signal>
+   <signal>textEdited(QString)</signal>
    <receiver>MainWindow</receiver>
-   <slot>lineEditTransmitterPulseshapeSamples()</slot>
+   <slot>lineEditTransmitterPulseshapeSamples(QString)</slot>
    <hints>
     <hint type="sourcelabel">
      <x>205</x>
@@ -2598,9 +2598,9 @@
   </connection>
   <connection>
    <sender>lineEdit_transmitter_pulseshape_duration</sender>
-   <signal>editingFinished()</signal>
+   <signal>textEdited(QString)</signal>
    <receiver>MainWindow</receiver>
-   <slot>lineEditTransmitterPulseshapeDuration()</slot>
+   <slot>lineEditTransmitterPulseshapeDuration(QString)</slot>
    <hints>
     <hint type="sourcelabel">
      <x>194</x>
@@ -2614,9 +2614,9 @@
   </connection>
   <connection>
    <sender>lineEdit_transmitter_signalresults_chiprate</sender>
-   <signal>editingFinished()</signal>
+   <signal>textEdited(QString)</signal>
    <receiver>MainWindow</receiver>
-   <slot>lineEditTransmitterSignalResultsChipRate()</slot>
+   <slot>lineEditTransmitterSignalResultsChipRate(QString)</slot>
    <hints>
     <hint type="sourcelabel">
      <x>202</x>
@@ -2630,9 +2630,9 @@
   </connection>
   <connection>
    <sender>lineEdit_transmitter_signalresults_bitduration</sender>
-   <signal>editingFinished()</signal>
+   <signal>textEdited(QString)</signal>
    <receiver>MainWindow</receiver>
-   <slot>lineEditTransmitterSignalResultsBitDuration()</slot>
+   <slot>lineEditTransmitterSignalResultsBitDuration(QString)</slot>
    <hints>
     <hint type="sourcelabel">
      <x>202</x>
@@ -2646,9 +2646,9 @@
   </connection>
   <connection>
    <sender>lineEdit_transmitter_signalresults_bitrate</sender>
-   <signal>editingFinished()</signal>
+   <signal>textEdited(QString)</signal>
    <receiver>MainWindow</receiver>
-   <slot>lineEditTransmitterSignalResultsBitRate()</slot>
+   <slot>lineEditTransmitterSignalResultsBitRate(QString)</slot>
    <hints>
     <hint type="sourcelabel">
      <x>202</x>
@@ -2662,9 +2662,9 @@
   </connection>
   <connection>
    <sender>lineEdit_transmitter_signalresults_samplerate</sender>
-   <signal>editingFinished()</signal>
+   <signal>textEdited(QString)</signal>
    <receiver>MainWindow</receiver>
-   <slot>lineEditTransmitterSignalResultsSampleRate()</slot>
+   <slot>lineEditTransmitterSignalResultsSampleRate(QString)</slot>
    <hints>
     <hint type="sourcelabel">
      <x>202</x>
@@ -2678,9 +2678,9 @@
   </connection>
   <connection>
    <sender>lineEdit_transmitter_signalresults_oversampling</sender>
-   <signal>editingFinished()</signal>
+   <signal>textEdited(QString)</signal>
    <receiver>MainWindow</receiver>
-   <slot>lineEditTransmitterSignalResultsOversampling()</slot>
+   <slot>lineEditTransmitterSignalResultsOversampling(QString)</slot>
    <hints>
     <hint type="sourcelabel">
      <x>202</x>
@@ -2694,9 +2694,9 @@
   </connection>
   <connection>
    <sender>lineEdit_transmitter_signalparameter_chipamplitude</sender>
-   <signal>editingFinished()</signal>
+   <signal>textEdited(QString)</signal>
    <receiver>MainWindow</receiver>
-   <slot>lineEditTransmitterSignalParameterChipAmplitude()</slot>
+   <slot>lineEditTransmitterSignalParameterChipAmplitude(QString)</slot>
    <hints>
     <hint type="sourcelabel">
      <x>439</x>
@@ -2710,9 +2710,9 @@
   </connection>
   <connection>
    <sender>lineEdit_transmitter_signalparameter_chipduration</sender>
-   <signal>editingFinished()</signal>
+   <signal>textEdited(QString)</signal>
    <receiver>MainWindow</receiver>
-   <slot>lineEditTransmitterSignalParameterChipDuration()</slot>
+   <slot>lineEditTransmitterSignalParameterChipDuration(QString)</slot>
    <hints>
     <hint type="sourcelabel">
      <x>439</x>
@@ -2726,9 +2726,9 @@
   </connection>
   <connection>
    <sender>lineEdit_channel_awgn_snr</sender>
-   <signal>editingFinished()</signal>
+   <signal>textEdited(QString)</signal>
    <receiver>MainWindow</receiver>
-   <slot>lineEditChannelAWGNPropertiesSNR()</slot>
+   <slot>lineEditChannelAWGNPropertiesSNR(QString)</slot>
    <hints>
     <hint type="sourcelabel">
      <x>828</x>
@@ -2742,9 +2742,9 @@
   </connection>
   <connection>
    <sender>lineEdit_channel_awgn_stddev</sender>
-   <signal>editingFinished()</signal>
+   <signal>textEdited(QString)</signal>
    <receiver>MainWindow</receiver>
-   <slot>lineEditChannelAWGNPropertiesStdDev()</slot>
+   <slot>lineEditChannelAWGNPropertiesStdDev(QString)</slot>
    <hints>
     <hint type="sourcelabel">
      <x>828</x>
@@ -2758,9 +2758,9 @@
   </connection>
   <connection>
    <sender>lineEdit_channel_cw_frequency</sender>
-   <signal>editingFinished()</signal>
+   <signal>textEdited(QString)</signal>
    <receiver>MainWindow</receiver>
-   <slot>lineEditChannelCWHz()</slot>
+   <slot>lineEditChannelCWHz(QString)</slot>
    <hints>
     <hint type="sourcelabel">
      <x>740</x>
@@ -2774,9 +2774,9 @@
   </connection>
   <connection>
    <sender>lineEdit_channel_cw_procent</sender>
-   <signal>editingFinished()</signal>
+   <signal>textEdited(QString)</signal>
    <receiver>MainWindow</receiver>
-   <slot>lineEditChannelCWPercentage()</slot>
+   <slot>lineEditChannelCWPercentage(QString)</slot>
    <hints>
     <hint type="sourcelabel">
      <x>740</x>
@@ -2790,9 +2790,9 @@
   </connection>
   <connection>
    <sender>lineEdit_channel_mw_seconds</sender>
-   <signal>editingFinished()</signal>
+   <signal>textEdited(QString)</signal>
    <receiver>MainWindow</receiver>
-   <slot>lineEditChannelMWs()</slot>
+   <slot>lineEditChannelMWs(QString)</slot>
    <hints>
     <hint type="sourcelabel">
      <x>740</x>
@@ -2806,9 +2806,9 @@
   </connection>
   <connection>
    <sender>lineEdit_channel_mw_procent</sender>
-   <signal>editingFinished()</signal>
+   <signal>textEdited(QString)</signal>
    <receiver>MainWindow</receiver>
-   <slot>lineEditChannelMWPercentage()</slot>
+   <slot>lineEditChannelMWPercentage(QString)</slot>
    <hints>
     <hint type="sourcelabel">
      <x>740</x>
@@ -2822,9 +2822,9 @@
   </connection>
   <connection>
    <sender>lineEdit_channel_mu_procent</sender>
-   <signal>editingFinished()</signal>
+   <signal>textEdited(QString)</signal>
    <receiver>MainWindow</receiver>
-   <slot>lineEditChannelMUPercentage()</slot>
+   <slot>lineEditChannelMUPercentage(QString)</slot>
    <hints>
     <hint type="sourcelabel">
      <x>741</x>
@@ -2838,9 +2838,9 @@
   </connection>
   <connection>
    <sender>lineEdit_channel_cw</sender>
-   <signal>editingFinished()</signal>
+   <signal>textEdited(QString)</signal>
    <receiver>MainWindow</receiver>
-   <slot>lineEditChannelNumberOfCW()</slot>
+   <slot>lineEditChannelNumberOfCW(QString)</slot>
    <hints>
     <hint type="sourcelabel">
      <x>844</x>
@@ -2854,9 +2854,9 @@
   </connection>
   <connection>
    <sender>lineEdit_channel_mw</sender>
-   <signal>editingFinished()</signal>
+   <signal>textEdited(QString)</signal>
    <receiver>MainWindow</receiver>
-   <slot>lineEditChannelNumberOfMW()</slot>
+   <slot>lineEditChannelNumberOfMW(QString)</slot>
    <hints>
     <hint type="sourcelabel">
      <x>844</x>
@@ -2870,9 +2870,9 @@
   </connection>
   <connection>
    <sender>lineEdit__channel_mu_users</sender>
-   <signal>editingFinished()</signal>
+   <signal>textEdited(QString)</signal>
    <receiver>MainWindow</receiver>
-   <slot>lineEditChannelNumberOfMU()</slot>
+   <slot>lineEditChannelNumberOfMU(QString)</slot>
    <hints>
     <hint type="sourcelabel">
      <x>1140</x>
@@ -2886,9 +2886,9 @@
   </connection>
   <connection>
    <sender>lineEdit_receiver_filter_integrate_and_dump_delay</sender>
-   <signal>editingFinished()</signal>
+   <signal>textEdited(QString)</signal>
    <receiver>MainWindow</receiver>
-   <slot>lineEditReceiverFilterIntegrateAndDumpDelay()</slot>
+   <slot>lineEditReceiverFilterIntegrateAndDumpDelay(QString)</slot>
    <hints>
     <hint type="sourcelabel">
      <x>1357</x>
@@ -2902,9 +2902,9 @@
   </connection>
   <connection>
    <sender>lineEdit_receiver_filter_matched_filter_delay</sender>
-   <signal>editingFinished()</signal>
+   <signal>textEdited(QString)</signal>
    <receiver>MainWindow</receiver>
-   <slot>lineEditReceiverFilterMatchedFilter()</slot>
+   <slot>lineEditReceiverFilterMatchedFilter(QString)</slot>
    <hints>
     <hint type="sourcelabel">
      <x>1357</x>
@@ -2918,9 +2918,9 @@
   </connection>
   <connection>
    <sender>lineEdit_receiver_filter_low_pass_filter_delay</sender>
-   <signal>editingFinished()</signal>
+   <signal>textEdited(QString)</signal>
    <receiver>MainWindow</receiver>
-   <slot>lineEditReceiverFilterLowPassFilterDelay()</slot>
+   <slot>lineEditReceiverFilterLowPassFilterDelay(QString)</slot>
    <hints>
     <hint type="sourcelabel">
      <x>1377</x>
@@ -2934,9 +2934,9 @@
   </connection>
   <connection>
    <sender>lineEdit_receiver_filter_rake_receiver_delay</sender>
-   <signal>editingFinished()</signal>
+   <signal>textEdited(QString)</signal>
    <receiver>MainWindow</receiver>
-   <slot>lineEditReceiverFilterRakeReceiverDelay()</slot>
+   <slot>lineEditReceiverFilterRakeReceiverDelay(QString)</slot>
    <hints>
     <hint type="sourcelabel">
      <x>1355</x>
@@ -2950,9 +2950,9 @@
   </connection>
   <connection>
    <sender>lineEdit_receiver_filter_rake_receiver_procent</sender>
-   <signal>editingFinished()</signal>
+   <signal>textEdited(QString)</signal>
    <receiver>MainWindow</receiver>
-   <slot>lineEditReceiverFilterRakeReceiverPercentage()</slot>
+   <slot>lineEditReceiverFilterRakeReceiverPercentage(QString)</slot>
    <hints>
     <hint type="sourcelabel">
      <x>1397</x>
@@ -3386,30 +3386,30 @@
   <slot>pushButtonChannelMUAnalyseSequence()</slot>
   <slot>pushButtonChannelMUAnalyseKKF()</slot>
   <slot>pushButtonChannelMUAddToList()</slot>
-  <slot>lineEditTransmitterPulseshapeSamples()</slot>
-  <slot>lineEditTransmitterPulseshapeDuration()</slot>
-  <slot>lineEditTransmitterSignalResultsChipRate()</slot>
-  <slot>lineEditTransmitterSignalResultsBitDuration()</slot>
-  <slot>lineEditTransmitterSignalResultsBitRate()</slot>
-  <slot>lineEditTransmitterSignalResultsSampleRate()</slot>
-  <slot>lineEditTransmitterSignalResultsOversampling()</slot>
-  <slot>lineEditTransmitterSignalParameterChipAmplitude()</slot>
-  <slot>lineEditTransmitterSignalParameterChipDuration()</slot>
-  <slot>lineEditChannelAWGNPropertiesSNR()</slot>
-  <slot>lineEditChannelAWGNPropertiesStdDev()</slot>
-  <slot>lineEditChannelCWHz()</slot>
-  <slot>lineEditChannelCWPercentage()</slot>
-  <slot>lineEditChannelMWs()</slot>
-  <slot>lineEditChannelMWPercentage()</slot>
-  <slot>lineEditChannelMUPercentage()</slot>
-  <slot>lineEditChannelNumberOfCW()</slot>
-  <slot>lineEditChannelNumberOfMW()</slot>
-  <slot>lineEditChannelNumberOfMU()</slot>
-  <slot>lineEditReceiverFilterIntegrateAndDumpDelay()</slot>
-  <slot>lineEditReceiverFilterMatchedFilter()</slot>
-  <slot>lineEditReceiverFilterLowPassFilterDelay()</slot>
-  <slot>lineEditReceiverFilterRakeReceiverDelay()</slot>
-  <slot>lineEditReceiverFilterRakeReceiverPercentage()</slot>
+  <slot>lineEditTransmitterPulseshapeSamples(QString)</slot>
+  <slot>lineEditTransmitterPulseshapeDuration(QString)</slot>
+  <slot>lineEditTransmitterSignalResultsChipRate(QString)</slot>
+  <slot>lineEditTransmitterSignalResultsBitDuration(QString)</slot>
+  <slot>lineEditTransmitterSignalResultsBitRate(QString)</slot>
+  <slot>lineEditTransmitterSignalResultsSampleRate(QString)</slot>
+  <slot>lineEditTransmitterSignalResultsOversampling(QString)</slot>
+  <slot>lineEditTransmitterSignalParameterChipAmplitude(QString)</slot>
+  <slot>lineEditTransmitterSignalParameterChipDuration(QString)</slot>
+  <slot>lineEditChannelAWGNPropertiesSNR(QString)</slot>
+  <slot>lineEditChannelAWGNPropertiesStdDev(QString)</slot>
+  <slot>lineEditChannelCWHz(QString)</slot>
+  <slot>lineEditChannelCWPercentage(QString)</slot>
+  <slot>lineEditChannelMWs(QString)</slot>
+  <slot>lineEditChannelMWPercentage(QString)</slot>
+  <slot>lineEditChannelMUPercentage(QString)</slot>
+  <slot>lineEditChannelNumberOfCW(QString)</slot>
+  <slot>lineEditChannelNumberOfMW(QString)</slot>
+  <slot>lineEditChannelNumberOfMU(QString)</slot>
+  <slot>lineEditReceiverFilterIntegrateAndDumpDelay(QString)</slot>
+  <slot>lineEditReceiverFilterMatchedFilter(QString)</slot>
+  <slot>lineEditReceiverFilterLowPassFilterDelay(QString)</slot>
+  <slot>lineEditReceiverFilterRakeReceiverDelay(QString)</slot>
+  <slot>lineEditReceiverFilterRakeReceiverPercentage(QString)</slot>
   <slot>tabWidgetTransmitterSSSequence(int)</slot>
   <slot>tabWidgetChannel(int)</slot>
   <slot>tabWidgetReceiverSSSequence(int)</slot>
