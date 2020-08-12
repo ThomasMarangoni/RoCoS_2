@@ -1081,7 +1081,7 @@ class Ui_MainWindow(object):
         self.pushButton_receiver_orthogonal_analyse_sequence.setText(_translate("MainWindow", "Analyse Sequence"))
         self.pushButton_receiver_orthogonal_analyse_kkf.setText(_translate("MainWindow", "Analyse KKF"))
         self.tabWidget_receiver_ss_sequence.setTabText(self.tabWidget_receiver_ss_sequence.indexOf(self.tab_receiver_orthogonal), _translate("MainWindow", "Orthogonal DS/SS System"))
-        self.pushbutton_ss_sequence_clone.setText(_translate("MainWindow", "Clone Transmitter Setiings"))
+        self.pushbutton_ss_sequence_clone.setText(_translate("MainWindow", "Clone Transmitter Settings"))
         self.groupBox_18.setTitle(_translate("MainWindow", "Filter"))
         self.label_28.setText(_translate("MainWindow", "Delay"))
         self.label_14.setText(_translate("MainWindow", "equals 0.0 chipdurations"))

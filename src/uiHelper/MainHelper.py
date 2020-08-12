@@ -4,9 +4,7 @@ from uiHelper import CodeGeneratorHelper as CodeGeneratorHelper
 from ui import SimulationControl as SimulationControl
 from uiHelper import SimulationControlHelper as SimulationControlHelper
 
-
 class MainHelper(QtWidgets.QMainWindow):
-
     def __init__(self):
         super().__init__()
 

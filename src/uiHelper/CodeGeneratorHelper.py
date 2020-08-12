@@ -1,7 +1,6 @@
 from PyQt5 import QtWidgets
 
 class CodeGeneratorHelper(QtWidgets.QDialog):
-
     def __init__(self):
         super().__init__()
 
@@ -308,4 +307,3 @@ class CodeGeneratorHelper(QtWidgets.QDialog):
 
     def comboBoxGolaySequence(self, index):
         print("Not Implemented")
-        
