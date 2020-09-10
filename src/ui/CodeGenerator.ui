@@ -1772,7 +1772,7 @@ color: rgb(255, 255, 255)</string>
    <sender>comboBox</sender>
    <signal>currentIndexChanged(int)</signal>
    <receiver>Dialog_CodeGenerator</receiver>
-   <slot>comboBoxGolaySequence(int)</slot>
+   <slot>comboBox(int)</slot>
    <hints>
     <hint type="sourcelabel">
      <x>1050</x>
@@ -1836,7 +1836,7 @@ color: rgb(255, 255, 255)</string>
    <sender>lineEdit_ogfsequence_register2_initialload</sender>
    <signal>editingFinished()</signal>
    <receiver>Dialog_CodeGenerator</receiver>
-   <slot>pushButtonMFamilyClone()</slot>
+   <slot>lineEditOGFSequencePropertiesRegister2InitialLoad()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>362</x>

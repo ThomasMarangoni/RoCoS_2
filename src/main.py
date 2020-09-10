@@ -1,9 +1,10 @@
 import sys
 
-from PyQt5 import QtWidgets
+from PyQt5 import QtWidgets, QtGui
 
 from ui import Main as Main
 from uiHelper import MainHelper as MainHelper
+from uiHelper import MainValidators as MainValidators
 
 from ui import Analyse as Analyse
 from ui import CodeGenerator as CodeGenerator
@@ -15,7 +16,10 @@ print("Starting Main Window")
 windowMain = MainHelper.MainHelper()
 mainUi = Main.Ui_MainWindow()
 mainUi.setupUi(windowMain)
+MainValidators.setup(mainUi)
 windowMain.show()
+
+
 
 # print("Stating Code Generator Dialog")
 # window02 = QtWidgets.QDialog()

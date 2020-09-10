@@ -17,24 +17,6 @@ class CodeGeneratorHelper(QtWidgets.QDialog):
     def listWidgetMSequence(self, current, previous):
         print("Not Implemented")
 
-    def pushButtonMSequenceGenerateSequence(self):
-        print("Not Implemented")
-
-    def pushButtonMSequenceAFKAnalyse(self):
-        print("Not Implemented")
-
-    def pushButtonMSequenceKKFAnalyse(self):
-        print("Not Implemented")
-
-    def pushButtonMSequenceDeleteAll(self):
-        print("Not Implemented")
-
-    def pushButtonMSequenceClone(self):
-        print("Not Implemented")
-
-    def comboBoxMSequence(self, index):
-        print("Not Implemented")
-
     def lineEditMFamilyPropertiesRegister1Exponents(self):
         print("Not Implemented")
 
@@ -51,24 +33,6 @@ class CodeGeneratorHelper(QtWidgets.QDialog):
         print("Not Implemented")
 
     def listWidgetMFamily2(self, current, previous):
-        print("Not Implemented")
-
-    def pushButtonMFamilyGenerateSequence(self):
-        print("Not Implemented")
-
-    def pushButtonMFamilyAFKAnalyse(self):
-        print("Not Implemented")
-
-    def pushButtonMFamilyKKFAnalyse(self):
-        print("Not Implemented")
-
-    def pushButtonMFamilyDeleteAll(self):
-        print("Not Implemented")
-
-    def pushButtonMFamilyClone(self):
-        print("Not Implemented")
-
-    def comboBoxMFamily(self, index):
         print("Not Implemented")
 
     def lineEditGoldSequencePropertiesRegister1Exponents(self):
@@ -92,24 +56,6 @@ class CodeGeneratorHelper(QtWidgets.QDialog):
     def listWidgetGoldSequence(self, current, previous):
         print("Not Implemented")
 
-    def pushButtonGoldSequenceGenerateSequence(self):
-        print("Not Implemented")
-
-    def pushButtonGoldSequenceAFKAnalyse(self):
-        print("Not Implemented")
-
-    def pushButtonGoldSequenceKKFAnalyse(self):
-        print("Not Implemented")
-
-    def pushButtonGoldSequenceDeleteAll(self):
-        print("Not Implemented")
-
-    def pushButtonGoldSequenceClone(self):
-        print("Not Implemented")
-
-    def comboBoxGoldSequence(self, index):
-        print("Not Implemented")
-
     def lineEditGoldFamilyPropertiesRegister1Exponents(self):
         print("Not Implemented")
 
@@ -120,24 +66,6 @@ class CodeGeneratorHelper(QtWidgets.QDialog):
         print("Not Implemented")
 
     def listWidgetGoldFamily(self, current, previous):
-        print("Not Implemented")
-
-    def pushButtonGoldFamilyGenerateSequence(self):
-        print("Not Implemented")
-
-    def pushButtonGoldFamilyAFKAnalyse(self):
-        print("Not Implemented")
-
-    def pushButtonGoldFamilyKKFAnalyse(self):
-        print("Not Implemented")
-
-    def pushButtonGoldFamilyDeleteAll(self):
-        print("Not Implemented")
-
-    def pushButtonGoldFamilyClone(self):
-        print("Not Implemented")
-
-    def comboBoxGoldFamily(self, index):
         print("Not Implemented")
 
     def lineEditOGFSequencePropertiesRegister1Exponents(self):
@@ -155,24 +83,6 @@ class CodeGeneratorHelper(QtWidgets.QDialog):
     def listWidgetOGFSequence(self, current, previous):
         print("Not Implemented")
 
-    def pushButtonOGFSequenceGenerateSequence(self):
-        print("Not Implemented")
-
-    def pushButtonOGFSequenceAFKAnalyse(self):
-        print("Not Implemented")
-
-    def pushButtonOGFSequenceKKFAnalyse(self):
-        print("Not Implemented")
-
-    def pushButtonOGFSequenceDeleteAll(self):
-        print("Not Implemented")
-
-    def pushButtonOGFSequenceClone(self):
-        print("Not Implemented")
-
-    def comboBoxOGFSequence(self, index):
-        print("Not Implemented")
-
     def lineEditOGFFamilyPropertiesRegister1Exponents(self):
         print("Not Implemented")
 
@@ -183,24 +93,6 @@ class CodeGeneratorHelper(QtWidgets.QDialog):
         print("Not Implemented")
 
     def listWidgetOGFFamily(self, current, previous):
-        print("Not Implemented")
-
-    def pushButtonOGFFamilyGenerateSequence(self):
-        print("Not Implemented")
-
-    def pushButtonOGFFamilyAFKAnalyse(self):
-        print("Not Implemented")
-
-    def pushButtonOGFFamilyKKFAnalyse(self):
-        print("Not Implemented")
-
-    def pushButtonOGFFamilyDeleteAll(self):
-        print("Not Implemented")
-
-    def pushButtonOGFFamilyClone(self):
-        print("Not Implemented")
-
-    def comboBoxOGFFamily(self, index):
         print("Not Implemented")
 
     def lineEditKasamiFamilyPropertiesRegister1Exponents(self):
@@ -218,24 +110,6 @@ class CodeGeneratorHelper(QtWidgets.QDialog):
     def listWidgetKasamiFamily(self, current, previous):
         print("Not Implemented")
 
-    def pushButtonKasamiFamilyGenerateSequence(self):
-        print("Not Implemented")
-
-    def pushButtonKasamiFamilyAFKAnalyse(self):
-        print("Not Implemented")
-
-    def pushButtonKasamiFamilyKKFAnalyse(self):
-        print("Not Implemented")
-
-    def pushButtonKasamiFamilyDeleteAll(self):
-        print("Not Implemented")
-
-    def pushButtonKasamiFamilyClone(self):
-        print("Not Implemented")
-
-    def comboBoxKasamiFamily(self, index):
-        print("Not Implemented")
-
     def lineEditKasamiSequencePropertiesRegister1Exponents(self):
         print("Not Implemented")
 
@@ -245,65 +119,29 @@ class CodeGeneratorHelper(QtWidgets.QDialog):
     def listWidgetKasamiSequence(self, current, previous):
         print("Not Implemented")
 
-    def pushButtonKasamiSequenceGenerateSequence(self):
-        print("Not Implemented")
-
-    def pushButtonKasamiSequenceAFKAnalyse(self):
-        print("Not Implemented")
-
-    def pushButtonKasamiSequenceKKFAnalyse(self):
-        print("Not Implemented")
-
-    def pushButtonKasamiSequenceDeleteAll(self):
-        print("Not Implemented")
-
-    def pushButtonKasamiSequenceClone(self):
-        print("Not Implemented")
-
-    def comboBoxKasamiSequence(self, index):
-        print("Not Implemented")
-
     def lineEditOVSFSequenceSequenceLength(self):
         print("Not Implemented")
 
     def listWidgetOVSFSequence(self, current, previous):
         print("Not Implemented")
 
-    def pushButtonOVSFSequenceGenerateSequence(self):
-        print("Not Implemented")
-
-    def pushButtonOVSFSequenceAFKAnalyse(self):
-        print("Not Implemented")
-
-    def pushButtonOVSFSequenceKKFAnalyse(self):
-        print("Not Implemented")
-
-    def pushButtonOVSFSequenceDeleteAll(self):
-        print("Not Implemented")
-
-    def pushButtonOVSFSequenceClone(self):
-        print("Not Implemented")
-
-    def comboBoxOVSFSequence(self, index):
-        print("Not Implemented")
-
     def listWidgetGolaySequence(self, current, previous):
         print("Not Implemented")
 
-    def pushButtonGolaySequenceGenerateSequence(self):
+    def pushButtonGenerateSequence(self):
         print("Not Implemented")
 
-    def pushButtonGolaySequenceAFKAnalyse(self):
+    def pushButtonAFKAnalyse(self):
         print("Not Implemented")
 
-    def pushButtonGolaySequenceKKFAnalyse(self):
+    def pushButtonKKFAnalyse(self):
         print("Not Implemented")
 
-    def pushButtonGolaySequenceDeleteAll(self):
+    def pushButtonDeleteAll(self):
         print("Not Implemented")
 
-    def pushButtonGolaySequenceClone(self):
+    def pushButtonClone(self):
         print("Not Implemented")
 
-    def comboBoxGolaySequence(self, index):
+    def comboBox(self, index):
         print("Not Implemented")

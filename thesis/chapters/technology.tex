@@ -1,0 +1,19 @@
+\section{Python}
+
+
+\section{Qt 5.15}
+Bei Qt handelt es sich um ein Framework und Toolkit zur Entwicklung grafischer Benutzeroberflächen und die erste Version wurde im Jahr 1995 veröffentlicht.
+Es zeichnet sich aus durch die Unterstützung zahlreicher Betriebssystem unter anderem auch Linux, MacOS und Windows. Es wird in C++ entwickelt wodurch eine Vielzahl von Wrappern für andere Sprachen exestiert, unter anderem: Python, C# und Java.
+Eine andere wichtige Eigenschaft ist das duale Lizensierungssystem, wodurch es unter der Open Source Lizenz GPL steht, aber für die kommerzielle Nutzung auch eine kommerzielle Lizenz zum Erwerb zu Verfügung steht.
+
+Für dieses Projekt ist die Entscheidung auf Qt gefallen, da es auf mehreren Betriebssystemen läuft und ein Wrapper für Python zur Verfügung steht. Außerdem bietet es zahlreiche weitere Funktionen welche die Entwicklung vereinfachen und die Benutzerfreundlichkeit erhöhen.
+Für die Entwicklung der UI in diesem Projekt wird auf den Qt Designer gesetzt, dieser ermöglicht es die UI Elemente grafisch anzuordnen, zu konfigurieren und mit Events zu verknüpfen. Der Qt Designer produziert eine .ui Datei, welche einer xml Datei entspricht, diese kann natürlich auch manuell editiert werden.
+Diese ui Datei kann dann mittels pyuic5, welches in PyQt enthalten ist, in Python Code umgewandelt und dann verwendet werden.
+
+Qt bietet wie bereits erwähnt auch Funktionen an, um die Benutzerfreundlichkeit zu erhöhen, in diesem Projekt werden folgende Funktionen davon verwendet:
+- Layouts: Diese dienen dazu, die UI responsive zu machen und einen reibungsfreien Ablauf zwischen den Betriebssystemen zu ermöglichen, da dieses andere Designs verwenden. Außerdem passt es die UI auch auf geänderte Texteinträge an und bietet diesen mehr Platz, so dass diese noch immer lesbar sind.
+- Linguist: Mithilfe dieses Tools ist es möglich, die Anwendung in mehreren Sprachen anzubieten. Hier gibt man Übersetzungen für eingebaute Texte an, diese werden dann je nach Sprache des Betriebssystem und der Einstellungen angezeigt.
+- Tooltip: Ein Tooltip ist ein kleiner Text, welcher erscheint wenn man mit der Maus über ein UI Element fährt. Dies ist nützlich für Elemente, welche nicht selbst erklärend sind.
+- whatsThis: Mit Qt mitgeliefert ist ein Hilfe- bzw Dokumentationssystem, wenn man nun F1 drückt, während die Maus sich über einem bestimmten UI Element befidnet. Dies öffnet daraufhin ein extra Fenster, mit der entsprechenden Hilfe für dieses UI Element.
+
+\section{PyQt} 

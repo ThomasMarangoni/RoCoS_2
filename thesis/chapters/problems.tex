@@ -1,0 +1,6 @@
+\section{Die UI hat nicht skaliert.}
+Es bestand das Problem, dass die UI mit Veränderung der Fenstergröße nicht skaliert hat und beim Aufruf auf einen anderen Betriebssytem stimmten die Abstände und Verhältnisse zwischen den einzelnen Elementen nicht mehr.
+Die Lösung war es das Layout System von Qt zu benutzen, dies teilt vereinfacht gesagt die UI in Raster ein, welches die Größe der Abstände an das Design des Betriebssytems und die Länge der Texte an. 
+Dies hatte zu Folge, dass die komplette UI noch einmal mit dem Layout System erstellt werden musste.
+
+\section{Wenn Dialog offen, dann andere Elemente nicht klickbar.}

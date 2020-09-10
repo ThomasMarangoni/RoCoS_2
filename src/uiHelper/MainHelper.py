@@ -1,4 +1,6 @@
 from PyQt5 import QtWidgets
+from PyQt5 import QtGui
+from PyQt5 import QtCore
 from ui import CodeGenerator as CodeGenerator
 from uiHelper import CodeGeneratorHelper as CodeGeneratorHelper
 from ui import SimulationControl as SimulationControl
@@ -12,15 +14,15 @@ class MainHelper(QtWidgets.QMainWindow):
         windowSimulationControl = SimulationControlHelper.SimulationControlHelper()
         windowSimulationControl.ui = SimulationControl.Ui_Dialog_SimulationControl()
         windowSimulationControl.ui.setupUi(windowSimulationControl)
-        windowSimulationControl.exec_()
         windowSimulationControl.show()
+        windowSimulationControl.exec()
 
     def pushButtonGenerateSequence(self):
         windowCodeGenerator = CodeGeneratorHelper.CodeGeneratorHelper()
         windowCodeGenerator.ui = CodeGenerator.Ui_Dialog_CodeGenerator()
         windowCodeGenerator.ui.setupUi(windowCodeGenerator)
-        windowCodeGenerator.exec_()
         windowCodeGenerator.show()
+        windowCodeGenerator.exec()
 
     def pushButtonPulseshapeShow(self):
         print("Not Implemented")
