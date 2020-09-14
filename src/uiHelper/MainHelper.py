@@ -1,13 +1,20 @@
 from PyQt5 import QtWidgets
 from PyQt5 import QtGui
 from PyQt5 import QtCore
+from PyQt5 import QtSvg
+
 from ui import CodeGenerator as CodeGenerator
 from uiHelper import CodeGeneratorHelper as CodeGeneratorHelper
 from ui import SimulationControl as SimulationControl
 from uiHelper import SimulationControlHelper as SimulationControlHelper
+from uiHelper import MainFunctions as MainFunctions
 
 class MainHelper(QtWidgets.QMainWindow):
-    def __init__(self):
+    def __init__(self, main):
+        global mainUi
+        mainUi = main
+        global transmitter 
+        transmitter = MainFunctions.Transmitter()
         super().__init__()
 
     def actionSimulationControl(checked):
@@ -17,7 +24,8 @@ class MainHelper(QtWidgets.QMainWindow):
         windowSimulationControl.show()
         windowSimulationControl.exec()
 
-    def pushButtonGenerateSequence(self):
+    def pushButtonGenerateSequence(self): #TODO: Gets triggered two times
+        print("Test")
         windowCodeGenerator = CodeGeneratorHelper.CodeGeneratorHelper()
         windowCodeGenerator.ui = CodeGenerator.Ui_Dialog_CodeGenerator()
         windowCodeGenerator.ui.setupUi(windowCodeGenerator)
@@ -25,7 +33,22 @@ class MainHelper(QtWidgets.QMainWindow):
         windowCodeGenerator.exec()
 
     def pushButtonPulseshapeShow(self):
-        print("Not Implemented")
+        transmitter.createPulseShapeImage(self)
+
+        renderer = QtSvg.QSvgRenderer()
+        renderer.load("tmp/pulseshape_plot.svg")
+        size = renderer.defaultSize()
+
+        item = QtSvg.QGraphicsSvgItem()
+        item.setSharedRenderer(renderer)
+
+        scene = QtWidgets.QGraphicsScene()
+        scene.addItem(item)
+
+        graphicsView = mainUi.graphicsView_transmitter_pulseshape
+        graphicsView.setScene(scene)
+        graphicsView.fitInView(item)
+        graphicsView.isInteractive = True
 
     def pushButtonPulseshapeProperties(self):
         print("Not Implemented")
@@ -82,31 +105,31 @@ class MainHelper(QtWidgets.QMainWindow):
         print("Not Implemented")
 
     def lineEditTransmitterPulseshapeSamples(self):
-        print("Not Implemented" + " " + self.sender().text())
+        transmitter.pulseshapeSamplePulse = int(self.sender().text())
 
     def lineEditTransmitterPulseshapeDuration(self):
-        print("Not Implemented")
+        transmitter.pulseshapeDuration = float(self.sender().text())
 
     def lineEditTransmitterSignalResultsChipRate(self):
-        print("Not Implemented")
+        transmitter.signalResultsChipRate = int(self.sender().text())
 
     def lineEditTransmitterSignalResultsBitDuration(self):
-        print("Not Implemented")
+        transmitter.signalResultsBitRate = float(self.sender().text())
 
     def lineEditTransmitterSignalResultsBitRate(self):
-        print("Not Implemented")
+        transmitter.signalResultsBitRate = int(self.sender().text())
 
     def lineEditTransmitterSignalResultsSampleRate(self):
-        print("Not Implemented")
+        transmitter.signalResultsSampleRate = int(self.sender().text())
 
     def lineEditTransmitterSignalResultsOversampling(self):
-        print("Not Implemented")
+        transmitter.signalResultsOversampling = int(self.sender().text())
 
     def lineEditTransmitterSignalParameterChipAmplitude(self):
-        print("Not Implemented")
+        transmitter.signalParameterChipAmplitude = float(self.sender().text())
 
     def lineEditTransmitterSignalParameterChipDuration(self):
-        print("Not Implemented")
+        transmitter.signalParameterChipDuration = float(self.sender().text())
 
     def lineEditChannelAWGNPropertiesSNR(self):
         print("Not Implemented")
@@ -166,7 +189,7 @@ class MainHelper(QtWidgets.QMainWindow):
         print("Not Implemented")
 
     def comboBoxTransmitterPulseshape(self, index):
-        print("Not Implemented")
+        transmitter.pulseShapeShapeIndex = int(index)
 
     def checkBoxChannelAWGN(self, toggle):
         print("Not Implemented" + " Status: " + str(toggle))

@@ -1,0 +1,2 @@
+class CONFIG:
+    TEMPORARY_DIRECTORY_NAME = "tmp/"
