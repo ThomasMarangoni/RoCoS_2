@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file '/home/tmarangoni/documents/RoCoS_2/src/ui/CodeGenerator.ui'
+# Form implementation generated from reading ui file '/home/thomas/Documents/RoCoS_2/src/ui/CodeGenerator.ui'
 #
 # Created by: PyQt5 UI code generator 5.14.2
 #
@@ -13,7 +13,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_Dialog_CodeGenerator(object):
     def setupUi(self, Dialog_CodeGenerator):
         Dialog_CodeGenerator.setObjectName("Dialog_CodeGenerator")
-        Dialog_CodeGenerator.resize(1289, 630)
+        Dialog_CodeGenerator.resize(1362, 630)
         font = QtGui.QFont()
         font.setFamily("Liberation Sans")
         Dialog_CodeGenerator.setFont(font)

@@ -15,6 +15,10 @@ class MainHelper(QtWidgets.QMainWindow):
         mainUi = main
         global transmitter 
         transmitter = MainFunctions.Transmitter()
+        global channel 
+        channel = MainFunctions.Channel()
+        global receiver 
+        receiver = MainFunctions.Receiver()
         super().__init__()
 
     def actionSimulationControl(checked):
@@ -132,91 +136,91 @@ class MainHelper(QtWidgets.QMainWindow):
         transmitter.signalParameterChipDuration = float(self.sender().text())
 
     def lineEditChannelAWGNPropertiesSNR(self):
-        print("Not Implemented")
+        channel.awgnSNR = float(self.sender().text())
 
     def lineEditChannelAWGNPropertiesStdDev(self):
-        print("Not Implemented")
+        channel.awgnStdDev = float(self.sender().text())
 
     def lineEditChannelCWHz(self):
-        print("Not Implemented")
+        channel.cwHz = float(self.sender().text())
 
     def lineEditChannelCWPercentage(self):
-        print("Not Implemented")
+        channel.cwReferenceAmplitude = int(self.sender().text())
 
     def lineEditChannelMWs(self):
-        print("Not Implemented")
+        channel.mwS = float(self.sender().text())
 
     def lineEditChannelMWPercentage(self):
-        print("Not Implemented")
+        channel.mwReferenceAmplitude = int(self.sender().text())
 
     def lineEditChannelMUPercentage(self):
-        print("Not Implemented")
+        channel.muReferenceAmplitude = int(self.sender().text())
 
     def lineEditChannelNumberOfCW(self):
-        print("Not Implemented")
+        channel.numberOfCWLineEdit = int(self.sender().text())
 
     def lineEditChannelNumberOfMW(self):
-        print("Not Implemented")
+        channel.numberOfMWLineEdit = int(self.sender().text())
 
     def lineEditChannelNumberOfMU(self):
-        print("Not Implemented")
+        channel.muNumberOfUserLineEdit = int(self.sender().text())
 
     def lineEditReceiverFilterMatchedFilter(self):
-        print("Not Implemented")
+        receiver.filterMatchedFilterDelay = float(self.sender().text())
 
     def lineEditReceiverFilterLowPassFilterDelay(self):
-        print("Not Implemented")
+        receiver.filterLowPassFilterDelay = float(self.sender().text())
 
     def lineEditReceiverFilterRakeReceiverDelay(self):
-        print("Not Implemented")
+        receiver.filterRakeReceiverDelay = float(self.sender().text())
 
     def lineEditReceiverFilterRakeReceiverPercentage(self):
-        print("Not Implemented")
+        receiver.filterRakeReceiverReferenceAmplitude = int(self.sender().text())
 
     def lineEditReceiverFilterIntegrateAndDumpDelay(self):
-        print("Not Implemented")
+        receiver.filterIntegrateAndDumpDelay = float(self.sender().text())
 
     def tabWidgetTransmitterSSSequence(self, index):
-        print("Not Implemented")
+        transmitter.sequenceIndex = int(index)
 
     def tabWidgetChannel(self, index):
-        print("Not Implemented")
+        channel.tabIndex = int(index)
 
     def tabWidgetReceiverSSSequence(self, index):
-        print("Not Implemented")
+        receiver.sequenceIndex = int(index)
 
     def tabWidgetReceiverFilter(self, index):
-        print("Not Implemented")
+        receiver.filterIndex = int(index)
 
     def comboBoxTransmitterPulseshape(self, index):
         transmitter.pulseShapeShapeIndex = int(index)
 
     def checkBoxChannelAWGN(self, toggle):
-        print("Not Implemented" + " Status: " + str(toggle))
+        channel.awgnCheckBox = bool(toggle)
 
     def checkBoxChannelNumberOfCW(self, toggle):
-        print("Not Implemented")
+        channel.numberOfCWCheckBox = bool(toggle)
 
     def checkBoxChannelNumberOfMW(self, toggle):
-        print("Not Implemented")
+        channel.numberOfMWCheckBox = bool(toggle)
 
     def checkBoxChannelMUNumberOfUsers(self, toggle):
-        print("Not Implemented")
+        channel.muNumberOfUserCheckBox = bool(toggle)
 
     def radioButtonChannelMUSCDMA(self, toggle):
-        print("Not Implemented")
+        channel.muSCDMA = bool(toggle)
 
     def radioButtonChannelMUACDMA(self, toggle):
-        print("Not Implemented")
+        channel.muACDMA = bool(toggle)
 
     def radioButtonReceiverFilterRakeReceiverFingerTypesMatchedFilter(self, toggle):
-        print("Not Implemented")
+        channel.filterRakeReceiverTypeIntegrateAndDump = bool(toggle)
 
     def radioButtonReceiverFilterRakeReceiverFingerTypesLowPassFilter(self, toggle):
-        print("Not Implemented")
+        channel.filterRakeReceiverTypeLowPassFilter = bool(toggle)
 
     def radioButtonReceiverFilterRakeReceiverFingerTypesIntegrateAndDump(self, toggle):
-        print("Not Implemented")
+        channel.filterRakeReceiverTypeIntegrateAndDump = bool(toggle)
 
     def listWidgetTransmitterSSSequenceAntipodal(self, current, previous):
         print("Not Implemented")
