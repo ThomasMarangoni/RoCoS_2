@@ -7,21 +7,25 @@ from ui import CodeGenerator as CodeGenerator
 from uiHelper import CodeGeneratorHelper as CodeGeneratorHelper
 from ui import SimulationControl as SimulationControl
 from uiHelper import SimulationControlHelper as SimulationControlHelper
-from uiHelper import MainFunctions as MainFunctions
+from uiHelper.classes import Channel as Channel
+from uiHelper.classes import Receiver as Receiver
+from uiHelper.classes import Transmitter as Transmitter
 
 class MainHelper(QtWidgets.QMainWindow):
     def __init__(self, main):
         global mainUi
         mainUi = main
+
         global transmitter 
-        transmitter = MainFunctions.Transmitter()
+        transmitter = Transmitter.Transmitter()
         global channel 
-        channel = MainFunctions.Channel()
+        channel = Channel.Channel()
         global receiver 
-        receiver = MainFunctions.Receiver()
+        receiver = Receiver.Receiver()
+
         super().__init__()
 
-    def actionSimulationControl(checked):
+    def actionSimulationControl(self, checked):
         windowSimulationControl = SimulationControlHelper.SimulationControlHelper()
         windowSimulationControl.ui = SimulationControl.Ui_Dialog_SimulationControl()
         windowSimulationControl.ui.setupUi(windowSimulationControl)

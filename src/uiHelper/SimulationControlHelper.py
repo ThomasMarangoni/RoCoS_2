@@ -1,8 +1,13 @@
 from PyQt5 import QtWidgets
 
+from uiHelper.classes import SimulationControl as SimulationControl
+
 class SimulationControlHelper(QtWidgets.QDialog):
 
     def __init__(self):
+        global simulationControl 
+        simulationControl = SimulationControl.SimulationControl()
+
         super().__init__()
 
     def pushButtonSaveResults(self):
@@ -18,91 +23,91 @@ class SimulationControlHelper(QtWidgets.QDialog):
         print("Not Implemented")
 
     def comboBoxSimulation(self, index):
-        print("Not Implemented")
+        simulationControl.comboBoxSimulationIndex = int(index)
 
     def checkBoxShowSimulationProgress(self, toggled):
-        print("Not Implemented")
+        simulationControl.showSimulationProgress = bool(toggled)
 
     def tabWidget(self, index):
-        print("Not Implemented")
+        simulationControl.tabIndex = int(index)
 
     def checkBoxSignalsOutputData(self, toggled):
-        print("Not Implemented")
+        simulationControl.signalsOutputData = bool(toggled)
 
     def checkBoxSignalsOutputTransmitter(self, toggled):
-        print("Not Implemented")
+        simulationControl.signalsOutputTransmitter = bool(toggled)
 
     def checkBoxSignalsOutputModulator(self, toggled):
-        print("Not Implemented")
+        simulationControl.signalsOutputModulator = bool(toggled)
 
     def checkBoxSignalsOutputChannel(self, toggled):
-        print("Not Implemented")
+        simulationControl.signalsOutputChannel = bool(toggled)
 
     def checkBoxSignalsDataGenerated(self, toggled):
-        print("Not Implemented")
+        simulationControl.signalsDataGenerated = bool(toggled)
 
     def checkBoxSignalsDataEstimated(self, toggled):
-        print("Not Implemented")
+        simulationControl.signalsDataEstimated = bool(toggled)
 
     def checkBoxSignalsShowHistogramms(self, toggled):
-        print("Not Implemented")
+        simulationControl.signalsShowHistogramms = bool(toggled)
 
     def checkBoxSignalsShowRunningWindow(self, toggled):
-        print("Not Implemented")
+        simulationControl.signalsShowRunningWindow = bool(toggled)
 
     def lineEditSignalsSimulationBitsFrame(self):
-        print("Not Implemented")
+        simulationControl.signalsSimulationBitsPerFrame = int(self.sender().text())
 
     def lineEditSignalsSimulationSamplerate(self):
-        print("Not Implemented")
+        simulationControl.signalsSimulationSamplerate = int(self.sender().text())
 
     def lineEditSignalsSimulationNumberOfShownSamples(self):
-        print("Not Implemented")
+        simulationControl.signalsSimulationNumberOfShownSamples = int(self.sender().text())
 
     def checkBoxHistogrammsPropertiesDataOutput(self, toggled):
-        print("Not Implemented")
+        simulationControl.histogrammsPropertiesDataOutput = bool(toggled)
 
     def checkBoxHistogrammsPropertiesSignalBeforeDecision(self, toggled):
-        print("Not Implemented")
+        simulationControl.histogrammsPropertiesSignalBeforeDecision = bool(toggled)
 
     def checkBoxHistogrammsPropertiesSampledSignal(self, toggled):
-        print("Not Implemented")
+        simulationControl.histogrammsPropertiesSampledSignal = bool(toggled)
 
     def checkBoxHistogrammsPropertiesErrorDistribution(self, toggled):
-        print("Not Implemented")
+        simulationControl.histogrammsPropertiesErrorDistribution = bool(toggled)
 
     def checkBoxHistogrammsSimulationAutomaticRangeEstimation(self, toggled):
-        print("Not Implemented")
+        simulationControl.histogrammsSimulationAutomaticRangeEstimation = bool(toggled)
 
     def lineEditHistogrammsSimulationGranularity(self):
-        print("Not Implemented")
+        simulationControl.histogrammsSimulationGranularity = int(self.sender().text())
 
     def checkBoxBEPSimulationBEPSNRActivate(self, toggled):
-        print("Not Implemented")
+        simulationControl.bepSimulationBEPMUActivate = bool(toggled)
 
     def checkBoxBEPSimulationBEPMUsActivate(self, toggled):
-        print("Not Implemented")
+        simulationControl.bepSimulationBEPMUActivate = bool(toggled)
 
     def checkBoxBEPSimulationSimulationShowFirst(self, toggled):
-        print("Not Implemented")
+        simulationControl.checkBoxBEPSimulationSimulationShowFirst = bool(toggled)
 
     def checkBoxBEPSimulationSimulationShowHistogramms(self, toggled):
-        print("Not Implemented")
+        simulationControl.bepSimulationSimulationShowHistogramms = bool(toggled)
 
     def lineEditBEPSimulationBEPSNRSNRRangeFrom(self):
-        print("Not Implemented")
+        simulationControl.bepSimulationBEPSNRRangeFrom = float(self.sender().text())
 
     def lineEditBEPSimulationBEPSNRSNRRangeTo(self):
-        print("Not Implemented")
+        simulationControl.bepSimulationBEPSNRRangeTo = float(self.sender().text())
 
     def lineEditBEPSimulationBEPSNRGranularity(self):
-        print("Not Implemented")
+        simulationControl.bepSimulationBEPSNRGranularity = float(self.sender().text())
 
     def lineEditBEPSimulationBEPMUsNrOfUsers(self):
-        print("Not Implemented")
+        simulationControl.bepSimulationBEPMUNrOfUsers = int(self.sender().text())
 
     def lineEditBEPSimulationBEPSNRNrOfBitsToSimulate(self):
-        print("Not Implemented")
+        simulationControl.bepSimulationSimulationNrOfBitsToSimulate = int(self.sender().text())
 
     def lineEditBEPSimulationSimulationTimeSamples(self):
-        print("Not Implemented")
+        simulationControl.bepSimulationSimulationTimeSamples = int(self.sender().text())

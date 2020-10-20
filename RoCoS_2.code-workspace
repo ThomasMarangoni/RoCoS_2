@@ -11,6 +11,8 @@
 		"qtForPython.path.pylupdate": "ylupdate5 -verbose -ts \"${fileDirname}/${fileBasenameNoExtension}.qt.ts\"",
 		"qtForPython.path.pyrcc": "pyrcc5 -o \"${fileDirname}/${fileBasenameNoExtension}.py\"",
 		"qtForPython.path.pyuic": "pyuic5 --resource-suffix= -d -o \"${fileDirname}/${fileBasenameNoExtension}.py\"",
-		"qtForPython.path.qmlscene": "\"/opt/Qt/5.15.0/gcc_64/bin/qmlscene\" --verbose"
+		"qtForPython.path.qmlscene": "\"/opt/Qt/5.15.0/gcc_64/bin/qmlscene\" --verbose",
+		"pyqt-integration.pyrcc.compile.filepath": "${qrc_name}.py",
+		"pyqt-integration.pyuic.compile.filepath": "${ui_name}.py",
 	}
 }
