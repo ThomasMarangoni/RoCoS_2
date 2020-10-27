@@ -1,7 +1,4 @@
-from PyQt5 import QtWidgets
-from PyQt5 import QtGui
-from PyQt5 import QtCore
-from PyQt5 import QtSvg
+from PyQt5 import QtWidgets, QtGui, QtCore, QtSvg
 
 from ui import CodeGenerator as CodeGenerator
 from uiHelper import CodeGeneratorHelper as CodeGeneratorHelper
@@ -53,10 +50,10 @@ class MainHelper(QtWidgets.QMainWindow):
         scene = QtWidgets.QGraphicsScene()
         scene.addItem(item)
 
-        graphicsView = mainUi.graphicsView_transmitter_pulseshape
-        graphicsView.setScene(scene)
-        graphicsView.fitInView(item)
-        graphicsView.isInteractive = True
+        #graphicsView = mainUi.graphicsView_transmitter_pulseshape
+        #graphicsView.setScene(scene)
+        #graphicsView.fitInView(item)
+        #graphicsView.isInteractive = True
 
     def pushButtonPulseshapeProperties(self):
         print("Not Implemented")
@@ -117,6 +114,15 @@ class MainHelper(QtWidgets.QMainWindow):
 
     def lineEditTransmitterPulseshapeDuration(self):
         transmitter.pulseshapeDuration = float(self.sender().text())
+
+    def lineEditTransmitterPulseshapeNumberOfZeros(self):
+        transmitter.pulseshapeNumberOfZeros = int(self.sender().text())
+
+    def lineEditTransmitterPulseshapeRollOffFactor(self):
+        transmitter.pulseshapeRollOffFactor = int(self.sender().text())
+
+    def lineEditTransmitterPulseshapeStandardDeviation(self):
+        transmitter.pulseshapeStandardDeviation = int(self.sender().text())
 
     def lineEditTransmitterSignalResultsChipRate(self):
         transmitter.signalResultsChipRate = int(self.sender().text())
@@ -197,7 +203,11 @@ class MainHelper(QtWidgets.QMainWindow):
         receiver.filterIndex = int(index)
 
     def comboBoxTransmitterPulseshape(self, index):
-        transmitter.pulseShapeShapeIndex = int(index)
+        transmitter.pulseshapeShapeIndex = int(index)
+        if (index == 1): # index 1 is sinc
+            mainUi.lineEdit_transmitter_pulseshape_numberofzeros.setEnabled(True)
+        else:
+            mainUi.lineEdit_transmitter_pulseshape_numberofzeros.setEnabled(False)
 
     def checkBoxChannelAWGN(self, toggle):
         channel.awgnCheckBox = bool(toggle)

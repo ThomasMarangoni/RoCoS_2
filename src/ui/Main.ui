@@ -260,10 +260,22 @@
           <string>Pulseshape</string>
          </property>
          <layout class="QGridLayout" name="gridLayout_4">
-          <item row="1" column="2">
-           <widget class="QLabel" name="label_2">
-            <property name="text">
-             <string>spp</string>
+          <item row="0" column="4">
+           <widget class="QLineEdit" name="lineEdit_transmitter_pulseshape_numberofzeros">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>60</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>80</width>
+              <height>16777215</height>
+             </size>
             </property>
            </widget>
           </item>
@@ -274,18 +286,53 @@
             </property>
            </widget>
           </item>
-          <item row="0" column="0" colspan="3">
-           <widget class="QComboBox" name="comboBox_transmitter_pulseshape">
-            <item>
-             <property name="text">
-              <string>Rectangular</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Sinc</string>
-             </property>
-            </item>
+          <item row="3" column="4">
+           <widget class="QLineEdit" name="lineEdit_transmitter_pulseshape_standarddeviation">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>60</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>80</width>
+              <height>16777215</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="3">
+           <widget class="QLabel" name="label_40">
+            <property name="text">
+             <string>Roll Off Factor Raised Cosine</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="QLineEdit" name="lineEdit_transmitter_pulseshape_duration">
+            <property name="minimumSize">
+             <size>
+              <width>60</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>80</width>
+              <height>16777215</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QLabel" name="label_3">
+            <property name="text">
+             <string>Duration</string>
+            </property>
            </widget>
           </item>
           <item row="1" column="1">
@@ -304,22 +351,25 @@
             </property>
            </widget>
           </item>
-          <item row="2" column="0">
-           <widget class="QLabel" name="label_3">
+          <item row="1" column="2">
+           <widget class="QLabel" name="label_2">
             <property name="text">
-             <string>Duration</string>
+             <string>spp</string>
             </property>
            </widget>
           </item>
-          <item row="2" column="2">
+          <item row="3" column="2">
            <widget class="QLabel" name="label_4">
             <property name="text">
              <string>sec</string>
             </property>
            </widget>
           </item>
-          <item row="2" column="1">
-           <widget class="QLineEdit" name="lineEdit_transmitter_pulseshape_duration">
+          <item row="1" column="4">
+           <widget class="QLineEdit" name="lineEdit_transmitter_pulseshape_rolloffactor">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
             <property name="minimumSize">
              <size>
               <width>60</width>
@@ -334,38 +384,55 @@
             </property>
            </widget>
           </item>
-          <item row="0" column="3" rowspan="3">
-           <layout class="QVBoxLayout" name="verticalLayout_2">
-            <item>
-             <widget class="QPushButton" name="pushButton_transmitter_pulseshape_show">
-              <property name="minimumSize">
-               <size>
-                <width>80</width>
-                <height>40</height>
-               </size>
-              </property>
-              <property name="text">
-               <string>Show</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QPushButton" name="pushButton_transmitter_pulseshape_properties">
-              <property name="minimumSize">
-               <size>
-                <width>80</width>
-                <height>40</height>
-               </size>
-              </property>
-              <property name="text">
-               <string>Properties</string>
-              </property>
-             </widget>
-            </item>
-           </layout>
+          <item row="0" column="3">
+           <widget class="QLabel" name="label_41">
+            <property name="text">
+             <string>Number of Zeros Raised Cosine &amp; Sinc</string>
+            </property>
+            <property name="wordWrap">
+             <bool>true</bool>
+            </property>
+           </widget>
           </item>
-          <item row="0" column="4" rowspan="3">
-           <widget class="QGraphicsView" name="graphicsView_transmitter_pulseshape"/>
+          <item row="3" column="3">
+           <widget class="QLabel" name="label_42">
+            <property name="text">
+             <string>Standard Deviation Gaussian</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2">
+           <widget class="QPushButton" name="pushButton_transmitter_pulseshape_show">
+            <property name="minimumSize">
+             <size>
+              <width>80</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Show</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0" colspan="2">
+           <widget class="QComboBox" name="comboBox_transmitter_pulseshape">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>40</height>
+             </size>
+            </property>
+            <item>
+             <property name="text">
+              <string>Rectangular</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Sinc</string>
+             </property>
+            </item>
+           </widget>
           </item>
          </layout>
         </widget>
@@ -2171,9 +2238,6 @@
   <tabstop>comboBox_transmitter_pulseshape</tabstop>
   <tabstop>lineEdit_transmitter_pulseshape_samples</tabstop>
   <tabstop>lineEdit_transmitter_pulseshape_duration</tabstop>
-  <tabstop>pushButton_transmitter_pulseshape_show</tabstop>
-  <tabstop>pushButton_transmitter_pulseshape_properties</tabstop>
-  <tabstop>graphicsView_transmitter_pulseshape</tabstop>
   <tabstop>lineEdit_transmitter_signalresults_chiprate</tabstop>
   <tabstop>lineEdit_transmitter_signalresults_bitduration</tabstop>
   <tabstop>lineEdit_transmitter_signalresults_bitrate</tabstop>
@@ -2300,38 +2364,6 @@
     <hint type="destinationlabel">
      <x>1861</x>
      <y>437</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButton_transmitter_pulseshape_show</sender>
-   <signal>pressed()</signal>
-   <receiver>MainWindow</receiver>
-   <slot>pushButtonPulseshapeShow()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>320</x>
-     <y>477</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>1</x>
-     <y>539</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButton_transmitter_pulseshape_properties</sender>
-   <signal>pressed()</signal>
-   <receiver>MainWindow</receiver>
-   <slot>pushButtonPulseshapeProperties()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>320</x>
-     <y>523</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>0</x>
-     <y>577</y>
     </hint>
    </hints>
   </connection>
@@ -3471,6 +3503,70 @@
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>pushButton_transmitter_pulseshape_show</sender>
+   <signal>pressed()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>pushButtonPulseshapeShow()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>328</x>
+     <y>476</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1</x>
+     <y>539</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_transmitter_pulseshape_numberofzeros</sender>
+   <signal>editingFinished()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>lineEditTransmitterPulseshapeNumberOfZeros()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>555</x>
+     <y>456</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>930</x>
+     <y>483</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_transmitter_pulseshape_rolloffactor</sender>
+   <signal>editingFinished()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>lineEditTransmitterPulseshapeRollOffFactor()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>555</x>
+     <y>494</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>930</x>
+     <y>483</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_transmitter_pulseshape_standarddeviation</sender>
+   <signal>editingFinished()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>lineEditTransmitterPulseshapeStandardDeviation()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>555</x>
+     <y>523</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>930</x>
+     <y>483</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
  <slots>
   <slot>pushButtonGenerateSequence()</slot>
@@ -3495,6 +3591,9 @@
   <slot>pushButtonChannelMUAddToList()</slot>
   <slot>lineEditTransmitterPulseshapeSamples()</slot>
   <slot>lineEditTransmitterPulseshapeDuration()</slot>
+  <slot>lineEditTransmitterPulseshapeNumberOfZeros()</slot>
+  <slot>lineEditTransmitterPulseshapeRollOffFactor()</slot>
+  <slot>lineEditTransmitterPulseshapeStandardDeviation()</slot>
   <slot>lineEditTransmitterSignalResultsChipRate()</slot>
   <slot>lineEditTransmitterSignalResultsBitDuration()</slot>
   <slot>lineEditTransmitterSignalResultsBitRate()</slot>

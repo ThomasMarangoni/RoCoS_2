@@ -9,9 +9,12 @@ class Transmitter:
     sequenceAntipodal = None
     sequenceOrthogonal = None
 
-    pulseShapeShapeIndex = 0        # Needs to be initialized with 0, because event is only triggered on change
+    pulseshapeShapeIndex = 0        # Needs to be initialized with 0, because event is only triggered on change
     pulseshapeSamplePulse = None    # spp
     pulseshapeDuration = None       # sec
+    pulseshapeNumberOfZeros = None
+    pulseshapeRollOffFactor = None
+    pulseshapeStandardDeviation = None
 
     signalParameterChipAmplitude = None    # V
     signalParameterChipDuration = None     # sec
