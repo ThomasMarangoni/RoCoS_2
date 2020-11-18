@@ -1,5 +1,6 @@
 from PyQt5 import QtWidgets, QtGui, QtCore, QtSvg
 
+from config import CONFIG as CONFIG
 from ui import CodeGenerator as CodeGenerator
 from uiHelper import CodeGeneratorHelper as CodeGeneratorHelper
 from ui import SimulationControl as SimulationControl
@@ -7,6 +8,11 @@ from uiHelper import SimulationControlHelper as SimulationControlHelper
 from uiHelper.classes import Channel as Channel
 from uiHelper.classes import Receiver as Receiver
 from uiHelper.classes import Transmitter as Transmitter
+
+import os
+import math
+import numpy as np
+import matplotlib.pyplot as plot
 
 class MainHelper(QtWidgets.QMainWindow):
     def __init__(self, main):
@@ -22,6 +28,7 @@ class MainHelper(QtWidgets.QMainWindow):
 
         super().__init__()
 
+    # GUI Events
     def actionSimulationControl(self, checked):
         windowSimulationControl = SimulationControlHelper.SimulationControlHelper()
         windowSimulationControl.ui = SimulationControl.Ui_Dialog_SimulationControl()
@@ -30,7 +37,6 @@ class MainHelper(QtWidgets.QMainWindow):
         windowSimulationControl.exec()
 
     def pushButtonGenerateSequence(self): #TODO: Gets triggered two times
-        print("Test")
         windowCodeGenerator = CodeGeneratorHelper.CodeGeneratorHelper()
         windowCodeGenerator.ui = CodeGenerator.Ui_Dialog_CodeGenerator()
         windowCodeGenerator.ui.setupUi(windowCodeGenerator)
@@ -38,7 +44,8 @@ class MainHelper(QtWidgets.QMainWindow):
         windowCodeGenerator.exec()
 
     def pushButtonPulseshapeShow(self):
-        transmitter.createPulseShapeImage(self)
+        sequence = self.createSincSequence(20, 5)
+        self.createPulseShapeImage(self, sequence, 20)
 
         renderer = QtSvg.QSvgRenderer()
         renderer.load("tmp/pulseshape_plot.svg")
@@ -50,10 +57,18 @@ class MainHelper(QtWidgets.QMainWindow):
         scene = QtWidgets.QGraphicsScene()
         scene.addItem(item)
 
-        #graphicsView = mainUi.graphicsView_transmitter_pulseshape
-        #graphicsView.setScene(scene)
-        #graphicsView.fitInView(item)
-        #graphicsView.isInteractive = True
+        graphicsView = QtWidgets.QGraphicsView()
+        graphicsView.setScene(scene)
+        graphicsView.fitInView(item)
+        graphicsView.isInteractive = True
+
+        layout = QtWidgets.QGridLayout()
+        layout.addWidget(graphicsView)
+
+        dialog = QtWidgets.QDialog(self)
+        dialog.setLayout(layout)
+        dialog.setWindowTitle("Pulseshape")
+        dialog.exec_()
 
     def pushButtonPulseshapeProperties(self):
         print("Not Implemented")
@@ -111,9 +126,23 @@ class MainHelper(QtWidgets.QMainWindow):
 
     def lineEditTransmitterPulseshapeSamples(self):
         transmitter.pulseshapeSamplePulse = int(self.sender().text())
+        if transmitter.pulseshapeDuration is not None:
+            transmitter.signalResultsSampleRate = float(1/(transmitter.pulseshapeDuration/transmitter.pulseshapeSamplePulse))
+            mainUi.lineEdit_transmitter_signalresults_samplerate.setText(str(transmitter.signalResultsSampleRate))
+
+        if transmitter.signalParameterChipDuration is not None and transmitter.pulseshapeDuration is not None:
+            transmitter.signalResultsOversampling = float(transmitter.signalParameterChipDuration/(transmitter.pulseshapeDuration/transmitter.pulseshapeSamplePulse))
+            mainUi.lineEdit_transmitter_signalresults_oversampling.setText(str(transmitter.signalResultsOversampling))
 
     def lineEditTransmitterPulseshapeDuration(self):
         transmitter.pulseshapeDuration = float(self.sender().text())
+        if transmitter.pulseshapeSamplePulse is not None:
+            transmitter.signalResultsSampleRate = float(1/(transmitter.pulseshapeDuration/transmitter.pulseshapeSamplePulse))
+            mainUi.lineEdit_transmitter_signalresults_samplerate.setText(str(transmitter.signalResultsSampleRate))
+        
+        if transmitter.signalParameterChipDuration is not None and transmitter.pulseshapeSamplePulse is not None:
+            transmitter.signalResultsOversampling = float(transmitter.signalParameterChipDuration/(transmitter.pulseshapeDuration/transmitter.pulseshapeSamplePulse))
+            mainUi.lineEdit_transmitter_signalresults_oversampling.setText(str(transmitter.signalResultsOversampling))
 
     def lineEditTransmitterPulseshapeNumberOfZeros(self):
         transmitter.pulseshapeNumberOfZeros = int(self.sender().text())
@@ -125,25 +154,36 @@ class MainHelper(QtWidgets.QMainWindow):
         transmitter.pulseshapeStandardDeviation = int(self.sender().text())
 
     def lineEditTransmitterSignalResultsChipRate(self):
-        transmitter.signalResultsChipRate = int(self.sender().text())
+        # lineEdit is read-only, event is only for debug purpose
+        print("Debug only event")
 
     def lineEditTransmitterSignalResultsBitDuration(self):
-        transmitter.signalResultsBitRate = float(self.sender().text())
+        # lineEdit is read-only, event is only for debug purpose
+        print("Debug only event")
 
     def lineEditTransmitterSignalResultsBitRate(self):
-        transmitter.signalResultsBitRate = int(self.sender().text())
+        # lineEdit is read-only, event is only for debug purpose
+        print("Debug only event")
 
     def lineEditTransmitterSignalResultsSampleRate(self):
-        transmitter.signalResultsSampleRate = int(self.sender().text())
+        # lineEdit is read-only, event is only for debug purpose
+        print("Debug only event")
 
     def lineEditTransmitterSignalResultsOversampling(self):
-        transmitter.signalResultsOversampling = int(self.sender().text())
+        # lineEdit is read-only, event is only for debug purpose
+        print("Debug only event")
 
     def lineEditTransmitterSignalParameterChipAmplitude(self):
         transmitter.signalParameterChipAmplitude = float(self.sender().text())
 
     def lineEditTransmitterSignalParameterChipDuration(self):
         transmitter.signalParameterChipDuration = float(self.sender().text())
+        transmitter.signalResultsChipRate = float(1/transmitter.signalParameterChipDuration)
+        mainUi.lineEdit_transmitter_signalresults_chiprate.setText(str(transmitter.signalResultsChipRate))
+
+        if transmitter.pulseshapeDuration is not None and transmitter.pulseshapeSamplePulse is not None:
+            transmitter.signalResultsOversampling = float(transmitter.signalParameterChipDuration/(transmitter.pulseshapeDuration/transmitter.pulseshapeSamplePulse))
+            mainUi.lineEdit_transmitter_signalresults_oversampling.setText(str(transmitter.signalResultsOversampling))
 
     def lineEditChannelAWGNPropertiesSNR(self):
         channel.awgnSNR = float(self.sender().text())
@@ -268,3 +308,42 @@ class MainHelper(QtWidgets.QMainWindow):
 
     def listWidgetChannelMUNewUser(self, current, previous):
         print("Not Implemented")
+
+   # Additional Functions
+    def createPulseShapeImage(self, ui, sequence, length):
+        fig, _ = plot.subplots(figsize=(15, 5), facecolor="white")
+        x = range(0, length)
+        y = sequence
+        plot.plot(x, y)
+
+        if not os.path.exists(CONFIG.TEMPORARY_DIRECTORY_NAME):
+            os.makedirs(CONFIG.TEMPORARY_DIRECTORY_NAME)
+
+        plot.savefig(CONFIG.TEMPORARY_DIRECTORY_NAME + 'pulseshape_plot.svg')
+        plot.close(fig)
+
+    def createRectSequence(self, length):
+        length = int(length)
+
+        sequence = []
+        for i in range(0, length):
+            sequence.insert(i,float(1.0))
+
+        return sequence
+
+    def createSincSequence(self, length, zeroes):
+        length = int(length)
+
+        arg = math.pi / length
+
+        sequence = [] 
+        for i in range(0, int(length/2)):
+            sequence.insert(i, math.sin((length/2-i)*arg)/((length/2-i)*arg))
+        
+        for i in range(int(length/2), length):
+            if ((math.sin((i-length/2)*arg) == 0) and ((i-length/2)*arg) == 0):
+                sequence.insert(i, 1)
+            else:
+                sequence.insert(i, math.sin((i-length/2)*arg)/((i-length/2)*arg))
+
+        return sequence
