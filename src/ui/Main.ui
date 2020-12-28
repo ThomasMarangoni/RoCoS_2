@@ -1964,7 +1964,7 @@
               </widget>
              </item>
              <item row="0" column="2">
-              <widget class="QLineEdit" name="lineEdit__channel_mu_users">
+              <widget class="QLineEdit" name="lineEdit_channel_mu_users">
                <property name="enabled">
                 <bool>false</bool>
                </property>
@@ -2292,7 +2292,7 @@
   <tabstop>checkBox_channel_mw</tabstop>
   <tabstop>lineEdit_channel_mw</tabstop>
   <tabstop>checkBox_channel_mu_users</tabstop>
-  <tabstop>lineEdit__channel_mu_users</tabstop>
+  <tabstop>lineEdit_channel_mu_users</tabstop>
   <tabstop>radioButton_channel_mu_scdma</tabstop>
   <tabstop>radioButton_channel_mu_acdma</tabstop>
   <tabstop>tabWidget_receiver_ss_sequence</tabstop>
@@ -2967,7 +2967,7 @@
    </hints>
   </connection>
   <connection>
-   <sender>lineEdit__channel_mu_users</sender>
+   <sender>lineEdit_channel_mu_users</sender>
    <signal>editingFinished()</signal>
    <receiver>MainWindow</receiver>
    <slot>lineEditChannelNumberOfMU()</slot>
@@ -3497,7 +3497,7 @@
   <connection>
    <sender>checkBox_channel_mu_users</sender>
    <signal>toggled(bool)</signal>
-   <receiver>lineEdit__channel_mu_users</receiver>
+   <receiver>lineEdit_channel_mu_users</receiver>
    <slot>setEnabled(bool)</slot>
    <hints>
     <hint type="sourcelabel">

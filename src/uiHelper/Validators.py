@@ -35,6 +35,7 @@ def setupMainValidators(mainUi):
     mainUi.lineEdit_channel_mu_procent.setValidator(integerValidator)
     mainUi.lineEdit_channel_cw.setValidator(integerValidator)
     mainUi.lineEdit_channel_mw.setValidator(integerValidator)
+    mainUi.lineEdit_channel_mu_users.setValidator(integerValidator)
     mainUi.lineEdit_channel_mu_procent.setValidator(integerValidator)
 
     mainUi.lineEdit_receiver_filter_integrate_and_dump_delay.setValidator(doubleValidator)
