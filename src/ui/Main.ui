@@ -1242,7 +1242,7 @@
                </widget>
               </item>
               <item row="1" column="1">
-               <widget class="QLineEdit" name="lineEdit_receiver_filter_rake_receiver_procent">
+               <widget class="QLineEdit" name="lineEdit_receiver_filter_rake_receiver_percent">
                 <property name="minimumSize">
                  <size>
                   <width>60</width>
@@ -1529,7 +1529,7 @@
                </widget>
               </item>
               <item row="1" column="0">
-               <widget class="QLineEdit" name="lineEdit_channel_cw_procent">
+               <widget class="QLineEdit" name="lineEdit_channel_cw_percent">
                 <property name="minimumSize">
                  <size>
                   <width>60</width>
@@ -1642,7 +1642,7 @@
                </widget>
               </item>
               <item row="1" column="0">
-               <widget class="QLineEdit" name="lineEdit_channel_mw_procent">
+               <widget class="QLineEdit" name="lineEdit_channel_mw_percent">
                 <property name="minimumSize">
                  <size>
                   <width>60</width>
@@ -1807,7 +1807,7 @@
               <item row="1" column="0" colspan="2">
                <layout class="QHBoxLayout" name="horizontalLayout">
                 <item>
-                 <widget class="QLineEdit" name="lineEdit_channel_mu_procent">
+                 <widget class="QLineEdit" name="lineEdit_channel_mu_percent">
                   <property name="minimumSize">
                    <size>
                     <width>60</width>
@@ -2272,15 +2272,15 @@
   <tabstop>lineEdit_channel_awgn_snr</tabstop>
   <tabstop>lineEdit_channel_awgn_stddev</tabstop>
   <tabstop>lineEdit_channel_cw_frequency</tabstop>
-  <tabstop>lineEdit_channel_cw_procent</tabstop>
+  <tabstop>lineEdit_channel_cw_percent</tabstop>
   <tabstop>pushButton_channel_cw_addtolist</tabstop>
   <tabstop>listWidget_channel_cw_users</tabstop>
   <tabstop>lineEdit_channel_mw_seconds</tabstop>
-  <tabstop>lineEdit_channel_mw_procent</tabstop>
+  <tabstop>lineEdit_channel_mw_percent</tabstop>
   <tabstop>pushButton_channel_mw_addtolist</tabstop>
   <tabstop>listWidget_channel_mw_users</tabstop>
   <tabstop>listWidget_channel_mu_newusers</tabstop>
-  <tabstop>lineEdit_channel_mu_procent</tabstop>
+  <tabstop>lineEdit_channel_mu_percent</tabstop>
   <tabstop>pushButton_channel_mu_addtolist</tabstop>
   <tabstop>pushButton_channel_mu_generate_sequence</tabstop>
   <tabstop>pushButton_channel_mu_analyse_sequence</tabstop>
@@ -2313,7 +2313,7 @@
   <tabstop>pushButton_receiver_filter_low_pass_filter_show_impulseresponse</tabstop>
   <tabstop>graphicsView_receiver_filter_low_pass_filter</tabstop>
   <tabstop>lineEdit_receiver_filter_rake_receiver_delay</tabstop>
-  <tabstop>lineEdit_receiver_filter_rake_receiver_procent</tabstop>
+  <tabstop>lineEdit_receiver_filter_rake_receiver_percent</tabstop>
   <tabstop>pushButton_receiver_filter_rake_receiver_addtolist</tabstop>
   <tabstop>listWidget_receiver_filter_rake_receiver_rakefingers</tabstop>
   <tabstop>radioButton_receiver_filter_rake_receiver_integrateanddump</tabstop>
@@ -2871,7 +2871,7 @@
    </hints>
   </connection>
   <connection>
-   <sender>lineEdit_channel_cw_procent</sender>
+   <sender>lineEdit_channel_cw_percent</sender>
    <signal>editingFinished()</signal>
    <receiver>MainWindow</receiver>
    <slot>lineEditChannelCWPercentage()</slot>
@@ -2903,7 +2903,7 @@
    </hints>
   </connection>
   <connection>
-   <sender>lineEdit_channel_mw_procent</sender>
+   <sender>lineEdit_channel_mw_percent</sender>
    <signal>editingFinished()</signal>
    <receiver>MainWindow</receiver>
    <slot>lineEditChannelMWPercentage()</slot>
@@ -2919,7 +2919,7 @@
    </hints>
   </connection>
   <connection>
-   <sender>lineEdit_channel_mu_procent</sender>
+   <sender>lineEdit_channel_mu_percent</sender>
    <signal>editingFinished()</signal>
    <receiver>MainWindow</receiver>
    <slot>lineEditChannelMUPercentage()</slot>
@@ -3047,7 +3047,7 @@
    </hints>
   </connection>
   <connection>
-   <sender>lineEdit_receiver_filter_rake_receiver_procent</sender>
+   <sender>lineEdit_receiver_filter_rake_receiver_percent</sender>
    <signal>editingFinished()</signal>
    <receiver>MainWindow</receiver>
    <slot>lineEditReceiverFilterRakeReceiverPercentage()</slot>
