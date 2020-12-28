@@ -221,18 +221,15 @@ class MainHelper(QtWidgets.QMainWindow):
 
     def lineEditChannelCWPercentage(self):
         channel.cwReferenceAmplitude = convertInt(self.sender().text())
-        print(self.sender().text())
 
     def lineEditChannelMWs(self):
         channel.mwS = convertFloat(self.sender().text())
 
     def lineEditChannelMWPercentage(self):
         channel.mwReferenceAmplitude = convertInt(self.sender().text())
-        print(self.sender().text())
 
     def lineEditChannelMUPercentage(self):
         channel.muReferenceAmplitude = convertInt(self.sender().text())
-        print(self.sender().text())
 
     def lineEditChannelNumberOfCW(self):
         channel.numberOfCWLineEdit = convertInt(self.sender().text())
@@ -254,7 +251,6 @@ class MainHelper(QtWidgets.QMainWindow):
 
     def lineEditReceiverFilterRakeReceiverPercentage(self):
         receiver.filterRakeReceiverReferenceAmplitude = convertInt(self.sender().text())
-        print(self.sender().text())
 
     def lineEditReceiverFilterIntegrateAndDumpDelay(self):
         receiver.filterIntegrateAndDumpDelay = convertFloat(self.sender().text())
