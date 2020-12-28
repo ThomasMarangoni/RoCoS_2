@@ -7,11 +7,14 @@
     <x>0</x>
     <y>0</y>
     <width>1862</width>
-    <height>968</height>
+    <height>993</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>RoCoS 2</string>
+  </property>
+  <property name="locale">
+   <locale language="English" country="Germany"/>
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QGridLayout" name="gridLayout">
@@ -1371,7 +1374,20 @@
        <string>Channel</string>
       </property>
       <layout class="QGridLayout" name="gridLayout_8">
-       <item row="0" column="0" colspan="5">
+       <item row="2" column="2">
+        <spacer name="verticalSpacer_9">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="0" column="0" colspan="4">
         <widget class="QTabWidget" name="tabWidget_channel">
          <property name="currentIndex">
           <number>0</number>
@@ -1858,102 +1874,96 @@
          </widget>
         </widget>
        </item>
-       <item row="1" column="1">
-        <layout class="QGridLayout" name="gridLayout_32">
-         <item row="1" column="1">
-          <widget class="QLineEdit" name="lineEdit_channel_cw">
-           <property name="enabled">
-            <bool>false</bool>
-           </property>
-           <property name="minimumSize">
-            <size>
-             <width>60</width>
-             <height>0</height>
-            </size>
-           </property>
-           <property name="maximumSize">
-            <size>
-             <width>80</width>
-             <height>16777215</height>
-            </size>
-           </property>
-          </widget>
-         </item>
-         <item row="2" column="1">
-          <widget class="QLineEdit" name="lineEdit_channel_mw">
-           <property name="enabled">
-            <bool>false</bool>
-           </property>
-           <property name="minimumSize">
-            <size>
-             <width>60</width>
-             <height>0</height>
-            </size>
-           </property>
-           <property name="maximumSize">
-            <size>
-             <width>80</width>
-             <height>16777215</height>
-            </size>
-           </property>
-          </widget>
-         </item>
-         <item row="0" column="0">
-          <widget class="QCheckBox" name="checkBox_channel_awgn">
-           <property name="text">
-            <string>AWGN</string>
-           </property>
-          </widget>
-         </item>
-         <item row="1" column="0">
-          <widget class="QCheckBox" name="checkBox_channel_cw">
-           <property name="text">
-            <string>number of CW</string>
-           </property>
-          </widget>
-         </item>
-         <item row="2" column="0">
-          <widget class="QCheckBox" name="checkBox_channel_mw">
-           <property name="text">
-            <string>number of MW</string>
-           </property>
-          </widget>
-         </item>
-        </layout>
-       </item>
        <item row="1" column="2">
-        <spacer name="horizontalSpacer_11">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>40</width>
-           <height>20</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
-       <item row="1" column="3">
         <widget class="QGroupBox" name="groupBox_8">
          <property name="title">
           <string>Channel Summary</string>
          </property>
          <layout class="QGridLayout" name="gridLayout_9">
-          <item row="3" column="0" colspan="3">
+          <item row="0" column="0">
+           <layout class="QGridLayout" name="gridLayout_32">
+            <item row="1" column="1">
+             <widget class="QLineEdit" name="lineEdit_channel_cw">
+              <property name="enabled">
+               <bool>false</bool>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>60</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>80</width>
+                <height>16777215</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="QLineEdit" name="lineEdit_channel_mw">
+              <property name="enabled">
+               <bool>false</bool>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>60</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>80</width>
+                <height>16777215</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="QCheckBox" name="checkBox_channel_awgn">
+              <property name="text">
+               <string>AWGN</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QCheckBox" name="checkBox_channel_cw">
+              <property name="text">
+               <string>number of CW</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QCheckBox" name="checkBox_channel_mw">
+              <property name="text">
+               <string>number of MW</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="0" column="1">
            <widget class="QGroupBox" name="groupBox_10">
             <property name="title">
              <string>MU</string>
             </property>
             <layout class="QGridLayout" name="gridLayout_10">
-             <item row="0" column="0">
-              <widget class="QCheckBox" name="checkBox_channel_mu_users">
+             <item row="1" column="1" colspan="2">
+              <widget class="QRadioButton" name="radioButton_channel_mu_scdma">
                <property name="text">
-                <string>number of User</string>
+                <string>S-CDMA</string>
                </property>
               </widget>
              </item>
-             <item row="0" column="1">
+             <item row="2" column="1" colspan="2">
+              <widget class="QRadioButton" name="radioButton_channel_mu_acdma">
+               <property name="text">
+                <string>A-CDMA</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="2">
               <widget class="QLineEdit" name="lineEdit__channel_mu_users">
                <property name="enabled">
                 <bool>false</bool>
@@ -1972,17 +1982,10 @@
                </property>
               </widget>
              </item>
-             <item row="1" column="0" colspan="2">
-              <widget class="QRadioButton" name="radioButton_channel_mu_scdma">
+             <item row="0" column="1">
+              <widget class="QCheckBox" name="checkBox_channel_mu_users">
                <property name="text">
-                <string>S-CDMA</string>
-               </property>
-              </widget>
-             </item>
-             <item row="2" column="0" colspan="2">
-              <widget class="QRadioButton" name="radioButton_channel_mu_acdma">
-               <property name="text">
-                <string>A-CDMA</string>
+                <string>number of User</string>
                </property>
               </widget>
              </item>
@@ -1992,7 +1995,7 @@
          </layout>
         </widget>
        </item>
-       <item row="1" column="4">
+       <item row="1" column="3">
         <spacer name="horizontalSpacer">
          <property name="orientation">
           <enum>Qt::Horizontal</enum>
@@ -2001,19 +2004,6 @@
           <size>
            <width>40</width>
            <height>20</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
-       <item row="2" column="3">
-        <spacer name="verticalSpacer_9">
-         <property name="orientation">
-          <enum>Qt::Vertical</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>20</width>
-           <height>40</height>
           </size>
          </property>
         </spacer>
@@ -2042,7 +2032,7 @@
      <x>0</x>
      <y>0</y>
      <width>1862</width>
-     <height>19</height>
+     <height>20</height>
     </rect>
    </property>
    <property name="font">

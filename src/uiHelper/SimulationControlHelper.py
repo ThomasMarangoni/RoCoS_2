@@ -2,6 +2,8 @@ from PyQt5 import QtWidgets
 
 from uiHelper.classes import SimulationControl as SimulationControl
 
+from functions import convertFloat, convertInt
+
 class SimulationControlHelper(QtWidgets.QDialog):
 
     def __init__(self):
@@ -23,13 +25,13 @@ class SimulationControlHelper(QtWidgets.QDialog):
         print("Not Implemented")
 
     def comboBoxSimulation(self, index):
-        simulationControl.comboBoxSimulationIndex = int(index)
+        simulationControl.comboBoxSimulationIndex = convertInt(index)
 
     def checkBoxShowSimulationProgress(self, toggled):
         simulationControl.showSimulationProgress = bool(toggled)
 
     def tabWidget(self, index):
-        simulationControl.tabIndex = int(index)
+        simulationControl.tabIndex = convertInt(index)
 
     def checkBoxSignalsOutputData(self, toggled):
         simulationControl.signalsOutputData = bool(toggled)
@@ -56,13 +58,13 @@ class SimulationControlHelper(QtWidgets.QDialog):
         simulationControl.signalsShowRunningWindow = bool(toggled)
 
     def lineEditSignalsSimulationBitsFrame(self):
-        simulationControl.signalsSimulationBitsPerFrame = int(self.sender().text())
+        simulationControl.signalsSimulationBitsPerFrame = convertInt(self.sender().text())
 
     def lineEditSignalsSimulationSamplerate(self):
-        simulationControl.signalsSimulationSamplerate = int(self.sender().text())
+        simulationControl.signalsSimulationSamplerate = convertInt(self.sender().text())
 
     def lineEditSignalsSimulationNumberOfShownSamples(self):
-        simulationControl.signalsSimulationNumberOfShownSamples = int(self.sender().text())
+        simulationControl.signalsSimulationNumberOfShownSamples = convertInt(self.sender().text())
 
     def checkBoxHistogrammsPropertiesDataOutput(self, toggled):
         simulationControl.histogrammsPropertiesDataOutput = bool(toggled)
@@ -80,7 +82,7 @@ class SimulationControlHelper(QtWidgets.QDialog):
         simulationControl.histogrammsSimulationAutomaticRangeEstimation = bool(toggled)
 
     def lineEditHistogrammsSimulationGranularity(self):
-        simulationControl.histogrammsSimulationGranularity = int(self.sender().text())
+        simulationControl.histogrammsSimulationGranularity = convertInt(self.sender().text())
 
     def checkBoxBEPSimulationBEPSNRActivate(self, toggled):
         simulationControl.bepSimulationBEPMUActivate = bool(toggled)
@@ -95,19 +97,19 @@ class SimulationControlHelper(QtWidgets.QDialog):
         simulationControl.bepSimulationSimulationShowHistogramms = bool(toggled)
 
     def lineEditBEPSimulationBEPSNRSNRRangeFrom(self):
-        simulationControl.bepSimulationBEPSNRRangeFrom = float(self.sender().text())
+        simulationControl.bepSimulationBEPSNRRangeFrom = convertFloat(self.sender().text())
 
     def lineEditBEPSimulationBEPSNRSNRRangeTo(self):
-        simulationControl.bepSimulationBEPSNRRangeTo = float(self.sender().text())
+        simulationControl.bepSimulationBEPSNRRangeTo = convertFloat(self.sender().text())
 
     def lineEditBEPSimulationBEPSNRGranularity(self):
-        simulationControl.bepSimulationBEPSNRGranularity = float(self.sender().text())
+        simulationControl.bepSimulationBEPSNRGranularity = convertFloat(self.sender().text())
 
     def lineEditBEPSimulationBEPMUsNrOfUsers(self):
-        simulationControl.bepSimulationBEPMUNrOfUsers = int(self.sender().text())
+        simulationControl.bepSimulationBEPMUNrOfUsers = convertInt(self.sender().text())
 
     def lineEditBEPSimulationBEPSNRNrOfBitsToSimulate(self):
-        simulationControl.bepSimulationSimulationNrOfBitsToSimulate = int(self.sender().text())
+        simulationControl.bepSimulationSimulationNrOfBitsToSimulate = convertInt(self.sender().text())
 
     def lineEditBEPSimulationSimulationTimeSamples(self):
-        simulationControl.bepSimulationSimulationTimeSamples = int(self.sender().text())
+        simulationControl.bepSimulationSimulationTimeSamples = convertInt(self.sender().text())

@@ -14,6 +14,8 @@ import math
 import numpy as np
 import matplotlib.pyplot as plot
 
+from functions import convertFloat, convertInt
+
 class MainHelper(QtWidgets.QMainWindow):
     def __init__(self, main):
         global mainUi
@@ -44,11 +46,20 @@ class MainHelper(QtWidgets.QMainWindow):
         windowCodeGenerator.exec()
 
     def pushButtonPulseshapeShow(self):
-        sequence = self.createSincSequence(20, 5)
-        self.createPulseShapeImage(self, sequence, 20)
+        if transmitter.pulseshapeShapeIndex == 1 and transmitter.pulseshapeNumberOfZeros is None:
+            return
+
+        sequenceLength = 20 # TODO replace with real sequence Length
+        if transmitter.pulseshapeShapeIndex == 0:
+            sequence = self.createRectSequence(sequenceLength)
+
+        if transmitter.pulseshapeShapeIndex == 1:
+            sequence = self.createSincSequence(sequenceLength, transmitter.pulseshapeNumberOfZeros)
+
+        self.createPulseShapeImage(self, sequence, sequenceLength)
 
         renderer = QtSvg.QSvgRenderer()
-        renderer.load("tmp/pulseshape_plot.svg")
+        renderer.load(CONFIG.TEMPORARY_DIRECTORY_NAME + "pulseshape_plot.svg")
         size = renderer.defaultSize()
 
         item = QtSvg.QGraphicsSvgItem()
@@ -125,33 +136,33 @@ class MainHelper(QtWidgets.QMainWindow):
         print("Not Implemented")
 
     def lineEditTransmitterPulseshapeSamples(self):
-        transmitter.pulseshapeSamplePulse = int(self.sender().text())
+        transmitter.pulseshapeSamplePulse = convertInt(self.sender().text())
         if transmitter.pulseshapeDuration is not None:
-            transmitter.signalResultsSampleRate = float(1/(transmitter.pulseshapeDuration/transmitter.pulseshapeSamplePulse))
+            transmitter.signalResultsSampleRate = convertFloat(1/(transmitter.pulseshapeDuration/transmitter.pulseshapeSamplePulse))
             mainUi.lineEdit_transmitter_signalresults_samplerate.setText(str(transmitter.signalResultsSampleRate))
 
         if transmitter.signalParameterChipDuration is not None and transmitter.pulseshapeDuration is not None:
-            transmitter.signalResultsOversampling = float(transmitter.signalParameterChipDuration/(transmitter.pulseshapeDuration/transmitter.pulseshapeSamplePulse))
+            transmitter.signalResultsOversampling = convertFloat(transmitter.signalParameterChipDuration/(transmitter.pulseshapeDuration/transmitter.pulseshapeSamplePulse))
             mainUi.lineEdit_transmitter_signalresults_oversampling.setText(str(transmitter.signalResultsOversampling))
 
     def lineEditTransmitterPulseshapeDuration(self):
-        transmitter.pulseshapeDuration = float(self.sender().text())
+        transmitter.pulseshapeDuration = convertFloat(self.sender().text())
         if transmitter.pulseshapeSamplePulse is not None:
-            transmitter.signalResultsSampleRate = float(1/(transmitter.pulseshapeDuration/transmitter.pulseshapeSamplePulse))
+            transmitter.signalResultsSampleRate = convertFloat(1/(transmitter.pulseshapeDuration/transmitter.pulseshapeSamplePulse))
             mainUi.lineEdit_transmitter_signalresults_samplerate.setText(str(transmitter.signalResultsSampleRate))
         
         if transmitter.signalParameterChipDuration is not None and transmitter.pulseshapeSamplePulse is not None:
-            transmitter.signalResultsOversampling = float(transmitter.signalParameterChipDuration/(transmitter.pulseshapeDuration/transmitter.pulseshapeSamplePulse))
+            transmitter.signalResultsOversampling = convertFloat(transmitter.signalParameterChipDuration/(transmitter.pulseshapeDuration/transmitter.pulseshapeSamplePulse))
             mainUi.lineEdit_transmitter_signalresults_oversampling.setText(str(transmitter.signalResultsOversampling))
 
     def lineEditTransmitterPulseshapeNumberOfZeros(self):
-        transmitter.pulseshapeNumberOfZeros = int(self.sender().text())
+        transmitter.pulseshapeNumberOfZeros = convertInt(self.sender().text())
 
     def lineEditTransmitterPulseshapeRollOffFactor(self):
-        transmitter.pulseshapeRollOffFactor = int(self.sender().text())
+        transmitter.pulseshapeRollOffFactor = convertInt(self.sender().text())
 
     def lineEditTransmitterPulseshapeStandardDeviation(self):
-        transmitter.pulseshapeStandardDeviation = int(self.sender().text())
+        transmitter.pulseshapeStandardDeviation = convertInt(self.sender().text())
 
     def lineEditTransmitterSignalResultsChipRate(self):
         # lineEdit is read-only, event is only for debug purpose
@@ -174,77 +185,91 @@ class MainHelper(QtWidgets.QMainWindow):
         print("Debug only event")
 
     def lineEditTransmitterSignalParameterChipAmplitude(self):
-        transmitter.signalParameterChipAmplitude = float(self.sender().text())
+        transmitter.signalParameterChipAmplitude = convertFloat(self.sender().text())
 
     def lineEditTransmitterSignalParameterChipDuration(self):
-        transmitter.signalParameterChipDuration = float(self.sender().text())
-        transmitter.signalResultsChipRate = float(1/transmitter.signalParameterChipDuration)
+        transmitter.signalParameterChipDuration = convertFloat(self.sender().text())
+        transmitter.signalResultsChipRate = convertFloat(1/transmitter.signalParameterChipDuration)
         mainUi.lineEdit_transmitter_signalresults_chiprate.setText(str(transmitter.signalResultsChipRate))
 
         if transmitter.pulseshapeDuration is not None and transmitter.pulseshapeSamplePulse is not None:
-            transmitter.signalResultsOversampling = float(transmitter.signalParameterChipDuration/(transmitter.pulseshapeDuration/transmitter.pulseshapeSamplePulse))
+            transmitter.signalResultsOversampling = convertFloat(transmitter.signalParameterChipDuration/(transmitter.pulseshapeDuration/transmitter.pulseshapeSamplePulse))
             mainUi.lineEdit_transmitter_signalresults_oversampling.setText(str(transmitter.signalResultsOversampling))
 
+        if transmitter.signalParameterChipDuration is not None:
+            #TODO: helpLen = ((Sequence_Basic*) Sequence1_ListBox->Items->Objects[2])->GetLength();
+            helpLength = 1
+
+            transmitter.signalResultsBitDuration = convertFloat(transmitter.signalParameterChipDuration*helpLength)
+            mainUi.lineEdit_transmitter_signalresults_bitduration.setText(str(transmitter.signalParameterChipDuration))
+
+            if transmitter.signalParameterChipDuration > 0:
+                transmitter.signalResultsBitRate = convertFloat(1/(transmitter.signalParameterChipDuration*helpLength))
+            else:
+                transmitter.signalResultsBitRate = 0
+
+            mainUi.lineEdit_transmitter_signalresults_bitrate.setText(str(transmitter.signalResultsBitRate))
+
     def lineEditChannelAWGNPropertiesSNR(self):
-        channel.awgnSNR = float(self.sender().text())
+        channel.awgnSNR = convertFloat(self.sender().text())
 
     def lineEditChannelAWGNPropertiesStdDev(self):
-        channel.awgnStdDev = float(self.sender().text())
+        channel.awgnStdDev = convertFloat(self.sender().text())
 
     def lineEditChannelCWHz(self):
-        channel.cwHz = float(self.sender().text())
+        channel.cwHz = convertFloat(self.sender().text())
 
     def lineEditChannelCWPercentage(self):
-        channel.cwReferenceAmplitude = int(self.sender().text())
+        channel.cwReferenceAmplitude = convertInt(self.sender().text())
 
     def lineEditChannelMWs(self):
-        channel.mwS = float(self.sender().text())
+        channel.mwS = convertFloat(self.sender().text())
 
     def lineEditChannelMWPercentage(self):
-        channel.mwReferenceAmplitude = int(self.sender().text())
+        channel.mwReferenceAmplitude = convertInt(self.sender().text())
 
     def lineEditChannelMUPercentage(self):
-        channel.muReferenceAmplitude = int(self.sender().text())
+        channel.muReferenceAmplitude = convertInt(self.sender().text())
 
     def lineEditChannelNumberOfCW(self):
-        channel.numberOfCWLineEdit = int(self.sender().text())
+        channel.numberOfCWLineEdit = convertInt(self.sender().text())
 
     def lineEditChannelNumberOfMW(self):
-        channel.numberOfMWLineEdit = int(self.sender().text())
+        channel.numberOfMWLineEdit = convertInt(self.sender().text())
 
     def lineEditChannelNumberOfMU(self):
-        channel.muNumberOfUserLineEdit = int(self.sender().text())
+        channel.muNumberOfUserLineEdit = convertInt(self.sender().text())
 
     def lineEditReceiverFilterMatchedFilter(self):
-        receiver.filterMatchedFilterDelay = float(self.sender().text())
+        receiver.filterMatchedFilterDelay = convertFloat(self.sender().text())
 
     def lineEditReceiverFilterLowPassFilterDelay(self):
-        receiver.filterLowPassFilterDelay = float(self.sender().text())
+        receiver.filterLowPassFilterDelay = convertFloat(self.sender().text())
 
     def lineEditReceiverFilterRakeReceiverDelay(self):
-        receiver.filterRakeReceiverDelay = float(self.sender().text())
+        receiver.filterRakeReceiverDelay = convertFloat(self.sender().text())
 
     def lineEditReceiverFilterRakeReceiverPercentage(self):
-        receiver.filterRakeReceiverReferenceAmplitude = int(self.sender().text())
+        receiver.filterRakeReceiverReferenceAmplitude = convertInt(self.sender().text())
 
     def lineEditReceiverFilterIntegrateAndDumpDelay(self):
-        receiver.filterIntegrateAndDumpDelay = float(self.sender().text())
+        receiver.filterIntegrateAndDumpDelay = convertFloat(self.sender().text())
 
     def tabWidgetTransmitterSSSequence(self, index):
-        transmitter.sequenceIndex = int(index)
+        transmitter.sequenceIndex = convertInt(index)
 
     def tabWidgetChannel(self, index):
-        channel.tabIndex = int(index)
+        channel.tabIndex = convertInt(index)
 
     def tabWidgetReceiverSSSequence(self, index):
-        receiver.sequenceIndex = int(index)
+        receiver.sequenceIndex = convertInt(index)
 
     def tabWidgetReceiverFilter(self, index):
-        receiver.filterIndex = int(index)
+        receiver.filterIndex = convertInt(index)
 
     def comboBoxTransmitterPulseshape(self, index):
-        transmitter.pulseshapeShapeIndex = int(index)
-        if (index == 1): # index 1 is sinc
+        transmitter.pulseshapeShapeIndex = convertInt(index)
+        if (transmitter.pulseshapeShapeIndex == 1): # index 1 is sinc
             mainUi.lineEdit_transmitter_pulseshape_numberofzeros.setEnabled(True)
         else:
             mainUi.lineEdit_transmitter_pulseshape_numberofzeros.setEnabled(False)
@@ -323,21 +348,21 @@ class MainHelper(QtWidgets.QMainWindow):
         plot.close(fig)
 
     def createRectSequence(self, length):
-        length = int(length)
+        length = convertInt(length)
 
         sequence = []
         for i in range(0, length):
-            sequence.insert(i,float(1.0))
+            sequence.insert(i,convertFloat(1.0))
 
         return sequence
 
     def createSincSequence(self, length, zeroes):
-        length = int(length)
+        length = convertInt(length)
 
         arg = math.pi / length
 
         sequence = [] 
-        for i in range(0, int(length/2)):
+        for i in range(0, convertInt(length/2)):
             sequence.insert(i, math.sin((length/2-i)*arg)/((length/2-i)*arg))
         
         for i in range(int(length/2), length):

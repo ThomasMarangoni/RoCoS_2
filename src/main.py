@@ -1,11 +1,11 @@
 import sys
 import os
 
-from PyQt5 import QtWidgets, QtGui
+from PyQt5 import QtWidgets, QtGui, QtCore
 
 from ui import Main as Main
 from uiHelper import MainHelper as MainHelper
-from uiHelper import MainValidators as MainValidators
+from uiHelper import Validators as Validators
 
 from ui import Analyse as Analyse
 from ui import CodeGenerator as CodeGenerator
@@ -23,7 +23,7 @@ mainUi = Main.Ui_MainWindow()
 windowMain = MainHelper.MainHelper(mainUi)
 mainUi.setupUi(windowMain)
 windowMain.show()
-MainValidators.setup(mainUi)
+Validators.setupMainValidators(mainUi)
 
 app.exec_()
 
